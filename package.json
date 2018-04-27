@@ -28,8 +28,11 @@
     "bootstrap": "^3.3.7",
     "compass": "^0.1.1",
     "font-awesome": "^4.7.0",
+    "gulp-file-include": "^2.0.1",
+    "jquery": "^3.3.1",
     "jquery-1x": "^1.12.1",
     "lodash": "^4.17.4",
+    "reset-css": "^3.0.0",
     "swiper": "^3.4.2"
   },
   "description": "Cài đặt Node.js, sau khi cài đặt thành công thì gõ lệnh:",

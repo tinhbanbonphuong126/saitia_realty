@@ -15,6 +15,7 @@ var browserSync = require('browser-sync');
 var CONFIG = require('../config.js');
 var SRC = 'scss/**/*.scss';
 var DESTINATION = 'css';
+var DESTINATION_JS = 'js';
 
 // Compile Sass files into css
 gulp.task('scss', ['scss:compile']);
@@ -60,6 +61,13 @@ gulp.task('scss:lib', function () {
         .pipe(concat('lib.min.css'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(DESTINATION));
+});
+gulp.task('scss:lib_js', function () {
+    return gulp.src(CONFIG.JS_DEPS)
+        .pipe(sourcemaps.init())
+        .pipe(concat('lib.min.js'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(DESTINATION_JS));
 });
 
 // Compile common

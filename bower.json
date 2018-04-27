@@ -1,0 +1,22 @@
+{
+  "name": "haguruma",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "ADNET-PLUS"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.9.1",
+    "flexslider": "^2.6.3"
+  }
+}

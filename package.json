@@ -1,0 +1,43 @@
+{
+  "name": "haguruma_frontend",
+  "author": "ADNET-PLUS",
+  "homepage": "http://haguruma-tpl.adnet.space/",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp scss:lib && gulp scss:common && gulp scss:recompile"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^3.1.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-lint": "^1.3.4",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^2.1.2",
+    "require-dir": "^0.3.1"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "compass": "^0.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery-1x": "^1.12.1",
+    "lodash": "^4.17.4",
+    "swiper": "^3.4.2"
+  },
+  "description": "Cài đặt Node.js, sau khi cài đặt thành công thì gõ lệnh:",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://NhuPham@bitbucket.org/adnetplus_html_css/haguruma_frontend.git"
+  },
+  "license": "ISC"
+}

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+//Square Mixin
+@mixin square($size) {
+  $unquote: unquote($size + 'px');
+  width: $unquote;
+  height: $unquote;
+}
+
+@mixin reset-a {
+  &:hover, &:visited, &:link, &:active {
+    text-decoration: none;
+  }
+}

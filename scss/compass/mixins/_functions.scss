@@ -1,0 +1,78 @@
+@charset "UTF-8";
+//Calculate rem
+@function rem($pixels, $context: $global-font-size) {
+  @return ($pixels / $context) * 1rem;
+}
+
+//Removal unit
+@function strip-unit($value) {
+  @return $value / ($value*0 + 1)
+}
+
+//Separat unit
+@function separate-unit($val) {
+  $unit: false;
+
+  @if unit($val) != '' {
+    $unit: unquote(unit($val));
+    $val: strip-unit($val);
+  }
+
+  @return ($val, $unit);
+}
+
+//Add unit
+@function unitLess($val) {
+
+  @if type-of($val) == number {
+    $val: strip-unit($val) * 1px;
+  }
+
+  @return $val;
+}
+
+//Negative number
+@function negative($val) {
+  @if $val == true {
+    $val: false;
+  } @else if $val == false {
+    $val: true;
+  } @else {
+    $val: $val * (-1);
+  }
+  @return $val;
+}
+
+//Very simple number functions
+@function h($num) {
+  @return $num / 2;
+}
+@function n($num) {
+  @return 0 - $num;
+}
+@function hn($num) {
+  @return n(h($num));
+}
+
+//  Helper function to replace characters in a string
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+  @return if($index,
+          str-slice($string, 1, $index - 1) + $replace +
+        str-replace(str-slice($string, $index +
+        str-length($search)), $search, $replace),
+          $string);
+}
+
+
+/// Calculates the height as a percentage of the width for a given ratio.
+/// @param {List} $ratio - Ratio to use to calculate the height, formatted as `x by y`.
+/// @return {Number} A percentage value for the height relative to the width of a responsive container.
+@function ratio-to-percentage($ratio) {
+  $w: nth($ratio, 1);
+  $h: nth($ratio, 3);
+  @return $h / $w * 100%;
+}
+
+
+

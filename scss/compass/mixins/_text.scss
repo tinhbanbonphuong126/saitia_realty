@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+
+//JP sign
+@mixin jp-sign($font-size) {
+  &.sign-left {
+    margin-left: unquote('-' + $font-size / 2);
+    margin-left: unquote('-' + rem($font-size / 2));
+  }
+  &.sign-right {
+    margin-right: unquote('-' + $font-size / 2);
+    margin-right: unquote('-' + rem($font-size / 2));
+  }
+}
+//Font Size
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: rem($size);
+
+  letter-spacing: $size / 10;
+  letter-spacing: rem($size / 10);
+
+  span {
+    @include jp-sign($size);
+  }
+}
+//Line Height
+@mixin line-height($heightValue: 12 ) {
+  line-height: $heightValue + px; //fallback for old browsers
+  line-height: (0.125 * $heightValue) + rem;
+}
+//Text Overflow
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+

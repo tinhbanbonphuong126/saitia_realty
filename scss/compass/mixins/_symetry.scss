@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+//Define padding margin symmetry
+@mixin paddingLeftRight($value) {
+  padding-left: (unquote($value + 'px'));
+  padding-right: (unquote($value + 'px'));
+}
+@mixin paddingLR($value) {
+
+  @if ($value == auto) {
+    padding-left: $value;
+    padding-right: $value;
+  } @else {
+    padding-left: $value;
+    padding-right: $value;
+    padding-left: rem($value);
+    padding-right: rem($value);
+  }
+}
+@mixin marginLeftRight($value) {
+  margin-left: (unquote($value + 'px'));
+  margin-right: (unquote($value + 'px'));
+}
+@mixin marginLR($value) {
+  @if($value == auto) {
+    margin-left: $value;
+    margin-right: $value;
+  } @else {
+    margin-left: $value;
+    margin-right: $value;
+    margin-left: rem($value);
+    margin-right: rem($value);
+  }
+}
+@mixin paddingTopBottom($value) {
+  padding-top: (unquote($value + 'px'));
+  padding-bottom: (unquote($value + 'px'));
+}
+@mixin paddingTB($value) {
+  padding-top: $value;
+  padding-bottom: $value;
+}
+@mixin marginTopBottom($value) {
+  margin-top: (unquote($value + 'px'));
+  margin-bottom: (unquote($value + 'px'));
+}
+@mixin marginTB($value) {
+  margin-top: $value;
+  margin-bottom: $value;
+}
+
+
+//Align
+//Vertical align middle with unknown height
+@mixin middle-align {
+  display: flex;
+  align-items: center;
+}
+//Vertical align middle with known height
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+//Push auto
+@mixin push--auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+//Center-align a block level element
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+//Absolute Positioned
+@mixin abs-pos($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  position: absolute;
+}
+
+//Advance possition
+@mixin center($position) {
+  position: absolute;
+
+  @if $position == 'vertical' {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  } @else if $position == 'horizontal' {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%);
+  } @else if $position == 'both' {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+//Vertical vs horizontal
+@mixin centerEl($top: 50%, $left: 50%, $width: 50%, $align: center ) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  -ms-transform: translate($left * -1, -50%);
+  -webkit-transform: translate($left * -1, -50%);
+  transform: translate($left * -1, -50%);
+  width: $width;
+  > * {
+    display: block;
+    padding: 0 10px;
+    text-align: $align;
+    width: 100%;
+  }
+  > span {
+    display: inline;
+  }
+}
+
+@mixin align($vertical: true, $horizontal: false, $position: relative) {
+  @if $position {
+    position: $position;
+  }
+  @if $vertical {
+    top: 50%;
+  }
+  @if $horizontal {
+    left: 50%;
+  }
+
+  @if $vertical and $horizontal {
+    transform: translateX(-50%) translateY(-50%);
+  } @else if $vertical {
+    transform: translateY(-50%);
+  } @else {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+//Pseudo mixin
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}

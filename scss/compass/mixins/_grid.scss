@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+//Non-sense
+@mixin occupy {
+  float: left;
+  position: relative;
+  min-height: 1px;
+}
+//Define mixin common
+@mixin row($grid) {
+  .row {
+    margin-left: (unquote('-' + $grid + 'px'));
+    margin-right: (unquote('-' + $grid + 'px'));
+  }
+}
+//Customize cluster of bootstrap
+@mixin col-grid($grid: 15) {
+  @include row($grid);
+  div[class^="col"] {
+    @include paddingLeftRight($grid);
+  }
+}
+//Customize grid options
+@mixin col-options($name_col, $col_number, $cluster) {
+  @include row($cluster);
+
+  div.#{$name_col} {
+    @include occupy();
+    @include paddingLeftRight($cluster);
+    width: calc(100% / #{$col_number});
+  }
+
+}
+@mixin left-right($cluster: 15, $first: 1, $total: 2) {
+
+  $left: null;
+  $right: null;
+
+  @if ($first <= 20) {
+    $left: ($first / $total) * 100;
+    $right: 100 - $left;
+  } @else {
+    $left: ($first + 2*$cluster) * 100 / ($total + 2*$cluster);
+    $right: 100 - $left;
+  }
+
+  @include row($cluster);
+
+  .row .left-col, .row .right-col {
+    float: left;
+    padding-left: (unquote($cluster + 'px'));
+    padding-right: (unquote($cluster + 'px'));
+    position: relative;
+    min-height: 1px;
+  }
+
+  @if ($first == $total) {
+    .row .left-col, .row .right-col {
+      width: 100%;
+    }
+  } @else {
+    .row .left-col {
+      width: unquote($left + '%');
+    }
+    .row .right-col {
+      width: unquote($right + '%');
+    }
+  }
+
+}
+@mixin left-right-fix($cluster: 15, $first: 1, $total: 2) {
+
+  $left: null;
+  $right: null;
+
+  $left: ($first + 2*$cluster) + 'px';
+  $right: calc(100% - #{$left});
+
+  @include row($cluster);
+
+  .row .left-col, .row .right-col {
+    float: left;
+    padding-left: (unquote($cluster + 'px'));
+    padding-right: (unquote($cluster + 'px'));
+    position: relative;
+    min-height: 1px;
+  }
+
+  @if ($first == $total) {
+    .row .left-col, .row .right-col {
+      width: 100%;
+    }
+  } @else {
+    .row .left-col {
+      width: unquote($left);
+    }
+    .row .right-col {
+      width: unquote($right);
+    }
+  }
+
+}
+@mixin left-right-fix-percent($cluster: 0, $first: 1, $total: 1) {
+
+  $left: null;
+  $right: null;
+
+  $left: ($first + 2*$cluster) + 'px';
+  $right: calc(100% - #{$left});
+
+  @include row($cluster);
+
+  .row .left-col, .row .right-col {
+    float: left;
+    padding-left: (unquote($cluster + 'px'));
+    padding-right: (unquote($cluster + 'px'));
+    position: relative;
+    min-height: 1px;
+  }
+
+  @if ($first == $total) {
+    .row .left-col, .row .right-col {
+      width: 100%;
+    }
+  } @else {
+    .row .left-col {
+      width: unquote($left);
+    }
+    .row .right-col {
+      width: unquote($right);
+    }
+  }
+
+}
+@mixin right-left-fix-percent($cluster: 0, $first: 1, $total: 1) {
+
+  $left: null;
+  $right: null;
+
+  $left: ($first + 2*$cluster) + 'px';
+  $right: calc(100% - #{$left});
+
+  @include row($cluster);
+
+  .row .left-col, .row .right-col {
+    float: left;
+    @include paddingLeftRight($cluster);
+    position: relative;
+    min-height: 1px;
+  }
+
+  @if ($first == $total) {
+    .row .left-col, .row .right-col {
+      width: 100%;
+    }
+  } @else {
+    .row .left-col {
+      width: unquote($right);
+    }
+    .row .right-col {
+      width: unquote($left);
+    }
+  }
+
+}
+@mixin right-left-fix($cluster: 15, $first: 1, $total: 2) {
+
+  $left: null;
+  $right: null;
+
+  $left: ($first + 2*$cluster) + 'px';
+  $right: calc(100% - #{$left});
+
+  @include row($cluster);
+
+  .row .left-col, .row .right-col {
+    float: left;
+    padding-left: (unquote($cluster + 'px'));
+    padding-right: (unquote($cluster + 'px'));
+    position: relative;
+    min-height: 1px;
+  }
+
+  @if ($first == $total) {
+    .row .left-col, .row .right-col {
+      width: 100%;
+    }
+  } @else {
+    .row .left-col {
+      width: unquote($right);
+    }
+    .row .right-col {
+      width: unquote($left);
+    }
+  }
+
+}
+@mixin right-left($cluster: 15, $first: 1, $total: 2) {
+
+  $left: null;
+  $right: null;
+
+  @if ($first <= 20) {
+    $left: ($first / $total) * 100;
+    $right: 100 - $left;
+  } @else {
+    $left: ($first + 2*$cluster) * 100 / ($total + 2*$cluster);
+    $right: 100 - $left;
+  }
+
+  @include row($cluster);
+
+  .row .left-col, .row .right-col {
+    float: left;
+    padding-left: (unquote($cluster + 'px'));
+    padding-right: (unquote($cluster + 'px'));
+    position: relative;
+    min-height: 1px;
+  }
+
+  @if ($first == $total) {
+    .row .left-col, .row .right-col {
+      width: 100%;
+    }
+  } @else {
+    .row .left-col {
+      width: unquote($right + '%');
+    }
+    .row .right-col {
+      width: unquote($left + '%');
+    }
+  }
+
+}

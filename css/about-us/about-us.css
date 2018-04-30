@@ -1,0 +1,582 @@
+@charset "UTF-8";
+.circle-text {
+  display: table-cell;
+  height: 197px;
+  /*change this and the width
+ for the size of your initial circle*/
+  width: 197px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  /*make it pretty*/
+  background: #ABCD03;
+  font-size: 30px;
+  color: #FFFFFF;
+  color: white;
+  font-family: "ヒラギノ明朝 Pro";
+  font-weight: bold;
+  /*change this
+ for font-size and font-family*/ }
+
+.main-content {
+  opacity: 1; }
+  .main-content .top_banner {
+    opacity: 1;
+    height: 200px;
+    background-color: gray; }
+  .main-content .naiyou_page {
+    opacity: 1; }
+    .main-content .naiyou_page .aisatsu {
+      opacity: 1;
+      position: relative; }
+      .main-content .naiyou_page .aisatsu::after {
+        content: url("/img/about-us/aisatsu.png");
+        display: block;
+        clear: both;
+        position: absolute;
+        right: -33px;
+        top: -35px; }
+      .main-content .naiyou_page .aisatsu .text_aisatsu {
+        font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+        width: 92%;
+        font-size: 20px;
+        color: #231815;
+        color: #231815;
+        margin-top: 75px;
+        margin-bottom: 61px; }
+    .main-content .naiyou_page .bunjochi {
+      opacity: 1; }
+      .main-content .naiyou_page .bunjochi .circle_title {
+        display: table;
+        margin: 0 auto; }
+      .main-content .naiyou_page .bunjochi .content {
+        opacity: 1;
+        margin-top: 127px; }
+        .main-content .naiyou_page .bunjochi .content .bound_ul {
+          opacity: 1; }
+          .main-content .naiyou_page .bunjochi .content .bound_ul .cell_li {
+            opacity: 1;
+            height: 95px;
+            border-bottom: 1px solid #B5B6B6;
+            padding-left: 3px;
+            position: relative; }
+            .main-content .naiyou_page .bunjochi .content .bound_ul .cell_li:first-child {
+              border-top: 1px solid #B5B6B6; }
+            .main-content .naiyou_page .bunjochi .content .bound_ul .cell_li:after {
+              position: absolute;
+              right: 0;
+              top: 31px;
+              content: url("/img/about-us/arrow_left.png");
+              clear: both; }
+            .main-content .naiyou_page .bunjochi .content .bound_ul .cell_li .label_rui {
+              opacity: 1;
+              width: 100px;
+              height: 48px;
+              background-color: #E60012;
+              display: inline-block;
+              font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+              font-size: 20px;
+              color: #FFFFFF;
+              color: white;
+              line-height: 48px;
+              text-align: center;
+              margin-top: 22px; }
+            .main-content .naiyou_page .bunjochi .content .bound_ul .cell_li .description_rui {
+              font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+              font-size: 21px;
+              color: #231815;
+              color: #231815;
+              display: inline-block;
+              margin-left: 15px; }
+    .main-content .naiyou_page .kaisha_gaiyou {
+      opacity: 1; }
+      .main-content .naiyou_page .kaisha_gaiyou .circle_title {
+        opacity: 1;
+        display: table;
+        margin: 0 auto;
+        margin-bottom: 78px;
+        margin-top: 137px; }
+      .main-content .naiyou_page .kaisha_gaiyou .content {
+        opacity: 1; }
+        .main-content .naiyou_page .kaisha_gaiyou .content .bound_ul {
+          opacity: 1; }
+          .main-content .naiyou_page .kaisha_gaiyou .content .bound_ul .cell_li {
+            opacity: 1;
+            border-bottom: 1px solid #B5B6B6; }
+            .main-content .naiyou_page .kaisha_gaiyou .content .bound_ul .cell_li:first-child {
+              border-top: 1px solid #B5B6B6; }
+            .main-content .naiyou_page .kaisha_gaiyou .content .bound_ul .cell_li .before, .main-content .naiyou_page .kaisha_gaiyou .content .bound_ul .cell_li .after {
+              opacity: 1;
+              font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+              font-size: 17px;
+              line-height: 94px;
+              color: #231815;
+              color: #231815;
+              display: inline-block; }
+            .main-content .naiyou_page .kaisha_gaiyou .content .bound_ul .cell_li .before {
+              opacity: 1;
+              width: 128px;
+              padding-left: 2px; }
+            .main-content .naiyou_page .kaisha_gaiyou .content .bound_ul .cell_li .after {
+              opacity: 1;
+              width: calc(100% - 134px); }
+            .main-content .naiyou_page .kaisha_gaiyou .content .bound_ul .cell_li.double {
+              opacity: 1; }
+              .main-content .naiyou_page .kaisha_gaiyou .content .bound_ul .cell_li.double .before {
+                vertical-align: top; }
+              .main-content .naiyou_page .kaisha_gaiyou .content .bound_ul .cell_li.double .after {
+                line-height: 40px;
+                padding-top: 27px;
+                padding-bottom: 17px; }
+    .main-content .naiyou_page .jigyou_naiyou {
+      opacity: 1; }
+      .main-content .naiyou_page .jigyou_naiyou .circle_title {
+        opacity: 1;
+        display: table;
+        margin: 0 auto;
+        margin-top: 87px; }
+      .main-content .naiyou_page .jigyou_naiyou .content1 {
+        opacity: 1; }
+        .main-content .naiyou_page .jigyou_naiyou .content1 .title {
+          opacity: 1;
+          margin-top: 55px; }
+        .main-content .naiyou_page .jigyou_naiyou .content1 .bounce_below {
+          opacity: 1;
+          margin-top: 58px; }
+          .main-content .naiyou_page .jigyou_naiyou .content1 .bounce_below .description {
+            opacity: 1;
+            font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+            font-size: 21px;
+            color: #231815;
+            color: #231815; }
+          .main-content .naiyou_page .jigyou_naiyou .content1 .bounce_below .bounce_image {
+            opacity: 1;
+            text-align: center;
+            margin-top: 110px; }
+            .main-content .naiyou_page .jigyou_naiyou .content1 .bounce_below .bounce_image a {
+              display: block;
+              padding-left: 173px; }
+      .main-content .naiyou_page .jigyou_naiyou .content2 {
+        opacity: 1; }
+        .main-content .naiyou_page .jigyou_naiyou .content2 .title {
+          opacity: 1;
+          margin-top: 124px; }
+        .main-content .naiyou_page .jigyou_naiyou .content2 .bounce_below {
+          opacity: 1;
+          margin-top: 52px; }
+          .main-content .naiyou_page .jigyou_naiyou .content2 .bounce_below .description {
+            opacity: 1;
+            font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+            font-size: 21px;
+            color: #231815;
+            color: #231815; }
+          .main-content .naiyou_page .jigyou_naiyou .content2 .bounce_below .bounce_image {
+            opacity: 1;
+            text-align: center;
+            margin-top: 71px; }
+            .main-content .naiyou_page .jigyou_naiyou .content2 .bounce_below .bounce_image a {
+              display: block;
+              padding-left: 173px; }
+    .main-content .naiyou_page .toiawase {
+      opacity: 1; }
+      .main-content .naiyou_page .toiawase .circle_title {
+        opacity: 1;
+        display: table;
+        margin: 0 auto;
+        margin-top: 172px; }
+      .main-content .naiyou_page .toiawase .content1 {
+        opacity: 1;
+        margin-top: 63px; }
+        .main-content .naiyou_page .toiawase .content1 .title {
+          opacity: 1; }
+        .main-content .naiyou_page .toiawase .content1 .tel_info {
+          margin-top: 34px;
+          opacity: 1;
+          text-align: center; }
+          .main-content .naiyou_page .toiawase .content1 .tel_info img {
+            opacity: 1; }
+      .main-content .naiyou_page .toiawase .content2 {
+        opacity: 1;
+        margin-top: 8px; }
+        .main-content .naiyou_page .toiawase .content2 .title {
+          opacity: 1; }
+        .main-content .naiyou_page .toiawase .content2 .form_info {
+          opacity: 1; }
+          .main-content .naiyou_page .toiawase .content2 .form_info .formSubmit {
+            opacity: 1;
+            padding-right: 27px; }
+            .main-content .naiyou_page .toiawase .content2 .form_info .formSubmit .hitsuyou {
+              opacity: 1;
+              font-size: 14px;
+              color: #E60012;
+              color: #e60012;
+              text-align: right;
+              margin-bottom: -2px;
+              margin-top: 46px; }
+            .main-content .naiyou_page .toiawase .content2 .form_info .formSubmit .form_content {
+              opacity: 1; }
+              .main-content .naiyou_page .toiawase .content2 .form_info .formSubmit .form_content .cell_form {
+                opacity: 1; }
+                .main-content .naiyou_page .toiawase .content2 .form_info .formSubmit .form_content .cell_form:before, .main-content .naiyou_page .toiawase .content2 .form_info .formSubmit .form_content .cell_form:after {
+                  content: "";
+                  display: table; }
+                .main-content .naiyou_page .toiawase .content2 .form_info .formSubmit .form_content .cell_form:after {
+                  clear: both; }
+                .main-content .naiyou_page .toiawase .content2 .form_info .formSubmit .form_content .cell_form .before, .main-content .naiyou_page .toiawase .content2 .form_info .formSubmit .form_content .cell_form .after {
+                  opacity: 1;
+                  margin-top: 7px;
+                  margin-bottom: 7px; }
+                .main-content .naiyou_page .toiawase .content2 .form_info .formSubmit .form_content .cell_form .before {
+                  opacity: 1;
+                  width: 190px;
+                  float: left;
+                  text-align: right;
+                  padding-right: 23px;
+                  margin-top: 23px; }
+                  .main-content .naiyou_page .toiawase .content2 .form_info .formSubmit .form_content .cell_form .before .mark_hitsuyou {
+                    font-size: 20px;
+                    color: #E60012;
+                    color: #e60012;
+                    display: inline-block;
+                    width: 10px;
+                    line-height: 0px; }
+                .main-content .naiyou_page .toiawase .content2 .form_info .formSubmit .form_content .cell_form .after {
+                  opacity: 1;
+                  float: left;
+                  width: calc(100% - 190px); }
+                  .main-content .naiyou_page .toiawase .content2 .form_info .formSubmit .form_content .cell_form .after input, .main-content .naiyou_page .toiawase .content2 .form_info .formSubmit .form_content .cell_form .after textarea {
+                    width: 100%; }
+                  .main-content .naiyou_page .toiawase .content2 .form_info .formSubmit .form_content .cell_form .after input {
+                    height: 41px; }
+                  .main-content .naiyou_page .toiawase .content2 .form_info .formSubmit .form_content .cell_form .after textarea {
+                    height: 177px; }
+          .main-content .naiyou_page .toiawase .content2 .form_info .bounce_submit {
+            opacity: 1;
+            text-align: center;
+            margin-top: 40px; }
+            .main-content .naiyou_page .toiawase .content2 .form_info .bounce_submit .btn_submit_form {
+              width: 253px;
+              height: 44px;
+              background-color: #438BCB;
+              font-size: 25px;
+              color: #FFFFFF;
+              color: white; }
+    .main-content .naiyou_page .privacy {
+      opacity: 1;
+      margin-bottom: 239px; }
+      .main-content .naiyou_page .privacy .circle_title {
+        margin-top: 146px;
+        margin-bottom: 46px;
+        opacity: 1;
+        display: table;
+        margin: 0 auto; }
+      .main-content .naiyou_page .privacy .content {
+        opacity: 1; }
+        .main-content .naiyou_page .privacy .content .description {
+          opacity: 1;
+          font-size: 14px;
+          color: #231815;
+          font-family: "ヒラギノ角ゴ Pro";
+          line-height: 25px; }
+          .main-content .naiyou_page .privacy .content .description.graph2 {
+            margin-top: 23px; }
+          .main-content .naiyou_page .privacy .content .description.graph3 {
+            margin-top: 17px; }
+          .main-content .naiyou_page .privacy .content .description.graph4 {
+            margin-top: 17px; }
+          .main-content .naiyou_page .privacy .content .description.graph5 {
+            margin-top: 17px; }
+
+.cpn_title {
+  opacity: 1;
+  font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+  font-size: 25px;
+  color: #438BCB;
+  color: #438bcb;
+  width: 316px;
+  margin: 0 auto;
+  text-align: center; }
+  .cpn_title:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 9px;
+    background-color: #CACACB;
+    margin-top: 12px; }
+
+.vitual {
+  position: relative;
+  min-height: 1px;
+  align-content: initial;
+  align-items: initial;
+  align-self: initial;
+  all: initial;
+  animation: initial;
+  animation-delay: initial;
+  animation-direction: initial;
+  animation-duration: initial;
+  animation-fill-mode: initial;
+  animation-iteration-count: initial;
+  animation-name: initial;
+  animation-play-state: initial;
+  animation-timing-function: initial;
+  backface-visibility: initial;
+  background: initial;
+  background-attachment: initial;
+  background-blend-mode: initial;
+  background-clip: initial;
+  background-color: initial;
+  background-image: initial;
+  background-origin: initial;
+  background-position: initial;
+  background-repeat: initial;
+  background-size: initial;
+  border: initial;
+  border-bottom: initial;
+  border-bottom-color: initial;
+  border-bottom-left-radius: initial;
+  border-bottom-right-radius: initial;
+  border-bottom-style: initial;
+  border-bottom-width: initial;
+  border-collapse: initial;
+  border-color: initial;
+  border-image: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  border-image-slice: initial;
+  border-image-source: initial;
+  border-image-width: initial;
+  border-left: initial;
+  border-left-color: initial;
+  border-left-style: initial;
+  border-left-width: initial;
+  border-radius: initial;
+  border-right: initial;
+  border-right-color: initial;
+  border-right-style: initial;
+  border-right-width: initial;
+  border-spacing: initial;
+  border-style: initial;
+  border-top: initial;
+  border-top-color: initial;
+  border-top-left-radius: initial;
+  border-top-right-radius: initial;
+  border-top-style: initial;
+  border-top-width: initial;
+  border-width: initial;
+  bottom: initial;
+  box-shadow: initial;
+  box-sizing: initial;
+  caption-side: initial;
+  clear: initial;
+  clip: initial;
+  color: initial;
+  column-count: initial;
+  column-fill: initial;
+  column-gap: initial;
+  column-rule: initial;
+  column-rule-color: initial;
+  column-rule-style: initial;
+  column-rule-width: initial;
+  column-span: initial;
+  column-width: initial;
+  columns: initial;
+  content: initial;
+  counter-increment: initial;
+  counter-reset: initial;
+  cursor: initial;
+  direction: initial;
+  display: initial;
+  empty-cells: initial;
+  filter: initial;
+  flex: initial;
+  flex-basis: initial;
+  flex-direction: initial;
+  flex-flow: initial;
+  flex-grow: initial;
+  flex-shrink: initial;
+  flex-wrap: initial;
+  float: initial;
+  font: initial;
+  font-family: initial;
+  font-size: initial;
+  font-size-adjust: initial;
+  font-stretch: initial;
+  font-style: initial;
+  font-variant: initial;
+  font-weight: initial;
+  hanging-punctuation: initial;
+  height: initial;
+  justify-content: initial;
+  left: initial;
+  letter-spacing: initial;
+  line-height: initial;
+  list-style: initial;
+  list-style-image: initial;
+  list-style-position: initial;
+  list-style-type: initial;
+  margin: initial;
+  margin-bottom: initial;
+  margin-left: initial;
+  margin-right: initial;
+  margin-top: initial;
+  max-height: initial;
+  max-width: initial;
+  min-height: initial;
+  min-width: initial;
+  nav-down: initial;
+  nav-index: initial;
+  nav-left: initial;
+  nav-right: initial;
+  nav-up: initial;
+  opacity: initial;
+  order: initial;
+  outline: initial;
+  outline-color: initial;
+  outline-offset: initial;
+  outline-style: initial;
+  outline-width: initial;
+  overflow: initial;
+  overflow-x: initial;
+  overflow-y: initial;
+  padding: initial;
+  padding-bottom: initial;
+  padding-left: initial;
+  padding-right: initial;
+  padding-top: initial;
+  page-break-after: initial;
+  page-break-before: initial;
+  page-break-inside: initial;
+  perspective: initial;
+  perspective-origin: initial;
+  position: initial;
+  quotes: initial;
+  resize: initial;
+  right: initial;
+  tab-size: initial;
+  table-layout: initial;
+  text-align: initial;
+  text-align-last: initial;
+  text-decoration: initial;
+  text-decoration-color: initial;
+  text-decoration-line: initial;
+  text-decoration-style: initial;
+  text-indent: initial;
+  text-justify: initial;
+  text-overflow: initial;
+  text-shadow: initial;
+  text-transform: initial;
+  top: initial;
+  transform: initial;
+  transform-origin: initial;
+  transform-style: initial;
+  transition: initial;
+  transition-delay: initial;
+  transition-duration: initial;
+  transition-property: initial;
+  transition-timing-function: initial;
+  unicode-bidi: initial;
+  user-select: initial;
+  vertical-align: initial;
+  visibility: initial;
+  white-space: initial;
+  width: initial;
+  word-break: initial;
+  word-spacing: initial;
+  word-wrap: initial;
+  z-index: initial; }
+  @media only screen and (max-width: 1200px) {
+    .vitual {
+      opacity: 1; } }
+  @media only screen and (max-width: 1024px) {
+    .vitual {
+      opacity: 1; } }
+  @media only screen and (max-width: 960px) {
+    .vitual {
+      opacity: 1; } }
+  @media only screen and (max-width: 767px) {
+    .vitual {
+      opacity: 1; } }
+  @media only screen and (max-width: 680px) {
+    .vitual {
+      opacity: 1; } }
+  @media only screen and (max-width: 480px) {
+    .vitual {
+      opacity: 1; } }
+  @media only screen and (max-width: 320px) {
+    .vitual {
+      opacity: 1; } }
+  .vitual:active {
+    opacity: 1; }
+  .vitual:checked {
+    opacity: 1; }
+  .vitual:disabled {
+    opacity: 1; }
+  .vitual:empty {
+    opacity: 1; }
+  .vitual:enabled {
+    opacity: 1; }
+  .vitual:first-child {
+    opacity: 1; }
+  .vitual:first-of-type {
+    opacity: 1; }
+  .vitual:focus {
+    opacity: 1; }
+  .vitual:hover {
+    opacity: 1; }
+  .vitual:in-range {
+    opacity: 1; }
+  .vitual:invalid {
+    opacity: 1; }
+  .vitual:lang(language) {
+    opacity: 1; }
+  .vitual:last-child {
+    opacity: 1; }
+  .vitual:last-of-type {
+    opacity: 1; }
+  .vitual:link {
+    opacity: 1; }
+  .vitual:not(selector) {
+    opacity: 1; }
+  .vitual:nth-child(n) {
+    opacity: 1; }
+  .vitual:nth-last-child(n) {
+    opacity: 1; }
+  .vitual:nth-last-of-type(n) {
+    opacity: 1; }
+  .vitual:nth-of-type(n) {
+    opacity: 1; }
+  .vitual:only-of-type {
+    opacity: 1; }
+  .vitual:only-child {
+    opacity: 1; }
+  .vitual:optional {
+    opacity: 1; }
+  .vitual:out-of-range {
+    opacity: 1; }
+  .vitual:read-only {
+    opacity: 1; }
+  .vitual:read-write {
+    opacity: 1; }
+  .vitual:required {
+    opacity: 1; }
+  .vitual:root {
+    opacity: 1; }
+  .vitual:target {
+    opacity: 1; }
+  .vitual:valid {
+    opacity: 1; }
+  .vitual:visited {
+    opacity: 1; }
+  .vitual::after {
+    opacity: 1; }
+  .vitual::before {
+    opacity: 1; }
+  .vitual::first-letter {
+    opacity: 1; }
+  .vitual::first-line {
+    opacity: 1; }
+  .vitual::selection {
+    opacity: 1; }
+
+/*# sourceMappingURL=about-us.css.map */

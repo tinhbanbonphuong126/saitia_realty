@@ -5,7 +5,8 @@ module.exports = {
     ],
     JS_DEPS: [
         'plugins/jquery/dist/jquery.js',
-        'plugins/bootstrap/dist/js/bootstrap.js'
+        'plugins/bootstrap/dist/js/bootstrap.js',
+        'plugins/scrollup-master/dist/jquery.scrollUp.js'
     ],
     CSS_COMPATIBILITY: [
         'last 2 versions',

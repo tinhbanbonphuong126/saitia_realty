@@ -1,0 +1,20 @@
+@mixin circle-text(){
+  display: table-cell;
+  height: 197px;
+  /*change this and the width
+ for the size of your initial circle*/
+  width: 197px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  /*make it pretty*/
+
+  background: #ABCD03;
+  font-size: 30px;
+  color: #FFFFFF;
+  color: rgb(255, 255, 255);
+  font-family: "ヒラギノ明朝 Pro";
+  font-weight: bold;
+  /*change this
+ for font-size and font-family*/
+}

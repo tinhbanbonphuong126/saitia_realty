@@ -1,0 +1,476 @@
+@charset "UTF-8";
+.circle-text {
+  display: table-cell;
+  height: 197px;
+  /*change this and the width
+ for the size of your initial circle*/
+  width: 197px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  /*make it pretty*/
+  background: #ABCD03;
+  font-size: 30px;
+  color: #FFFFFF;
+  color: white;
+  font-family: "ヒラギノ明朝 Pro";
+  font-weight: bold;
+  /*change this
+ for font-size and font-family*/ }
+
+.main-content {
+  opacity: 1; }
+  .main-content .top_banner {
+    opacity: 1;
+    height: 200px;
+    background-color: gray; }
+  .main-content .naiyou_page {
+    opacity: 1; }
+    .main-content .naiyou_page .kittsu {
+      margin-top: 22px;
+      color: #673A1B;
+      text-align: right;
+      margin-bottom: 28px; }
+    .main-content .naiyou_page .slogan {
+      font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+      font-size: 18px;
+      line-height: 30px;
+      color: #5A5858;
+      letter-spacing: -1px;
+      padding-left: 48px;
+      padding-right: 48px; }
+      .main-content .naiyou_page .slogan .pink_text {
+        color: #EA5539; }
+    .main-content .naiyou_page .aloha_askout {
+      opacity: 1;
+      text-align: center;
+      position: relative; }
+      .main-content .naiyou_page .aloha_askout::before {
+        content: url("/img/home/askout.png");
+        position: absolute;
+        left: 0;
+        top: 12px; }
+      .main-content .naiyou_page .aloha_askout .search {
+        font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #FFFFFF;
+        color: white;
+        width: 340px;
+        height: 46px;
+        background-color: #E83918;
+        outline: none;
+        border-radius: 14px;
+        margin-top: 51px;
+        margin-bottom: 50px; }
+      .main-content .naiyou_page .aloha_askout .osumai {
+        font-family: " ＭＳ Ｐゴシック ", " MS PGothic ", " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, sans-serif;
+        font-size: 15px;
+        line-height: 24px;
+        color: #231815;
+        color: #231815; }
+    .main-content .naiyou_page .max_search {
+      position: relative;
+      text-align: center;
+      opacity: 1;
+      margin-top: 161px;
+      height: 139px;
+      background: url("/img/home/banner_horizontal.png") repeat-x; }
+      .main-content .naiyou_page .max_search .bounce_img {
+        display: inline-block;
+        position: absolute;
+        top: -106px;
+        left: 0;
+        right: 0; }
+        .main-content .naiyou_page .max_search .bounce_img a.middle {
+          margin-left: 33px;
+          margin-right: 33px; }
+    .main-content .naiyou_page .search_usage {
+      opacity: 1; }
+      .main-content .naiyou_page .search_usage .upper_box_search {
+        opacity: 1;
+        font-size: 20px;
+        line-height: 30px;
+        color: #5A5858;
+        color: #5a5858;
+        letter-spacing: -1px;
+        width: 900px;
+        margin: 0 auto;
+        margin-top: 133px;
+        margin-bottom: 41px; }
+        .main-content .naiyou_page .search_usage .upper_box_search .pink_text {
+          color: #E83918; }
+      .main-content .naiyou_page .search_usage .search_button_div {
+        opacity: 1;
+        text-align: center;
+        position: relative; }
+        .main-content .naiyou_page .search_usage .search_button_div::after {
+          content: url("/img/home/aisatsu.png");
+          position: absolute;
+          right: 0;
+          top: -57px; }
+        .main-content .naiyou_page .search_usage .search_button_div .btn_search {
+          opacity: 1;
+          font-size: 20px;
+          letter-spacing: 2px;
+          color: #FFFFFF;
+          color: white;
+          width: 340px;
+          height: 48px;
+          border-radius: 14px;
+          background-color: #E83918; }
+      .main-content .naiyou_page .search_usage .lower_box_search {
+        font-size: 15px;
+        line-height: 24px;
+        color: #231815;
+        color: #231815;
+        text-align: center;
+        margin-top: 52px;
+        margin-bottom: 66px; }
+      .main-content .naiyou_page .search_usage .bounce_way {
+        opacity: 1; }
+        .main-content .naiyou_page .search_usage .bounce_way:before, .main-content .naiyou_page .search_usage .bounce_way:after {
+          content: "";
+          display: table; }
+        .main-content .naiyou_page .search_usage .bounce_way:after {
+          clear: both; }
+        .main-content .naiyou_page .search_usage .bounce_way .row {
+          margin-left: -9px;
+          margin-right: -9px; }
+        .main-content .naiyou_page .search_usage .bounce_way div.cell_div {
+          float: left;
+          position: relative;
+          min-height: 1px;
+          padding-left: 9px;
+          padding-right: 9px;
+          width: calc(100% / 5); }
+        .main-content .naiyou_page .search_usage .bounce_way img {
+          width: 100%; }
+    .main-content .naiyou_page .project {
+      opacity: 1; }
+      .main-content .naiyou_page .project .button_project {
+        opacity: 1;
+        text-align: center;
+        margin-top: 78px;
+        margin-bottom: 58px; }
+        .main-content .naiyou_page .project .button_project .btn_prj {
+          opacity: 1;
+          width: 340px;
+          height: 48px;
+          border-radius: 14px;
+          background-color: transparent;
+          border: 1px solid #E83918; }
+      .main-content .naiyou_page .project .bounce_ctn_prj {
+        opacity: 1; }
+        .main-content .naiyou_page .project .bounce_ctn_prj .row {
+          margin-left: -5px;
+          margin-right: -5px; }
+        .main-content .naiyou_page .project .bounce_ctn_prj div.cell_prj {
+          float: left;
+          position: relative;
+          min-height: 1px;
+          padding-left: 5px;
+          padding-right: 5px;
+          width: calc(100% / 2); }
+        .main-content .naiyou_page .project .bounce_ctn_prj .cell_prj {
+          opacity: 1; }
+          .main-content .naiyou_page .project .bounce_ctn_prj .cell_prj img {
+            width: 100%; }
+    .main-content .naiyou_page .map {
+      opacity: 1;
+      margin-bottom: 72px; }
+      .main-content .naiyou_page .map .button_map {
+        opacity: 1;
+        text-align: center; }
+        .main-content .naiyou_page .map .button_map .btn_map {
+          opacity: 1;
+          width: 340px;
+          height: 48px;
+          border-radius: 14px;
+          background-color: transparent;
+          border: 1px solid #E83918;
+          margin-top: 92px;
+          margin-bottom: 68px; }
+      .main-content .naiyou_page .map .google_map {
+        opacity: 1;
+        width: 736px;
+        height: 501px;
+        background-color: rgba(0, 0, 0, 0.02);
+        margin: 0 auto; }
+
+.vitual {
+  position: relative;
+  min-height: 1px;
+  align-content: initial;
+  align-items: initial;
+  align-self: initial;
+  all: initial;
+  animation: initial;
+  animation-delay: initial;
+  animation-direction: initial;
+  animation-duration: initial;
+  animation-fill-mode: initial;
+  animation-iteration-count: initial;
+  animation-name: initial;
+  animation-play-state: initial;
+  animation-timing-function: initial;
+  backface-visibility: initial;
+  background: initial;
+  background-attachment: initial;
+  background-blend-mode: initial;
+  background-clip: initial;
+  background-color: initial;
+  background-image: initial;
+  background-origin: initial;
+  background-position: initial;
+  background-repeat: initial;
+  background-size: initial;
+  border: initial;
+  border-bottom: initial;
+  border-bottom-color: initial;
+  border-bottom-left-radius: initial;
+  border-bottom-right-radius: initial;
+  border-bottom-style: initial;
+  border-bottom-width: initial;
+  border-collapse: initial;
+  border-color: initial;
+  border-image: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  border-image-slice: initial;
+  border-image-source: initial;
+  border-image-width: initial;
+  border-left: initial;
+  border-left-color: initial;
+  border-left-style: initial;
+  border-left-width: initial;
+  border-radius: initial;
+  border-right: initial;
+  border-right-color: initial;
+  border-right-style: initial;
+  border-right-width: initial;
+  border-spacing: initial;
+  border-style: initial;
+  border-top: initial;
+  border-top-color: initial;
+  border-top-left-radius: initial;
+  border-top-right-radius: initial;
+  border-top-style: initial;
+  border-top-width: initial;
+  border-width: initial;
+  bottom: initial;
+  box-shadow: initial;
+  box-sizing: initial;
+  caption-side: initial;
+  clear: initial;
+  clip: initial;
+  color: initial;
+  column-count: initial;
+  column-fill: initial;
+  column-gap: initial;
+  column-rule: initial;
+  column-rule-color: initial;
+  column-rule-style: initial;
+  column-rule-width: initial;
+  column-span: initial;
+  column-width: initial;
+  columns: initial;
+  content: initial;
+  counter-increment: initial;
+  counter-reset: initial;
+  cursor: initial;
+  direction: initial;
+  display: initial;
+  empty-cells: initial;
+  filter: initial;
+  flex: initial;
+  flex-basis: initial;
+  flex-direction: initial;
+  flex-flow: initial;
+  flex-grow: initial;
+  flex-shrink: initial;
+  flex-wrap: initial;
+  float: initial;
+  font: initial;
+  font-family: initial;
+  font-size: initial;
+  font-size-adjust: initial;
+  font-stretch: initial;
+  font-style: initial;
+  font-variant: initial;
+  font-weight: initial;
+  hanging-punctuation: initial;
+  height: initial;
+  justify-content: initial;
+  left: initial;
+  letter-spacing: initial;
+  line-height: initial;
+  list-style: initial;
+  list-style-image: initial;
+  list-style-position: initial;
+  list-style-type: initial;
+  margin: initial;
+  margin-bottom: initial;
+  margin-left: initial;
+  margin-right: initial;
+  margin-top: initial;
+  max-height: initial;
+  max-width: initial;
+  min-height: initial;
+  min-width: initial;
+  nav-down: initial;
+  nav-index: initial;
+  nav-left: initial;
+  nav-right: initial;
+  nav-up: initial;
+  opacity: initial;
+  order: initial;
+  outline: initial;
+  outline-color: initial;
+  outline-offset: initial;
+  outline-style: initial;
+  outline-width: initial;
+  overflow: initial;
+  overflow-x: initial;
+  overflow-y: initial;
+  padding: initial;
+  padding-bottom: initial;
+  padding-left: initial;
+  padding-right: initial;
+  padding-top: initial;
+  page-break-after: initial;
+  page-break-before: initial;
+  page-break-inside: initial;
+  perspective: initial;
+  perspective-origin: initial;
+  position: initial;
+  quotes: initial;
+  resize: initial;
+  right: initial;
+  tab-size: initial;
+  table-layout: initial;
+  text-align: initial;
+  text-align-last: initial;
+  text-decoration: initial;
+  text-decoration-color: initial;
+  text-decoration-line: initial;
+  text-decoration-style: initial;
+  text-indent: initial;
+  text-justify: initial;
+  text-overflow: initial;
+  text-shadow: initial;
+  text-transform: initial;
+  top: initial;
+  transform: initial;
+  transform-origin: initial;
+  transform-style: initial;
+  transition: initial;
+  transition-delay: initial;
+  transition-duration: initial;
+  transition-property: initial;
+  transition-timing-function: initial;
+  unicode-bidi: initial;
+  user-select: initial;
+  vertical-align: initial;
+  visibility: initial;
+  white-space: initial;
+  width: initial;
+  word-break: initial;
+  word-spacing: initial;
+  word-wrap: initial;
+  z-index: initial; }
+  @media only screen and (max-width: 1200px) {
+    .vitual {
+      opacity: 1; } }
+  @media only screen and (max-width: 1024px) {
+    .vitual {
+      opacity: 1; } }
+  @media only screen and (max-width: 960px) {
+    .vitual {
+      opacity: 1; } }
+  @media only screen and (max-width: 767px) {
+    .vitual {
+      opacity: 1; } }
+  @media only screen and (max-width: 680px) {
+    .vitual {
+      opacity: 1; } }
+  @media only screen and (max-width: 480px) {
+    .vitual {
+      opacity: 1; } }
+  @media only screen and (max-width: 320px) {
+    .vitual {
+      opacity: 1; } }
+  .vitual:active {
+    opacity: 1; }
+  .vitual:checked {
+    opacity: 1; }
+  .vitual:disabled {
+    opacity: 1; }
+  .vitual:empty {
+    opacity: 1; }
+  .vitual:enabled {
+    opacity: 1; }
+  .vitual:first-child {
+    opacity: 1; }
+  .vitual:first-of-type {
+    opacity: 1; }
+  .vitual:focus {
+    opacity: 1; }
+  .vitual:hover {
+    opacity: 1; }
+  .vitual:in-range {
+    opacity: 1; }
+  .vitual:invalid {
+    opacity: 1; }
+  .vitual:lang(language) {
+    opacity: 1; }
+  .vitual:last-child {
+    opacity: 1; }
+  .vitual:last-of-type {
+    opacity: 1; }
+  .vitual:link {
+    opacity: 1; }
+  .vitual:not(selector) {
+    opacity: 1; }
+  .vitual:nth-child(n) {
+    opacity: 1; }
+  .vitual:nth-last-child(n) {
+    opacity: 1; }
+  .vitual:nth-last-of-type(n) {
+    opacity: 1; }
+  .vitual:nth-of-type(n) {
+    opacity: 1; }
+  .vitual:only-of-type {
+    opacity: 1; }
+  .vitual:only-child {
+    opacity: 1; }
+  .vitual:optional {
+    opacity: 1; }
+  .vitual:out-of-range {
+    opacity: 1; }
+  .vitual:read-only {
+    opacity: 1; }
+  .vitual:read-write {
+    opacity: 1; }
+  .vitual:required {
+    opacity: 1; }
+  .vitual:root {
+    opacity: 1; }
+  .vitual:target {
+    opacity: 1; }
+  .vitual:valid {
+    opacity: 1; }
+  .vitual:visited {
+    opacity: 1; }
+  .vitual::after {
+    opacity: 1; }
+  .vitual::before {
+    opacity: 1; }
+  .vitual::first-letter {
+    opacity: 1; }
+  .vitual::first-line {
+    opacity: 1; }
+  .vitual::selection {
+    opacity: 1; }
+
+/*# sourceMappingURL=home.css.map */

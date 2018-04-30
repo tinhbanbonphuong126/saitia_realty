@@ -3,8 +3,6 @@ var port = process.env.SERVER_PORT || 3000;
 var browserSync = require('browser-sync');
 var requireDir = require('require-dir');
 
-//Include file to blade view
-var fileinclude = require('gulp-file-include'),
 
 requireDir('./gulp/tasks');
 
@@ -30,28 +28,32 @@ gulp.task('watch', function () {
     //         'scss/_responsive.scss',
     //         'scss/_utilities.scss'], ['scss:common']);
     //
-    // // Watch submodule to rebuild style
-    // gulp.watch(['scss/**/*.scss',
-    //     '!scss/*.scss',
-    //     '!scss/components/*.scss',
-    //     '!scss/mixins/*.scss',
-    //     '!scss/utilities/*.scss'], ['scss']);
-    //
+    // Watch submodule to rebuild style
+    gulp.watch(['scss/**/*.scss',
+        '!scss/compass-mixins/*.scss', '!scss/compass/*.scss'], ['scss']);
+
     // // Watch common for all style, if change build all project
-    // gulp.watch([
-    //         'scss/mixins/*',
-    //         'scss/_functions.scss',
-    //         'scss/_variables.scss',
-    //         'scss/_mixins.scss',
-    //         'scss/_require.scss'], ['scss:common', 'scss:recompile']);
+    gulp.watch([
+            'scss/compass/**/*.scss',
+            'scss/partial/**/*.scss'
+            ], ['scss:recompile']);
 
     // Watch html status, if change refresh browser
-    gulp.watch(['**/*.html',
+    gulp.watch(['html/**/*.html',
+        '!html/partial/**/*.html',
         '!bower_components/*',
         '!node_modules/*',
-        '!plugins/*'])
+        '!plugins/*']
+        ,['html:fileinclude']);
+    gulp.watch(['html/partial/**/*.html',
+        '!bower_components/*',
+        '!node_modules/*',
+        '!plugins/*']
+        ,['html:partial']);
+
+    gulp.watch(['js/**/*.js'])
         .on('change', browserSync.reload);
 });
 
 // Default gulp
-gulp.task('default', ['serve', 'scss:lib', 'scss:lib_js', 'scss:common', 'watch']);
+gulp.task('default', ['serve', 'scss:lib', 'scss:lib_js', 'scss:common', 'html:fileinclude' ,'scss:recompile', 'html:partial', 'watch']);

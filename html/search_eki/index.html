@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    @@include('./../partial/style.html', {"title": "サティア不動産ホームページ"})
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwlkTA1L6lLnp76nr6LZ22ebIXMXNxxUY&language=ja&region=JP"></script>
+    <link rel="stylesheet" href="/plugins/bootstrap/dist/css/bootstrap.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="/css/search_eki/search_eki.css" type="text/css" media="all"/>
+    <style tyle="text/css">
+    </style>
+</head>
+<body>
+@@include('./../partial/header.html')
+<div class="main-content">
+    <div class="top_banner">
+        HERE IS TOP BANNER
+    </div>
+
+    <div class="naiyou_page container">
+        <div class="eki_kara">
+            <div class="title">
+                <div class="cpn_title">
+                    分譲地を路線から探す
+                </div>
+            </div>
+
+            <div class="bound_green_title">
+                @@include("./../partial/component/green_title.html", {"titleContent": "サティヤ不動産分譲地(売土地) 駅名一覧"})
+            </div>
+
+            <div class="bounce_navigation">
+                <div class="bounce_list bounce_list_1">
+                    <div class="col col_1">
+                        <div class="row_cell">
+                            <div class="full header_tit"><a href="javascript:;">予讃線</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="half"><a href="javascript:;">高松</a></div>
+                            <div class="half"><a href="javascript:;">丸亀</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="half"><a href="javascript:;">香西</a></div>
+                            <div class="half"><a href="javascript:;">多度津</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="half"><a href="javascript:;">鬼無</a></div>
+                            <div class="half"><a href="javascript:;">詫間</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="half"><a href="javascript:;">端岡</a></div>
+                            <div class="half"><a href="javascript:;">高瀬</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="half"><a href="javascript:;">国分</a></div>
+                            <div class="half"><a href="javascript:;">観音寺</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="half"><a href="javascript:;">坂出</a></div>
+                            <div class="half"><a href="javascript:;">豊浜</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="full"><a href="javascript:;">宇多津</a></div>
+                        </div>
+                    </div>
+
+                    <div class="col col_2">
+                        <div class="row_cell">
+                            <div class="full header_tit"><a href="javascript:;">土讃線</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="full"><a href="javascript:;">善通寺</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="full"><a href="javascript:;">琴平 </a></div>
+                        </div>
+                    </div>
+                    <div class="col col_3">
+                        <div class="row_cell">
+                            <div class="full header_tit"><a href="javascript:;">高徳線</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="half"><a href="javascript:;">栗林</a></div>
+                            <div class="half"><a href="javascript:;">三本松</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="half"><a href="javascript:;">木太町</a></div>
+                            <div class="half"><a href="javascript:;">讃岐白鳥</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="half"><a href="javascript:;">栗林</a></div>
+                            <div class="half"><a href="javascript:;">引田</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="full"><a href="javascript:;">讃岐牟礼</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="full"><a href="javascript:;">志度</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="full"><a href="javascript:;">オレンジタウン</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bounce_list bounce_list_2">
+                    <div class="col col_4">
+                        <div class="row_cell">
+                            <div class="full header_tit"><a href="javascript:;">琴電（琴平線）</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="full"><a href="javascript:;">瓦町</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="full"><a href="javascript:;">仏生山</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="full"><a href="javascript:;">円座</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="full"><a href="javascript:;">岡本</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="full"><a href="javascript:;">陶</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="full"><a href="javascript:;">滝宮</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="full"><a href="javascript:;">岡田</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="full"><a href="javascript:;">琴電琴平</a></div>
+                        </div>
+                    </div>
+                    <div class="col col_5">
+                        <div class="row_cell">
+                            <div class="full header_tit"><a href="javascript:;">琴電（長尾線）</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="full"><a href="javascript:;">元山</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="full"><a href="javascript:;">高田</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="full"><a href="javascript:;">長尾</a></div>
+                        </div>
+                    </div>
+                    <div class="col col_6">
+                        <div class="row_cell">
+                            <div class="full header_tit"><a href="javascript:;">琴電（志度線）</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="full"><a href="javascript:;">琴電屋島</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="full"><a href="javascript:;">八栗</a></div>
+                        </div>
+                        <div class="row_cell">
+                            <div class="full"><a href="javascript:;">琴電志度</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="route_map">
+                <a data-fancybox="gallery" href="/img/search_eki/gallery_route_map.png">
+                    <img src="/img/search_eki/route_map.png" alt="Route Map">
+                </a>
+                <p class="img_des">香川の鉄道路線マップ</p>
+            </div>
+
+            <div class="bounce_result">
+                <div class="bounce_buirochi_kara">
+                    <div class="list">
+                        分譲中の分譲地一覧
+                    </div>
+                    <ul class="bound_ul">
+                        @@loop("../partial/component/loop_bunjochi.html", [{},{},{},{},{},{},{},{},{}])
+                    </ul>
+                    <!--In case have no item on search result-->
+                    <!--<div class="no-result">-->
+                        <!--選択されたエリアには分譲地はありません。-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('./../partial/footer.html')
+@@include('./../partial/script.html')
+<script type="text/javascript" src="/js/search_eki/search_eki.js"></script>
+<script type="text/javascript">
+    <!--Javascript here-->
+</script>
+</body>
+</html>
+

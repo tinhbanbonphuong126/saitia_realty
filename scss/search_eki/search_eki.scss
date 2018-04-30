@@ -28,21 +28,14 @@
   }
   .naiyou_page {
     opacity: 1;
-
-    .bunjiro_kara {
+    margin-bottom: 270px;
+    .eki_kara {
       opacity: 1;
 
       .title {
         opacity: 1;
         margin-top: 86px;
         margin-bottom: 67px;
-        position: relative;
-        &::before {
-          top: -53px;
-          left: 68px;
-          position: absolute;
-          content: url("/img/search_chizu/akkushuu_right.png");
-        }
       }
       .bound_green_title {
         opacity: 1;
@@ -50,55 +43,162 @@
 
       .bounce_navigation {
         opacity: 1;
+        position: relative;
+
+        &::after {
+          content: url("/img/search_eki/stand_aisatsu.png");
+          position: absolute;
+          top: 40px;
+          right: 27px;
+        }
 
         .bounce_list {
           opacity: 1;
           @include clearfix();
-          padding-left: 45px;
-          padding-right: 45px;
-          margin-top: 50px;
 
-          .bounce_li {
+
+
+          &.bounce_list_1 {
             opacity: 1;
+            margin-top: 35px;
 
-            .item_li {
+          }
+          &.bounce_list_2 {
+            opacity: 1;
+            margin-top: 71px;
+          }
+
+          .col {
+            opacity: 1;
+            float: left;
+            .row_cell {
               opacity: 1;
-              float: left;
-              width: 20%;
-              margin-top: 6px;
+              @include clearfix();
 
-              a {
-                font-family : 小塚ゴシック Pr6N;
-                font-size : 20px;
-                color : #231815;
-                color : rgb(35, 24, 21);
-                text-decoration : underline;
+              .half, .full {
+                opacity: 1;
+                a {
+                  font-family : 小塚ゴシック Pr6N;
+                  font-size : 20px;
+                  color : #231815;
+                  color : rgb(35, 24, 21);
+                  text-decoration : underline;
+                  line-height: 34px;
+
+                  &:hover {
+                    color: #65AADD;
+                  }
+                }
+              }
+              .half {
+                opacity: 1;
+                width: 50%;
+                float: left;
+
+              }
+              .full {
+                opacity: 1;
+                width: 100%;
+                &.header_tit {
+                  opacity: 1;
+
+                  a {
+                    font-family : HiraKakuProN W6-83pv-RKSJ-H;
+                    font-size : 18px;
+                    color : #008982;
+                    color : rgb(0, 137, 130);
+
+                    @include reset-a();
+                  }
+                }
               }
             }
           }
+
+          .col_1 {
+            margin-left: 117px;
+            opacity: 1;
+            width: 185px;
+
+          }
+          .col_2 {
+            width: 134px;
+            margin-left: 21px;
+          }
+          .col_3 {
+            width: 330px;
+          }
+          .col_4 {
+            opacity: 1;
+            margin-left: 117px;
+            width: 210px;
+
+            .full:not(.header_tit) {
+              padding-left: 21px;
+            }
+          }
+          .col_5 {
+            width: 216px;
+            .full:not(.header_tit) {
+              padding-left: 24px;
+            }
+          }
+          .col_6 {
+            .full:not(.header_tit) {
+              padding-left: 20px;
+            }
+          }
+        }
+      }
+      
+      .route_map {
+        text-align: center;
+        margin-top: 72px;
+        
+        a {
+          outline: none;
+          img {
+            opacity: 1;
+            outline: none;
+            border: none;
+          }
+        }
+        .img_des {
+          opacity: 1;
+          text-align: center;
+          font-family : HiraKakuProN W3-83pv-RKSJ-H;
+          font-size : 21px;
+          color : #727171;
+          color : rgb(114, 113, 113);
+          margin-top: 23px;
         }
       }
 
       .bounce_result {
         opacity: 1;
-
-        .gmap_position {
-          opacity: 1;
-          margin-top: 90px;
-          margin-left: -57px;
-          margin-right: -57px;
-          height: 553px;
-
-          img {
-            width: 100%;
-            height: 100%;
-          }
-        }
+        margin-top: 147px;
 
         .bounce_buirochi_kara {
           opacity: 1;
-          margin-top: 80px;
-          margin-bottom: 165px;
+
+          .list {
+            margin-bottom: 27px;
+            opacity: 1;
+            font-family : ヒラギノ角ゴ Pro;
+            font-size : 16px;
+            line-height : 21px;
+            color : #231815;
+            color : rgb(35, 24, 21);
+
+          }
+          .bound_ul {
+            opacity: 1;
+
+          }
+          .no-result {
+            opacity: 1;
+            font-size: 20px;
+          }
         }
       }
     }

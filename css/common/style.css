@@ -12,7 +12,7 @@ body {
 #scrollUp {
   background-image: url("../../img/top.png");
   bottom: 20px;
-  right: 20px;
+  right: calc((100vw - 961px) / 2);
   width: 35px;
   /* Width of image */
   height: 35px;

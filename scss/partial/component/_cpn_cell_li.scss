@@ -1,0 +1,50 @@
+@mixin cpn_bound_ul() {
+  .cell_li {
+    opacity: 1;
+    height: 95px;
+    border-bottom: 1px solid #B5B6B6;
+    padding-left: 3px;
+    position: relative;
+
+    &:first-child {
+      border-top: 1px solid #B5B6B6;
+    }
+
+    &:after {
+      position: absolute;
+      right: 0;
+      top: 31px;
+      content: url("/img/about-us/arrow_left.png");
+      clear: both;
+    }
+
+    .label_rui {
+      opacity: 1;
+      width: 100px;
+      height: 48px;
+      background-color: #E60012;
+      display: inline-block;
+      font-family: $font-family-jp;
+      font-size: 20px;
+      color: #FFFFFF;
+      color: rgb(255, 255, 255);
+      line-height: 48px;
+      text-align: center;
+      margin-top: 22px;
+    }
+    .description_rui {
+      display: inline-block;
+      margin-left: 15px;
+
+      a {
+        text-underline: none;
+        font-family: $font-family-jp;
+        font-size: 21px;
+        color: #231815;
+        color: rgb(35, 24, 21);
+
+        @include reset-a();
+      }
+    }
+  }
+}

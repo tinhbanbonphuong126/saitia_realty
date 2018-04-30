@@ -8,6 +8,9 @@
 .circle-text {
   @include circle-text();
 }
+.cpn_title {
+  @include cpn_title();
+}
 .main-content {
   opacity: 1;
 
@@ -59,48 +62,7 @@
         .bound_ul {
           opacity: 1;
 
-          .cell_li {
-            opacity: 1;
-            height: 95px;
-            border-bottom: 1px solid #B5B6B6;
-            padding-left: 3px;
-            position: relative;
-
-            &:first-child {
-              border-top: 1px solid #B5B6B6;
-            }
-
-            &:after {
-              position: absolute;
-              right: 0;
-              top: 31px;
-              content: url("/img/about-us/arrow_left.png");
-              clear: both;
-            }
-
-            .label_rui {
-              opacity: 1;
-              width: 100px;
-              height: 48px;
-              background-color: #E60012;
-              display: inline-block;
-              font-family: $font-family-jp;
-              font-size: 20px;
-              color: #FFFFFF;
-              color: rgb(255, 255, 255);
-              line-height: 48px;
-              text-align: center;
-              margin-top: 22px;
-            }
-            .description_rui {
-              font-family: $font-family-jp;
-              font-size: 21px;
-              color: #231815;
-              color: rgb(35, 24, 21);
-              display: inline-block;
-              margin-left: 15px;
-            }
-          }
+          @include cpn_bound_ul();
         }
       }
     }
@@ -274,7 +236,7 @@
           text-align: center;
           img {
             opacity: 1;
-            
+
           }
         }
       }
@@ -322,6 +284,7 @@
                   text-align: right;
                   padding-right: 23px;
                   margin-top: 23px;
+                  font-weight: 700;
 
                   .mark_hitsuyou {
                     font-size: 20px;
@@ -376,11 +339,11 @@
       margin-bottom: 239px;
 
       .circle_title {
-        margin-top: 146px;
-        margin-bottom: 46px;
         opacity: 1;
         display: table;
         margin: 0 auto;
+        margin-top: 146px;
+        margin-bottom: 46px;
 
       }
       .content {
@@ -415,26 +378,6 @@
 }
 
 //Common component
-
-.cpn_title {
-  opacity: 1;
-  font-family: $font-family-jp;
-  font-size: 25px;
-  color: #438BCB;
-  color: rgb(67, 139, 203);
-  width: 316px;
-  margin: 0 auto;
-  text-align: center;
-
-  &:after {
-    content: '';
-    display: block;
-    clear: both;
-    height: 9px;
-    background-color: #CACACB;
-    margin-top: 12px;
-  }
-}
 
 //Vitural. After complete. Please delete it
 .vitual {

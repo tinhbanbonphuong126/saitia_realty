@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    @@include('./../partial/style.html', {"title": "サティア不動産ホームページ"})
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwlkTA1L6lLnp76nr6LZ22ebIXMXNxxUY&language=ja&region=JP"></script>
+    <link rel="stylesheet" href="/plugins/bootstrap/dist/css/bootstrap.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="/css/search_chizu/search_chizu.css" type="text/css" media="all"/>
+    <style tyle="text/css">
+    </style>
+</head>
+<body>
+@@include('./../partial/header.html')
+<div class="main-content">
+    <div class="top_banner">
+        HERE IS TOP BANNER
+    </div>
+
+    <div class="naiyou_page container">
+        <div class="bunjiro_kara">
+            <div class="title">
+                <div class="cpn_title">
+                    分譲地を地図から探す
+                </div>
+            </div>
+
+            <div class="bound_green_title">
+                @@include("./../partial/component/green_title.html", {"titleContent": "サティヤ不動産分譲地(売土地) 地名一覧"})
+            </div>
+
+            <div class="bounce_navigation">
+                <div class="bounce_list">
+                    <ul class="bounce_li">
+                        <li class="item_li"><a href="javascript:;">東かがわ市</a></li>
+                        <li class="item_li"><a href="javascript:;">高松市</a></li>
+                        <li class="item_li"><a href="javascript:;">綾川町</a></li>
+                        <li class="item_li"><a href="javascript:;">琴平町</a></li>
+                        <li class="item_li"><a href="javascript:;">三豊市</a></li>
+                        <li class="item_li"><a href="javascript:;">三木町</a></li>
+                        <li class="item_li"><a href="javascript:;">坂出市</a></li>
+                        <li class="item_li"><a href="javascript:;">丸亀市</a></li>
+                        <li class="item_li"><a href="javascript:;">まんのう町</a></li>
+                        <li class="item_li"><a href="javascript:;">観音寺市</a></li>
+                        <li class="item_li"><a href="javascript:;">さぬき市</a></li>
+                        <li class="item_li"><a href="javascript:;">宇多津町</a></li>
+                        <li class="item_li"><a href="javascript:;">多度津町</a></li>
+                        <li class="item_li"><a href="javascript:;">善通寺市</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bounce_result">
+                <div class="gmap_position">
+                    <img src="/img/search_chizu/gmap_pos.png" alt="Google Map Position">
+                </div>
+
+                <div class="bounce_buirochi_kara">
+                    <ul class="bound_ul">
+                        @@loop("../partial/component/loop_bunjochi.html", [{},{},{},{},{},{},{},{},{}])
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('./../partial/footer.html')
+@@include('./../partial/script.html')
+
+<script type="text/javascript" src="/js/search_chizu/search_chizu.js"></script>
+<script type="text/javascript">
+    <!--Javascript here-->
+</script>
+</body>
+</html>
+

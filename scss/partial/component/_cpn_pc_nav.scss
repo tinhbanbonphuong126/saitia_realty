@@ -1,0 +1,16 @@
+.pc_nav {
+  opacity: 1;
+
+  .nav_pos {
+    opacity: 1;
+
+    &.left_nav {
+      opacity: 1;
+
+    }
+    &.right_nav {
+      opacity: 1;
+
+    }
+  }
+}

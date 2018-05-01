@@ -1,7 +1,7 @@
 module.exports = {
     CSS_DEPS: [
         'plugins/reset-css/_reset.scss',
-        'plugins/bootstrap/dist/css/bootstrap.css',
+        'plugins/bootstrap/dist/css/bootstrap.min.css',
         'plugins/fancybox/dist/jquery.fancybox.css',
     ],
     JS_DEPS: [
@@ -9,6 +9,7 @@ module.exports = {
         'plugins/bootstrap/dist/js/bootstrap.js',
         'plugins/scrollup-master/dist/jquery.scrollUp.js',
         'plugins/fancybox/dist/jquery.fancybox.js',
+        'plugins/jquery-fatNav/dist/jquery.fatNav.js',
     ],
     CSS_COMPATIBILITY: [
         'last 2 versions',

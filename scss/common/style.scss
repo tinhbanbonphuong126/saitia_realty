@@ -14,8 +14,11 @@ body {
   font-family: $font-family-jp;
 }
 .container {
-  max-width: 1015px;
+  @include pc-screen() {
+    width: 1015px;
+  }
 }
+
 /* Image style */
 #scrollUp {
   background-image: url("../../img/top.png");
@@ -28,6 +31,18 @@ body {
 
 
 //Header style
+.header {
+  opacity: 1;
+
+  .pc_navigation {
+    opacity: 1;
+  }
+  .mobile_hamburger {
+    opacity: 1;
+  }
+}
+
+//Footer style
 .footer{
   opacity: 1;
 
@@ -168,5 +183,3 @@ body {
     }
   }
 }
-
-//Footer style

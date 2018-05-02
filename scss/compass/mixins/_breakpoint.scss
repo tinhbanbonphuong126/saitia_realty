@@ -42,7 +42,7 @@
   }
 }
 @mixin pc-screen() {
-  @media only screen and (min-width: 1201px) {
+  @media only screen and (min-width: 1000px) {
     @content;
   }
 }

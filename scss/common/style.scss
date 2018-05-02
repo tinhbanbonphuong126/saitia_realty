@@ -29,6 +29,13 @@ body {
   height: 35px; /* Height of image */
 }
 
+//Style Hamburger Mobile Navigation
+@include cpn_fat_nav();
+//End hamburger
+
+//Include Navigation Bar
+@include pc_nav();
+//End of navigation bar
 
 //Header style
 .header {
@@ -36,9 +43,17 @@ body {
 
   .pc_navigation {
     opacity: 1;
+    height: 90px;
+    margin-top: 20px;
+    @include clearfix();
+    
+    @include xs-screen() {
+      display: none;
+    }
   }
   .mobile_hamburger {
     opacity: 1;
+    @include clearfix();
   }
 }
 

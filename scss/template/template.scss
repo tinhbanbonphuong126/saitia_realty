@@ -4,6 +4,21 @@
 //Vitural. After complete. Please delete it
 @import "../compass/helper_class";
 
+body {
+  opacity: 1;
+
+  .naiyou_page {
+    background-color: red;
+
+    @include xs-screen() {
+      background-color: green;
+    }
+    @include medium-screen() {
+      background-color: blue;
+    }
+  }
+}
+
 
 //Vitural. After complete. Please delete it
 .vitual {

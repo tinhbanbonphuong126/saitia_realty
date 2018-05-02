@@ -1,16 +1,148 @@
-.pc_nav {
-  opacity: 1;
-
-  .nav_pos {
+@mixin pc_nav() {
+  .pc_nav {
     opacity: 1;
+    @include clearfix();
 
-    &.left_nav {
+    .nav_pos {
       opacity: 1;
 
-    }
-    &.right_nav {
-      opacity: 1;
+      &.left_nav {
+        opacity: 1;
+        width: calc(100% - 440px);
+        float: left;
 
+        img {
+          opacity: 1;
+
+          &.logo_image {
+            opacity: 1;
+            margin-left: 14px;
+          }
+          &.tel_logo {
+            opacity: 1;
+            margin-top: 22px;
+            margin-left: 12px;
+          }
+        }
+
+      }
+      &.right_nav {
+        opacity: 1;
+        width: 440px;
+        float: left;
+        margin-top: 22px;
+
+        .nav_pure_css ul {
+          list-style: none;
+          background-color: transparent;
+          text-align: center;
+          padding: 0;
+          margin: 0;
+        }
+
+        .nav_pure_css li {
+          font-family: 'Oswald', sans-serif;
+          font-size: 1.2em;
+          //line-height: 40px;
+          text-align: left;
+        }
+
+        .nav_pure_css a {
+          text-decoration: none;
+          display: block;
+          transition: .3s background-color;
+
+          .upper_link {
+            font-family : $font-family-jp;
+            font-size : 15px;
+            letter-spacing : 0px;
+            color : #5A5858;
+            color : rgb(90, 88, 88);
+            display: block;
+            line-height: 15px;
+          }
+
+          .lower_link {
+            font-family : KozGoPr6N Light-83pv-RKSJ-H;
+            font-size : 12px;
+            letter-spacing : 0px;
+            color : #727171;
+            color : rgb(114, 113, 113);
+            display: inline;
+          }
+        }
+
+        .nav_pure_css a:hover {
+          //background-color: #005f5f;
+          opacity: 1;
+
+          .lower_link {
+            color : #00923A;
+
+          }
+        }
+
+        .nav_pure_css a.active {
+          color : #00923A;
+          cursor: default;
+        }
+
+        /* Sub Menus */
+        .nav_pure_css li li {
+          font-size: .8em;
+        }
+
+        /*******************************************
+           Style menu for larger screens
+
+           Using 650px (130px each * 5 items), but ems
+           or other values could be used depending on other factors
+        ********************************************/
+
+        @media screen and (min-width: 650px) {
+          .nav_pure_css li {
+            width: 20%;
+            border-bottom: none;
+            //height: 50px;
+            //line-height: 50px;
+            font-size: 1.4em;
+            display: inline-block;
+            margin-right: -4px;
+          }
+
+          .nav_pure_css a {
+            border-bottom: none;
+          }
+
+          .nav_pure_css > ul > li {
+            text-align: center;
+          }
+
+          .nav_pure_css > ul > li > a {
+            padding-left: 0;
+          }
+
+          /* Sub Menus */
+          .nav_pure_css li ul {
+            position: absolute;
+            display: none;
+            width: inherit;
+          }
+
+          .nav_pure_css li:hover ul {
+            display: block;
+          }
+
+          .nav_pure_css li ul li {
+            display: block;
+          }
+        }
+      }
     }
   }
+}
+
+//Change default animation ui-box
+.ui-box {
+  padding: 0px;
 }

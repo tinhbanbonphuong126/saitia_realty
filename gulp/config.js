@@ -3,6 +3,7 @@ module.exports = {
         'plugins/reset-css/_reset.scss',
         'plugins/bootstrap/dist/css/bootstrap.min.css',
         'plugins/fancybox/dist/jquery.fancybox.css',
+        'plugins/pure-css3-animated-border/css/animated-border/animated-border.scss',
     ],
     JS_DEPS: [
         'plugins/jquery/dist/jquery.js',

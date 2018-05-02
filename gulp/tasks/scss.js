@@ -66,7 +66,8 @@ gulp.task('scss:recompile', function () {
 gulp.task('scss:lib', function () {
     return gulp.src(CONFIG.CSS_DEPS)
         .pipe(sourcemaps.init())
-        // .pipe(cleanCSS())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(cleanCSS())
         .pipe(concat('lib.min.css'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(DESTINATION));

@@ -6,6 +6,7 @@
 @import "../compass/helper_class";
 
 //Common style
+
 //Base for html rem
 html {
   font-size: $global-font-size;
@@ -19,23 +20,37 @@ body {
   }
 }
 
-/* Image style */
-#scrollUp {
-  background-image: url("../../img/top.png");
-  bottom: 20px;
-  //right: 20px;
-  right: calc((100vw - 961px) / 2);
-  width: 35px; /* Width of image */
-  height: 35px; /* Height of image */
+button {
+  outline: none!important;
 }
 
-//Style Hamburger Mobile Navigation
-@include cpn_fat_nav();
-//End hamburger
+/* Image style */
+#scrollUp {
+  background-image: url("../../img/common/top.png");
+  bottom: 20px;
+  //right: 20px;
+  right: calc((100vw - 1000px) / 2);
+  width: 35px; /* Width of image */
+  height: 35px; /* Height of image */
 
-//Include Navigation Bar
-@include pc_nav();
-//End of navigation bar
+  @include big-screen() {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+
+* {
+  //Style Hamburger Mobile Navigation
+  @include cpn_fat_nav();
+  //End hamburger
+
+  //Include Navigation Bar
+  @include cpn_pc_nav();
+  //End of navigation bar
+
+  @include cpn_footer();
+}
 
 //Header style
 .header {
@@ -46,7 +61,7 @@ body {
     height: 90px;
     margin-top: 20px;
     @include clearfix();
-    
+
     @include xs-screen() {
       display: none;
     }
@@ -57,144 +72,3 @@ body {
   }
 }
 
-//Footer style
-.footer{
-  opacity: 1;
-
-  .banner_slash {
-    opacity: 1;
-    text-align: center;
-    height: 38px;
-
-    background-image: url("/img/common/banner_slash.png");
-    background-repeat: repeat-x;
-
-    padding-top: 15px;
-
-    @include clearfix();
-
-    .bounce_link {
-      opacity: 1;
-      display: inline-block;
-
-      .li_link {
-        opacity: 1;
-        float: left;
-        border-right: 1px solid #3F3B3A;
-        padding-left: 20px;
-        padding-right: 20px;
-        line-height: 12px;
-
-        &:first-child {
-          border-left: 1px solid #3F3B3A;
-        }
-
-        .anchor_link {
-          font-family: $font-family-jp;
-          font-size: 12px;
-          color: #3F3B3A;
-          color: rgb(63, 59, 58);
-        }
-      }
-    }
-  }
-
-  .footer_below {
-    opacity: 1;
-    background: #EFEFF0;
-
-    @include clearfix();
-
-    .bounce_content {
-      opacity: 1;
-      margin-top: 38px;
-
-      .elm_cel {
-        opacity: 1;
-        float: left;
-
-        &.name_kaisha {
-          opacity: 1;
-          margin-right: 23px;
-        }
-
-        &.info_kaisha {
-          opacity: 1;
-
-          * {
-            font-family: $font-family-jp;
-          }
-
-          .tel_time {
-            @include clearfix();
-            opacity: 1;
-            margin-bottom: 0px;
-
-            &::before {
-              content: '';
-              background-image: url("/img/common/wowow_tel.png");
-              width: 29px;
-              height: 17px;
-              position: absolute;
-            }
-            .tel {
-              font-weight: bold;
-              opacity: 1;
-              font-size: 16px;
-              color: #E83928;
-              color: rgb(232, 57, 40);
-              float: left;
-              margin-left: 38px;
-            }
-            .time {
-              float: left;
-              opacity: 1;
-              font-size: 12px;
-              color: #231815;
-              color: rgb(35, 24, 21);
-              line-height: 24px;
-            }
-
-          }
-          .star {
-            opacity: 1;
-            font-size: 12px;
-            color: #231815;
-            color: rgb(35, 24, 21);
-          }
-          .address {
-            opacity: 1;
-
-            p {
-              font-size: 10px;
-              line-height: 10px;
-              color: #231815;
-              color: rgb(35, 24, 21);
-            }
-          }
-
-        }
-
-        &.image_kaisha {
-          opacity: 1;
-          float: right;
-
-          img {
-            opacity: 1;
-            margin-right: 33px;
-
-          }
-          .copy_right {
-            margin-top: 22px;
-            font-family: $font-family-jp;
-            font-size: 10px;
-            color: #727171;
-            color: rgb(114, 113, 113);
-            text-align: right;
-          }
-        }
-
-      }
-    }
-  }
-}

@@ -18,16 +18,20 @@ var browserSync = require('browser-sync');
 //Include file to blade view
 var fileinclude = require('gulp-file-include');
 const errorHandler = require('gulp-error-handle');
+var urlAdjuster = require('gulp-css-url-adjuster');
 
 
 var CONFIG = require('../config.js');
 var SRC = 'scss/**/*.scss';
+var SRC_PARTIAL = ['scss/**/style.scss', 'scss/**/template.scss'];
 var DESTINATION = 'css';
 var DESTINATION_JS = 'js';
 var DESTINATION_HTML = './';
 
 // Compile Sass files into css
 gulp.task('scss', ['scss:compile']);
+// Decode
+gulp.task('scss:decode', ['scss:lib', 'scss:lib_js', 'html:partial', 'scss:recompile']);
 
 gulp.task('scss:compile', function () {
     var processors = [
@@ -41,6 +45,9 @@ gulp.task('scss:compile', function () {
         // .pipe(gulp.dest(DESTINATION))
         // .pipe(cleanCSS())
         // .pipe(concat('haguruma.min.css'))
+        // .pipe(urlAdjuster({
+        //     prepend: '../..',
+        //  }))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(DESTINATION))
         .pipe(browserSync.stream());
@@ -55,8 +62,29 @@ gulp.task('scss:recompile', function () {
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         // .pipe(postcss(processors))
-        .pipe(gulp.dest(DESTINATION))
+        // .pipe(gulp.dest(DESTINATION))
         // .pipe(cleanCSS())
+        // .pipe(urlAdjuster({
+        //     prepend: '../..',
+        //  }))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(DESTINATION))
+        .pipe(browserSync.stream());
+});
+//Common, partial
+gulp.task('scss:decode_partial', function () {
+    var processors = [
+        autoprefixer()
+    ];
+    return gulp.src(SRC_PARTIAL)
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        // .pipe(postcss(processors))
+        // .pipe(gulp.dest(DESTINATION))
+        // .pipe(cleanCSS())
+        // .pipe(urlAdjuster({
+        //     prepend: '../..',
+        // }))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(DESTINATION))
         .pipe(browserSync.stream());
@@ -88,6 +116,9 @@ gulp.task('scss:common', function () {
         .pipe(sass().on('error', sass.logError))
         // .pipe(cleanCSS())
         .pipe(sourcemaps.write('.'))
+        // .pipe(urlAdjuster({
+        //     prepend: '../..',
+        //  }))
         .pipe(gulp.dest('css'))
         .pipe(browserSync.stream());
 });
@@ -106,8 +137,24 @@ gulp.task('html:fileinclude', function () {
         .pipe(gulp.dest(DESTINATION_HTML))
         .pipe(browserSync.stream());
 });
+
 gulp.task('html:partial', function () {
     return gulp.src(['html/**/*.html', '!html/partial/**/*.html'])
+        .pipe(plumber())
+        // .pipe(coffee())
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        // .pipe(plumber.stop())
+        .pipe(gulp.dest(DESTINATION_HTML))
+        .pipe(browserSync.stream());
+});
+
+
+//Handle on partials file -> complie only template file to check :)
+gulp.task('html:template', function () {
+    return gulp.src(['html/**/template.html'])
         .pipe(plumber())
         // .pipe(coffee())
         .pipe(fileinclude({

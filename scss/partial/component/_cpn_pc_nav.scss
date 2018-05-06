@@ -1,4 +1,4 @@
-@mixin pc_nav() {
+@mixin cpn_pc_nav() {
   .pc_nav {
     opacity: 1;
     @include clearfix();
@@ -22,6 +22,10 @@
             opacity: 1;
             margin-top: 22px;
             margin-left: 12px;
+
+            @include large-screen() {
+              margin-left: 16px;
+            }
           }
         }
 
@@ -140,9 +144,10 @@
       }
     }
   }
+
+  //Change default animation ui-box
+  .ui-box {
+    padding: 0px;
+  }
 }
 
-//Change default animation ui-box
-.ui-box {
-  padding: 0px;
-}

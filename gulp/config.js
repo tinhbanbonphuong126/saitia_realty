@@ -1,6 +1,6 @@
 module.exports = {
     CSS_DEPS: [
-        'plugins/reset-css/_reset.scss',
+        'plugins/reset-css/reset.css',
         'plugins/bootstrap/dist/css/bootstrap.min.css',
         'plugins/fancybox/dist/jquery.fancybox.css',
         'plugins/pure-css3-animated-border/css/animated-border/animated-border.scss',

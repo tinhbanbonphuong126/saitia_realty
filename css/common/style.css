@@ -1,7 +1,4 @@
 @charset "UTF-8";
-.ui-box {
-  padding: 0px; }
-
 html {
   font-size: 16px; }
 
@@ -12,21 +9,28 @@ body {
   .container {
     width: 1015px; } }
 
+button {
+  outline: none !important; }
+
 /* Image style */
 #scrollUp {
-  background-image: url("../../img/top.png");
+  background-image: url("../../img/common/top.png");
   bottom: 20px;
-  right: calc((100vw - 961px) / 2);
+  right: calc((100vw - 1000px) / 2);
   width: 35px;
   /* Width of image */
   height: 35px;
   /* Height of image */ }
+  @media only screen and (max-width: 1024px) {
+    #scrollUp {
+      right: 15px;
+      bottom: 15px; } }
 
-.hamburger {
+* .hamburger {
   opacity: 1;
   display: none; }
   @media only screen and (max-width: 767px) {
-    .hamburger {
+    * .hamburger {
       display: block;
       width: 54px;
       height: 54px;
@@ -43,12 +47,12 @@ body {
       -ms-touch-action: manipulation;
       touch-action: manipulation; } }
 
-.hamburger__icon {
+* .hamburger__icon {
   position: relative;
   margin-top: 7px;
   margin-bottom: 7px; }
 
-.hamburger__icon, .hamburger__icon:before, .hamburger__icon:after {
+* .hamburger__icon, * .hamburger__icon:before, * .hamburger__icon:after {
   display: block;
   width: 25px;
   height: 2px;
@@ -62,35 +66,35 @@ body {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s; }
 
-.hamburger__icon:before, .hamburger__icon:after {
+* .hamburger__icon:before, * .hamburger__icon:after {
   position: absolute;
   content: ""; }
 
-.hamburger__icon:before {
+* .hamburger__icon:before {
   top: -7px; }
 
-.hamburger__icon:after {
+* .hamburger__icon:after {
   top: 7px; }
 
-.active .hamburger__icon {
+* .active .hamburger__icon {
   background-color: transparent; }
 
-.active .hamburger__icon:before, .active .hamburger__icon:after {
+* .active .hamburger__icon:before, * .active .hamburger__icon:after {
   background-color: #fff; }
 
-.active .hamburger__icon:before {
+* .active .hamburger__icon:before {
   -moz-transform: translateY(7px) rotate(45deg);
   -ms-transform: translateY(7px) rotate(45deg);
   -webkit-transform: translateY(7px) rotate(45deg);
   transform: translateY(7px) rotate(45deg); }
 
-.active .hamburger__icon:after {
+* .active .hamburger__icon:after {
   -moz-transform: translateY(-7px) rotate(-45deg);
   -ms-transform: translateY(-7px) rotate(-45deg);
   -webkit-transform: translateY(-7px) rotate(-45deg);
   transform: translateY(-7px) rotate(-45deg); }
 
-.fat-nav {
+* .fat-nav {
   top: 0;
   left: 0;
   z-index: 9999;
@@ -115,25 +119,25 @@ body {
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch; }
 
-.fat-nav__wrapper {
+* .fat-nav__wrapper {
   width: 100%;
   height: calc(100% - 56px);
   display: table;
   table-layout: fixed; }
 
-.fat-nav.active {
+* .fat-nav.active {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
   transform: scale(1); }
 
-.fat-nav ul {
+* .fat-nav ul {
   display: table-cell;
   vertical-align: top;
   margin: 0;
   padding: 0; }
 
-.fat-nav li {
+* .fat-nav li {
   list-style-type: none;
   text-align: center;
   padding: 3px;
@@ -141,18 +145,18 @@ body {
   padding-left: 50px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.33); }
 
-.fat-nav li, .fat-nav li a {
+* .fat-nav li, * .fat-nav li a {
   color: #fff;
   text-align: left; }
 
-.fat-nav li a {
+* .fat-nav li a {
   text-decoration: none;
   font-family: KozGoPr6N Medium-83pv-RKSJ-H;
   font-size: 15px;
   letter-spacing: 1.5px;
   color: #FFFFFF;
   color: white; }
-  .fat-nav li a span {
+  * .fat-nav li a span {
     font-family: KozGoPr6N Light-83pv-RKSJ-H;
     font-size: 12px;
     letter-spacing: 2.4px;
@@ -161,59 +165,62 @@ body {
     display: inline-block;
     margin-left: 7px; }
 
-.fat-nav {
+* .fat-nav {
   opacity: 1; }
-  .fat-nav .top_nav_mb {
+  * .fat-nav .top_nav_mb {
     opacity: 1;
     position: relative;
     height: 55px;
     background-color: #231815; }
-    .fat-nav .top_nav_mb::after {
-      content: url("/img/common/vertical_slash_mb.png");
+    * .fat-nav .top_nav_mb::after {
+      content: url("../../../img/common/vertical_slash_mb.png");
       position: absolute;
       right: 57px; }
-    .fat-nav .top_nav_mb img {
+    * .fat-nav .top_nav_mb img {
       opacity: 1;
       margin-top: 5px;
       margin-left: 15px; }
 
-.nav_header_mb {
+* .nav_header_mb {
   opacity: 1;
   display: none; }
   @media only screen and (max-width: 767px) {
-    .nav_header_mb {
+    * .nav_header_mb {
       display: block; } }
-  .nav_header_mb .bound_img {
+  * .nav_header_mb .bound_img {
     opacity: 1;
     margin-top: 49px;
     margin-bottom: 15px; }
-    .nav_header_mb .bound_img img {
+    * .nav_header_mb .bound_img img {
       opacity: 1;
       max-width: 100%; }
 
-.pc_nav {
+* .pc_nav {
   opacity: 1; }
-  .pc_nav:before, .pc_nav:after {
+  * .pc_nav:before, * .pc_nav:after {
     content: "";
     display: table; }
-  .pc_nav:after {
+  * .pc_nav:after {
     clear: both; }
-  .pc_nav .nav_pos {
+  * .pc_nav .nav_pos {
     opacity: 1; }
-    .pc_nav .nav_pos.left_nav {
+    * .pc_nav .nav_pos.left_nav {
       opacity: 1;
       width: calc(100% - 440px);
       float: left; }
-      .pc_nav .nav_pos.left_nav img {
+      * .pc_nav .nav_pos.left_nav img {
         opacity: 1; }
-        .pc_nav .nav_pos.left_nav img.logo_image {
+        * .pc_nav .nav_pos.left_nav img.logo_image {
           opacity: 1;
           margin-left: 14px; }
-        .pc_nav .nav_pos.left_nav img.tel_logo {
+        * .pc_nav .nav_pos.left_nav img.tel_logo {
           opacity: 1;
           margin-top: 22px;
           margin-left: 12px; }
-    .pc_nav .nav_pos.right_nav {
+          @media only screen and (max-width: 960px) {
+            * .pc_nav .nav_pos.left_nav img.tel_logo {
+              margin-left: 16px; } }
+    * .pc_nav .nav_pos.right_nav {
       opacity: 1;
       width: 440px;
       float: left;
@@ -225,21 +232,21 @@ body {
            Using 650px (130px each * 5 items), but ems
            or other values could be used depending on other factors
         ********************************************/ }
-      .pc_nav .nav_pos.right_nav .nav_pure_css ul {
+      * .pc_nav .nav_pos.right_nav .nav_pure_css ul {
         list-style: none;
         background-color: transparent;
         text-align: center;
         padding: 0;
         margin: 0; }
-      .pc_nav .nav_pos.right_nav .nav_pure_css li {
+      * .pc_nav .nav_pos.right_nav .nav_pure_css li {
         font-family: 'Oswald', sans-serif;
         font-size: 1.2em;
         text-align: left; }
-      .pc_nav .nav_pos.right_nav .nav_pure_css a {
+      * .pc_nav .nav_pos.right_nav .nav_pure_css a {
         text-decoration: none;
         display: block;
         transition: .3s background-color; }
-        .pc_nav .nav_pos.right_nav .nav_pure_css a .upper_link {
+        * .pc_nav .nav_pos.right_nav .nav_pure_css a .upper_link {
           font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
           font-size: 15px;
           letter-spacing: 0px;
@@ -247,45 +254,257 @@ body {
           color: #5a5858;
           display: block;
           line-height: 15px; }
-        .pc_nav .nav_pos.right_nav .nav_pure_css a .lower_link {
+        * .pc_nav .nav_pos.right_nav .nav_pure_css a .lower_link {
           font-family: KozGoPr6N Light-83pv-RKSJ-H;
           font-size: 12px;
           letter-spacing: 0px;
           color: #727171;
           color: #727171;
           display: inline; }
-      .pc_nav .nav_pos.right_nav .nav_pure_css a:hover {
+      * .pc_nav .nav_pos.right_nav .nav_pure_css a:hover {
         opacity: 1; }
-        .pc_nav .nav_pos.right_nav .nav_pure_css a:hover .lower_link {
+        * .pc_nav .nav_pos.right_nav .nav_pure_css a:hover .lower_link {
           color: #00923A; }
-      .pc_nav .nav_pos.right_nav .nav_pure_css a.active {
+      * .pc_nav .nav_pos.right_nav .nav_pure_css a.active {
         color: #00923A;
         cursor: default; }
-      .pc_nav .nav_pos.right_nav .nav_pure_css li li {
+      * .pc_nav .nav_pos.right_nav .nav_pure_css li li {
         font-size: .8em; }
       @media screen and (min-width: 650px) {
-        .pc_nav .nav_pos.right_nav {
+        * .pc_nav .nav_pos.right_nav {
           /* Sub Menus */ }
-          .pc_nav .nav_pos.right_nav .nav_pure_css li {
+          * .pc_nav .nav_pos.right_nav .nav_pure_css li {
             width: 20%;
             border-bottom: none;
             font-size: 1.4em;
             display: inline-block;
             margin-right: -4px; }
-          .pc_nav .nav_pos.right_nav .nav_pure_css a {
+          * .pc_nav .nav_pos.right_nav .nav_pure_css a {
             border-bottom: none; }
-          .pc_nav .nav_pos.right_nav .nav_pure_css > ul > li {
+          * .pc_nav .nav_pos.right_nav .nav_pure_css > ul > li {
             text-align: center; }
-          .pc_nav .nav_pos.right_nav .nav_pure_css > ul > li > a {
+          * .pc_nav .nav_pos.right_nav .nav_pure_css > ul > li > a {
             padding-left: 0; }
-          .pc_nav .nav_pos.right_nav .nav_pure_css li ul {
+          * .pc_nav .nav_pos.right_nav .nav_pure_css li ul {
             position: absolute;
             display: none;
             width: inherit; }
-          .pc_nav .nav_pos.right_nav .nav_pure_css li:hover ul {
+          * .pc_nav .nav_pos.right_nav .nav_pure_css li:hover ul {
             display: block; }
-          .pc_nav .nav_pos.right_nav .nav_pure_css li ul li {
+          * .pc_nav .nav_pos.right_nav .nav_pure_css li ul li {
             display: block; } }
+
+* .ui-box {
+  padding: 0px; }
+
+* .footer {
+  opacity: 1; }
+  @media only screen and (max-width: 960px) {
+    * .footer {
+      opacity: 1; } }
+  * .footer .banner_slash {
+    opacity: 1;
+    text-align: center;
+    height: 38px;
+    background-image: url("../../../img/common/banner_slash.png");
+    background-repeat: repeat-x;
+    padding-top: 15px; }
+    * .footer .banner_slash:before, * .footer .banner_slash:after {
+      content: "";
+      display: table; }
+    * .footer .banner_slash:after {
+      clear: both; }
+    * .footer .banner_slash .bounce_link {
+      opacity: 1;
+      display: inline-block; }
+      * .footer .banner_slash .bounce_link .li_link {
+        opacity: 1;
+        float: left;
+        border-right: 1px solid #3F3B3A;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 12px; }
+        @media only screen and (max-width: 480px) {
+          * .footer .banner_slash .bounce_link .li_link {
+            padding-left: 11px;
+            padding-right: 11px; } }
+        * .footer .banner_slash .bounce_link .li_link:first-child {
+          border-left: 1px solid #3F3B3A; }
+        * .footer .banner_slash .bounce_link .li_link .anchor_link {
+          font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+          font-size: 12px;
+          color: #3F3B3A;
+          color: #3f3b3a; }
+  * .footer .footer_below {
+    opacity: 1;
+    background: #EFEFF0; }
+    * .footer .footer_below:before, * .footer .footer_below:after {
+      content: "";
+      display: table; }
+    * .footer .footer_below:after {
+      clear: both; }
+    @media only screen and (max-width: 960px) {
+      * .footer .footer_below {
+        padding-bottom: 42px; } }
+    * .footer .footer_below .bounce_content {
+      opacity: 1;
+      margin-top: 38px; }
+      * .footer .footer_below .bounce_content .elm_cel {
+        opacity: 1;
+        float: left; }
+        * .footer .footer_below .bounce_content .elm_cel.name_kaisha {
+          opacity: 1;
+          margin-right: 23px; }
+          @media only screen and (max-width: 960px) {
+            * .footer .footer_below .bounce_content .elm_cel.name_kaisha {
+              width: 100%; } }
+          * .footer .footer_below .bounce_content .elm_cel.name_kaisha img {
+            display: inline-block;
+            float: left; }
+            @media only screen and (max-width: 680px) {
+              * .footer .footer_below .bounce_content .elm_cel.name_kaisha img {
+                opacity: 1;
+                width: 50%; } }
+            @media only screen and (max-width: 570px) {
+              * .footer .footer_below .bounce_content .elm_cel.name_kaisha img {
+                width: 42%;
+                margin-top: 6px; } }
+            @media only screen and (max-width: 480px) {
+              * .footer .footer_below .bounce_content .elm_cel.name_kaisha img {
+                width: 100%; } }
+          * .footer .footer_below .bounce_content .elm_cel.name_kaisha .tel_time {
+            opacity: 1;
+            margin-bottom: 0px;
+            display: none; }
+            * .footer .footer_below .bounce_content .elm_cel.name_kaisha .tel_time:before, * .footer .footer_below .bounce_content .elm_cel.name_kaisha .tel_time:after {
+              content: "";
+              display: table; }
+            * .footer .footer_below .bounce_content .elm_cel.name_kaisha .tel_time:after {
+              clear: both; }
+            * .footer .footer_below .bounce_content .elm_cel.name_kaisha .tel_time::before {
+              content: '';
+              background-image: url("../../../img/common/wowow_tel.png");
+              width: 29px;
+              height: 17px;
+              position: absolute; }
+            * .footer .footer_below .bounce_content .elm_cel.name_kaisha .tel_time .tel {
+              font-weight: bold;
+              opacity: 1;
+              font-size: 16px;
+              color: #E83928;
+              color: #e83928;
+              float: left;
+              margin-left: 38px; }
+            * .footer .footer_below .bounce_content .elm_cel.name_kaisha .tel_time .time {
+              float: left;
+              opacity: 1;
+              font-size: 12px;
+              color: #231815;
+              color: #231815;
+              line-height: 24px; }
+            @media only screen and (max-width: 960px) {
+              * .footer .footer_below .bounce_content .elm_cel.name_kaisha .tel_time {
+                display: inline-block;
+                float: right;
+                margin-right: 0px;
+                margin-top: 8px; } }
+            @media only screen and (max-width: 480px) {
+              * .footer .footer_below .bounce_content .elm_cel.name_kaisha .tel_time {
+                float: left;
+                margin-left: 1px;
+                margin-top: 15px; } }
+        * .footer .footer_below .bounce_content .elm_cel.info_kaisha {
+          opacity: 1;
+          margin-top: 8px; }
+          * .footer .footer_below .bounce_content .elm_cel.info_kaisha * {
+            font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif; }
+          @media only screen and (max-width: 960px) {
+            * .footer .footer_below .bounce_content .elm_cel.info_kaisha {
+              opacity: 1;
+              margin-top: 31px;
+              margin-left: 50px; } }
+          @media only screen and (max-width: 680px) {
+            * .footer .footer_below .bounce_content .elm_cel.info_kaisha {
+              margin-left: 0px; } }
+          * .footer .footer_below .bounce_content .elm_cel.info_kaisha .tel_time {
+            opacity: 1;
+            margin-bottom: 0px; }
+            * .footer .footer_below .bounce_content .elm_cel.info_kaisha .tel_time:before, * .footer .footer_below .bounce_content .elm_cel.info_kaisha .tel_time:after {
+              content: "";
+              display: table; }
+            * .footer .footer_below .bounce_content .elm_cel.info_kaisha .tel_time:after {
+              clear: both; }
+            * .footer .footer_below .bounce_content .elm_cel.info_kaisha .tel_time::before {
+              content: '';
+              background-image: url("../../../img/common/wowow_tel.png");
+              width: 29px;
+              height: 17px;
+              position: absolute; }
+            * .footer .footer_below .bounce_content .elm_cel.info_kaisha .tel_time .tel {
+              font-weight: bold;
+              opacity: 1;
+              font-size: 16px;
+              color: #E83928;
+              color: #e83928;
+              float: left;
+              margin-left: 38px; }
+            * .footer .footer_below .bounce_content .elm_cel.info_kaisha .tel_time .time {
+              float: left;
+              opacity: 1;
+              font-size: 12px;
+              color: #231815;
+              color: #231815;
+              line-height: 24px; }
+            @media only screen and (max-width: 960px) {
+              * .footer .footer_below .bounce_content .elm_cel.info_kaisha .tel_time {
+                display: none; } }
+          * .footer .footer_below .bounce_content .elm_cel.info_kaisha .star {
+            opacity: 1;
+            font-family: 小塚ゴシック Pr6N;
+            font-size: 12px;
+            color: #231815;
+            color: #231815; }
+          * .footer .footer_below .bounce_content .elm_cel.info_kaisha .address {
+            opacity: 1;
+            margin-top: 12px; }
+            * .footer .footer_below .bounce_content .elm_cel.info_kaisha .address p {
+              font-size: 10px;
+              line-height: 10px;
+              color: #231815;
+              color: #231815;
+              font-family: 小塚ゴシック Pr6N; }
+        * .footer .footer_below .bounce_content .elm_cel.image_kaisha {
+          opacity: 1;
+          float: right; }
+          @media only screen and (max-width: 960px) {
+            * .footer .footer_below .bounce_content .elm_cel.image_kaisha {
+              opacity: 1;
+              margin-top: 10px; } }
+          * .footer .footer_below .bounce_content .elm_cel.image_kaisha img {
+            opacity: 1;
+            margin-right: 33px; }
+            @media only screen and (max-width: 960px) {
+              * .footer .footer_below .bounce_content .elm_cel.image_kaisha img {
+                margin-right: 67px; } }
+            @media only screen and (max-width: 570px) {
+              * .footer .footer_below .bounce_content .elm_cel.image_kaisha img {
+                width: 85%;
+                margin-right: 0px; } }
+            @media only screen and (max-width: 480px) {
+              * .footer .footer_below .bounce_content .elm_cel.image_kaisha img {
+                margin-left: -12px;
+                width: 100%; } }
+          * .footer .footer_below .bounce_content .elm_cel.image_kaisha .copy_right {
+            margin-top: 22px;
+            font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+            font-size: 10px;
+            color: #727171;
+            color: #727171;
+            text-align: right; }
+            @media only screen and (max-width: 480px) {
+              * .footer .footer_below .bounce_content .elm_cel.image_kaisha .copy_right {
+                float: left;
+                font-size: 13px; } }
 
 .header {
   opacity: 1; }
@@ -308,112 +527,5 @@ body {
       display: table; }
     .header .mobile_hamburger:after {
       clear: both; }
-
-.footer {
-  opacity: 1; }
-  .footer .banner_slash {
-    opacity: 1;
-    text-align: center;
-    height: 38px;
-    background-image: url("/img/common/banner_slash.png");
-    background-repeat: repeat-x;
-    padding-top: 15px; }
-    .footer .banner_slash:before, .footer .banner_slash:after {
-      content: "";
-      display: table; }
-    .footer .banner_slash:after {
-      clear: both; }
-    .footer .banner_slash .bounce_link {
-      opacity: 1;
-      display: inline-block; }
-      .footer .banner_slash .bounce_link .li_link {
-        opacity: 1;
-        float: left;
-        border-right: 1px solid #3F3B3A;
-        padding-left: 20px;
-        padding-right: 20px;
-        line-height: 12px; }
-        .footer .banner_slash .bounce_link .li_link:first-child {
-          border-left: 1px solid #3F3B3A; }
-        .footer .banner_slash .bounce_link .li_link .anchor_link {
-          font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
-          font-size: 12px;
-          color: #3F3B3A;
-          color: #3f3b3a; }
-  .footer .footer_below {
-    opacity: 1;
-    background: #EFEFF0; }
-    .footer .footer_below:before, .footer .footer_below:after {
-      content: "";
-      display: table; }
-    .footer .footer_below:after {
-      clear: both; }
-    .footer .footer_below .bounce_content {
-      opacity: 1;
-      margin-top: 38px; }
-      .footer .footer_below .bounce_content .elm_cel {
-        opacity: 1;
-        float: left; }
-        .footer .footer_below .bounce_content .elm_cel.name_kaisha {
-          opacity: 1;
-          margin-right: 23px; }
-        .footer .footer_below .bounce_content .elm_cel.info_kaisha {
-          opacity: 1; }
-          .footer .footer_below .bounce_content .elm_cel.info_kaisha * {
-            font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif; }
-          .footer .footer_below .bounce_content .elm_cel.info_kaisha .tel_time {
-            opacity: 1;
-            margin-bottom: 0px; }
-            .footer .footer_below .bounce_content .elm_cel.info_kaisha .tel_time:before, .footer .footer_below .bounce_content .elm_cel.info_kaisha .tel_time:after {
-              content: "";
-              display: table; }
-            .footer .footer_below .bounce_content .elm_cel.info_kaisha .tel_time:after {
-              clear: both; }
-            .footer .footer_below .bounce_content .elm_cel.info_kaisha .tel_time::before {
-              content: '';
-              background-image: url("/img/common/wowow_tel.png");
-              width: 29px;
-              height: 17px;
-              position: absolute; }
-            .footer .footer_below .bounce_content .elm_cel.info_kaisha .tel_time .tel {
-              font-weight: bold;
-              opacity: 1;
-              font-size: 16px;
-              color: #E83928;
-              color: #e83928;
-              float: left;
-              margin-left: 38px; }
-            .footer .footer_below .bounce_content .elm_cel.info_kaisha .tel_time .time {
-              float: left;
-              opacity: 1;
-              font-size: 12px;
-              color: #231815;
-              color: #231815;
-              line-height: 24px; }
-          .footer .footer_below .bounce_content .elm_cel.info_kaisha .star {
-            opacity: 1;
-            font-size: 12px;
-            color: #231815;
-            color: #231815; }
-          .footer .footer_below .bounce_content .elm_cel.info_kaisha .address {
-            opacity: 1; }
-            .footer .footer_below .bounce_content .elm_cel.info_kaisha .address p {
-              font-size: 10px;
-              line-height: 10px;
-              color: #231815;
-              color: #231815; }
-        .footer .footer_below .bounce_content .elm_cel.image_kaisha {
-          opacity: 1;
-          float: right; }
-          .footer .footer_below .bounce_content .elm_cel.image_kaisha img {
-            opacity: 1;
-            margin-right: 33px; }
-          .footer .footer_below .bounce_content .elm_cel.image_kaisha .copy_right {
-            margin-top: 22px;
-            font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
-            font-size: 10px;
-            color: #727171;
-            color: #727171;
-            text-align: right; }
 
 /*# sourceMappingURL=style.css.map */

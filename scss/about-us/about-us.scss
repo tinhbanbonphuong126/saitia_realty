@@ -5,12 +5,10 @@
 @import "../compass/helper_class";
 
 //Common global style
-.circle-text {
-  @include circle-text();
-}
-.cpn_title {
-  @include cpn_title();
-}
+@include title_circle();
+@include cpn_title();
+@include cpn_cell_li();
+
 .main-content {
   opacity: 1;
 
@@ -29,7 +27,7 @@
       position: relative;
 
       &::after {
-        content: url("/img/about-us/aisatsu.png");
+        content: url("../../img/about-us/aisatsu.png");
         display: block;
         clear: both;
         position: absolute;
@@ -62,7 +60,6 @@
         .bound_ul {
           opacity: 1;
 
-          @include cpn_bound_ul();
         }
       }
     }

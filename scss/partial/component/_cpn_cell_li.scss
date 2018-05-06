@@ -1,4 +1,4 @@
-@mixin cpn_bound_ul() {
+@mixin cpn_cell_li() {
   .cell_li {
     opacity: 1;
     height: 95px;
@@ -14,7 +14,7 @@
       position: absolute;
       right: 0;
       top: 31px;
-      content: url("/img/about-us/arrow_left.png");
+      content: url("../../../img/about-us/arrow_left.png");
       clear: both;
     }
 

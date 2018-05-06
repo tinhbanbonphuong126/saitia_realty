@@ -5,16 +5,9 @@
 @import "../compass/helper_class";
 
 //Common global style
-.cpn_title {
-  @include cpn_title();
-}
-
-.bound_ul {
-  @include cpn_bound_ul();
-}
-.cpn_green_title {
-  @include cpn_green_title();
-}
+@include cpn_title();
+@include cpn_cell_li();
+@include cpn_green_title();
 
 .main-content {
   opacity: 1;
@@ -52,7 +45,7 @@
         margin-bottom: 200px;
         &::after {
           position: absolute;
-          content: url("/img/search/akkushuu.png");
+          content: url("../../img/search/akkushuu.png");
           top: -165px;
           right: -16px;
         }
@@ -222,7 +215,7 @@
 }
 
 .navigation ul li.has-sub > a:after {
-  content: url("/img/search/arrow_left.png");
+  content: url("../../img/search/arrow_left.png");
   position: absolute;
   right: 14px;
   top: 6px;

@@ -1,12 +1,9 @@
 @charset "UTF-8";
-.ui-box {
-  padding: 0px; }
-
 .circle-text {
   display: table-cell;
   height: 197px;
   /*change this and the width
- for the size of your initial circle*/
+   for the size of your initial circle*/
   width: 197px;
   text-align: center;
   vertical-align: middle;
@@ -19,7 +16,7 @@
   font-family: "ヒラギノ明朝 Pro";
   font-weight: bold;
   /*change this
- for font-size and font-family*/ }
+   for font-size and font-family*/ }
 
 .main-content {
   opacity: 1; }
@@ -50,7 +47,7 @@
       text-align: center;
       position: relative; }
       .main-content .naiyou_page .aloha_askout::before {
-        content: url("/img/home/askout.png");
+        content: url("../../img/home/askout.png");
         position: absolute;
         left: 0;
         top: 12px; }
@@ -79,7 +76,7 @@
       opacity: 1;
       margin-top: 161px;
       height: 139px;
-      background: url("/img/home/banner_horizontal.png") repeat-x; }
+      background: url("../../img/home/banner_horizontal.png") repeat-x; }
       .main-content .naiyou_page .max_search .bounce_img {
         display: inline-block;
         position: absolute;
@@ -109,7 +106,7 @@
         text-align: center;
         position: relative; }
         .main-content .naiyou_page .search_usage .search_button_div::after {
-          content: url("/img/home/aisatsu.png");
+          content: url("../../img/home/aisatsu.png");
           position: absolute;
           right: 0;
           top: -57px; }

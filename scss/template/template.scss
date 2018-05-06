@@ -1,20 +1,61 @@
+@charset "UTF-8";
 @import "../compass-mixins/lib/compass/css3";
 @import "../../scss/compass/compass";
 @import "../../scss/partial/component";
 //Vitural. After complete. Please delete it
 @import "../compass/helper_class";
 
+//Import Component
+
+* {
+  @include title_circle;
+  @include cpn_title;
+  @include cpn_cell_li;
+  @include cpn_green_title;
+}
+
+
 body {
   opacity: 1;
 
   .naiyou_page {
-    background-color: red;
+    background-color: transparent;
 
-    @include xs-screen() {
-      background-color: green;
+    .title_bound_component {
+      opacity: 1;
+      background: #9cb976;;
+
     }
-    @include medium-screen() {
-      background-color: blue;
+    .boundComponent {
+      opacity: 1;
+
+      .component_element {
+        opacity: 1;
+        border: 1px solid #83c4dc;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        .el_title {
+          opacity: 1;
+          color: #ff005c;
+          background: #e2e9f1;
+          margin-bottom: 28px;
+
+          .indexTitle {
+            opacity: 1;
+            width: 30px;
+            display: inline-block;
+          }
+        }
+
+        .bounceContent {
+          opacity: 1;
+
+          margin-bottom: 26px;
+        }
+      }
     }
   }
 }

@@ -1,7 +1,4 @@
 @charset "UTF-8";
-.ui-box {
-  padding: 0px; }
-
 .cpn_title {
   opacity: 1;
   font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
@@ -19,21 +16,21 @@
     background-color: #CACACB;
     margin-top: 12px; }
 
-.bound_ul .cell_li {
+.cell_li {
   opacity: 1;
   height: 95px;
   border-bottom: 1px solid #B5B6B6;
   padding-left: 3px;
   position: relative; }
-  .bound_ul .cell_li:first-child {
+  .cell_li:first-child {
     border-top: 1px solid #B5B6B6; }
-  .bound_ul .cell_li:after {
+  .cell_li:after {
     position: absolute;
     right: 0;
     top: 31px;
-    content: url("/img/about-us/arrow_left.png");
+    content: url("../../../img/about-us/arrow_left.png");
     clear: both; }
-  .bound_ul .cell_li .label_rui {
+  .cell_li .label_rui {
     opacity: 1;
     width: 100px;
     height: 48px;
@@ -46,16 +43,16 @@
     line-height: 48px;
     text-align: center;
     margin-top: 22px; }
-  .bound_ul .cell_li .description_rui {
+  .cell_li .description_rui {
     display: inline-block;
     margin-left: 15px; }
-    .bound_ul .cell_li .description_rui a {
+    .cell_li .description_rui a {
       text-underline: none;
       font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
       font-size: 21px;
       color: #231815;
       color: #231815; }
-      .bound_ul .cell_li .description_rui a:hover, .bound_ul .cell_li .description_rui a:visited, .bound_ul .cell_li .description_rui a:link, .bound_ul .cell_li .description_rui a:active {
+      .cell_li .description_rui a:hover, .cell_li .description_rui a:visited, .cell_li .description_rui a:link, .cell_li .description_rui a:active {
         text-decoration: none; }
 
 .cpn_green_title {
@@ -88,7 +85,7 @@
           top: -53px;
           left: 68px;
           position: absolute;
-          content: url("/img/search_chizu/akkushuu_right.png"); }
+          content: url("../../img/search_chizu/akkushuu_right.png"); }
       .main-content .naiyou_page .bunjiro_kara .bound_green_title {
         opacity: 1; }
       .main-content .naiyou_page .bunjiro_kara .bounce_navigation {

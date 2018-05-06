@@ -5,9 +5,7 @@
 @import "../compass/helper_class";
 
 //Common global style
-.circle-text {
-  @include circle-text();
-}
+@include title_circle();
 .main-content {
   opacity: 1;
 
@@ -49,7 +47,7 @@
       position: relative;
 
       &::before {
-        content: url("/img/home/askout.png");
+        content: url("../../img/home/askout.png");
         position: absolute;
         left: 0;
         top: 12px;
@@ -85,7 +83,7 @@
       opacity: 1;
       margin-top: 161px;
       height: 139px;
-      background: url("/img/home/banner_horizontal.png") repeat-x;
+      background: url("../../img/home/banner_horizontal.png") repeat-x;
 
       .bounce_img {
         display: inline-block;
@@ -126,7 +124,7 @@
         position: relative;
 
         &::after {
-          content: url("/img/home/aisatsu.png");
+          content: url("../../img/home/aisatsu.png");
           position: absolute;
           right: 0;
           top: -57px;

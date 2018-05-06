@@ -30,13 +30,18 @@ gulp.task('watch', function () {
     //
     // Watch submodule to rebuild style
     gulp.watch(['scss/**/*.scss',
-        '!scss/compass-mixins/*.scss', '!scss/compass/*.scss'], ['scss']);
+        '!scss/compass-mixins/*.scss', '!scss/compass/*.scss', '!scss/partial/**/*.scss'], ['scss']);
 
-    // // Watch common for all style, if change build all project
+    // Watch common for all style, if change build all project
     gulp.watch([
             'scss/compass/**/*.scss',
             'scss/partial/**/*.scss'
-            ], ['scss:recompile']);
+            ], ['scss:decode_partial']);
+
+    // gulp.watch([
+    //         'scss/compass/**/*.scss',
+    //         'scss/partial/**/*.scss'
+    //         ], ['scss:recomplie']);
 
     // Watch html status, if change refresh browser
     gulp.watch(['html/**/*.html',
@@ -45,14 +50,17 @@ gulp.task('watch', function () {
         '!node_modules/*',
         '!plugins/*']
         ,['html:fileinclude']);
+
+
     gulp.watch(['html/partial/**/*.html',
         '!bower_components/*',
         '!node_modules/*',
         '!plugins/*']
-        ,['html:partial']);
+        ,['html:template']);
 
     gulp.watch(['js/**/*.js'])
         .on('change', browserSync.reload);
+
 });
 
 // Default gulp

@@ -5,16 +5,9 @@
 @import "../compass/helper_class";
 
 //Common global style
-.cpn_title {
-  @include cpn_title();
-}
-
-.bound_ul {
-  @include cpn_bound_ul();
-}
-.cpn_green_title {
-  @include cpn_green_title();
-}
+@include cpn_title();
+@include cpn_cell_li();
+@include cpn_green_title();
 
 .main-content {
   opacity: 1;
@@ -41,7 +34,7 @@
           top: -53px;
           left: 68px;
           position: absolute;
-          content: url("/img/search_chizu/akkushuu_right.png");
+          content: url("../../img/search_chizu/akkushuu_right.png");
         }
       }
       .bound_green_title {

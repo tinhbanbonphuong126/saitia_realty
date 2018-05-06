@@ -18,9 +18,9 @@
     <div class="naiyou_page container">
         <div class="eki_kara">
             <div class="title">
-                <div class="cpn_title">
-                    分譲地を路線から探す
-                </div>
+
+                @@include('./../partial/component/cpn_title.html', {"title": "分譲地を路線から探す"})
+
             </div>
 
             <div class="bound_green_title">
@@ -186,8 +186,8 @@
         </div>
     </div>
 </div>
-@@include('./../partial/footer.html')
-@@include('./../partial/script.html')
+@@include('@@webRoot/partial/cpn_footer.html')
+@@include('@@webRoot/partial/script.html')
 <script type="text/javascript" src="/js/search_eki/search_eki.js"></script>
 <script type="text/javascript">
     <!--Javascript here-->

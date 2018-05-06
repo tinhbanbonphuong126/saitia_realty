@@ -30,6 +30,7 @@
     "compass-mixins": "^0.12.10",
     "font-awesome": "^4.7.0",
     "gulp-coffee": "^3.0.2",
+    "gulp-css-url-adjuster": "^0.2.3",
     "gulp-error-handle": "^1.0.1",
     "gulp-file-include": "^2.0.1",
     "gulp-util": "^3.0.8",

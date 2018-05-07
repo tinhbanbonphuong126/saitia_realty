@@ -50,6 +50,10 @@
         @include small-screen() {
           margin-top: 27px;
         }
+
+        @include tiny-screen() {
+          right: -12px;
+        }
       }
 
       .text_aisatsu {

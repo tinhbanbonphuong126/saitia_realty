@@ -365,6 +365,11 @@
               width: 220px;
               font-size: 17px;
               margin-right: 64px; } }
+          @media only screen and (max-width: 320px) {
+            .main-content .naiyou_page .search_usage .search_button_div .btn_search {
+              font-size: 12px;
+              width: 198px;
+              height: 38px; } }
       .main-content .naiyou_page .search_usage .lower_box_search {
         font-size: 15px;
         line-height: 24px;

@@ -393,6 +393,7 @@
             opacity: 1;
             right: 21px;
           }
+
         }
 
         .btn_search {
@@ -417,6 +418,12 @@
             width: 220px;
             font-size: 17px;
             margin-right: 64px
+          }
+
+          @include tiny-screen() {
+            font-size: 12px;
+            width: 198px;
+            height: 38px;
           }
         }
       }

@@ -1,5 +1,56 @@
 @charset "UTF-8";
-.cpn_title {
+* .cpn_header_banner_gazou {
+  opacity: 1;
+  height: 512px;
+  width: 100%;
+  background: url("../../img/common/banner_gazou.png") center;
+  background-size: cover;
+  position: relative; }
+  * .cpn_header_banner_gazou .text_float {
+    opacity: 1;
+    position: absolute;
+    top: 39px;
+    right: 255px; }
+    @media only screen and (max-width: 1600px) {
+      * .cpn_header_banner_gazou .text_float {
+        right: 155px; } }
+    @media only screen and (max-width: 1400px) {
+      * .cpn_header_banner_gazou .text_float {
+        opacity: 1;
+        right: 100px; } }
+    @media only screen and (max-width: 1024px) {
+      * .cpn_header_banner_gazou .text_float {
+        opacity: 1;
+        right: 15px;
+        top: 15px; } }
+    @media only screen and (max-width: 960px) {
+      * .cpn_header_banner_gazou .text_float {
+        width: 472px;
+        text-align: justify; } }
+    @media only screen and (max-width: 480px) {
+      * .cpn_header_banner_gazou .text_float {
+        opacity: 1;
+        left: 0;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px; } }
+    * .cpn_header_banner_gazou .text_float .p_text {
+      opacity: 1;
+      font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+      font-size: 25px;
+      color: #438BCB;
+      color: #438bcb; }
+      @media only screen and (max-width: 480px) {
+        * .cpn_header_banner_gazou .text_float .p_text {
+          opacity: 1;
+          font-size: 23px; } }
+      * .cpn_header_banner_gazou .text_float .p_text .break_magic {
+        opacity: 1; }
+        @media only screen and (max-width: 960px) {
+          * .cpn_header_banner_gazou .text_float .p_text .break_magic {
+            display: none; } }
+
+* .cpn_title {
   opacity: 1;
   font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 25px;
@@ -9,11 +60,11 @@
   margin: 0 auto;
   text-align: center; }
   @media only screen and (max-width: 480px) {
-    .cpn_title {
+    * .cpn_title {
       opacity: 1;
       width: 210px;
       font-size: 20px; } }
-  .cpn_title:after {
+  * .cpn_title:after {
     content: '';
     display: block;
     clear: both;
@@ -21,33 +72,33 @@
     background-color: #CACACB;
     margin-top: 12px; }
 
-.cell_li {
+* .cell_li {
   opacity: 1;
   height: 95px;
   border-bottom: 1px solid #B5B6B6;
   padding-left: 3px;
   position: relative; }
   @media only screen and (max-width: 480px) {
-    .cell_li {
+    * .cell_li {
       opacity: 1;
       height: 75px;
       padding-left: 0px; } }
-  .cell_li:first-child {
+  * .cell_li:first-child {
     border-top: 1px solid #B5B6B6; }
-  .cell_li:after {
+  * .cell_li:after {
     position: absolute;
     right: 0;
     top: 31px;
     content: url("../../img/about-us/arrow_left.png");
     clear: both; }
     @media only screen and (max-width: 480px) {
-      .cell_li:after {
+      * .cell_li:after {
         top: 52px;
         zoom: 55%; } }
     @media only screen and (max-width: 320px) {
-      .cell_li:after {
+      * .cell_li:after {
         display: none; } }
-  .cell_li .label_rui {
+  * .cell_li .label_rui {
     opacity: 1;
     width: 100px;
     height: 48px;
@@ -60,34 +111,34 @@
     line-height: 48px;
     text-align: center;
     margin-top: 22px; }
-    .cell_li .label_rui.gray_item {
+    * .cell_li .label_rui.gray_item {
       background-color: #9FA0A0; }
     @media only screen and (max-width: 480px) {
-      .cell_li .label_rui {
+      * .cell_li .label_rui {
         opacity: 1;
         font-size: 12px;
         width: 48px;
         line-height: 30px;
         height: 30px; } }
-  .cell_li .description_rui {
+  * .cell_li .description_rui {
     display: inline-block;
     margin-left: 15px; }
     @media only screen and (max-width: 480px) {
-      .cell_li .description_rui {
+      * .cell_li .description_rui {
         margin-left: 0px; } }
-    .cell_li .description_rui a {
+    * .cell_li .description_rui a {
       text-underline: none;
       font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
       font-size: 21px;
       color: #231815;
       color: #231815; }
-      .cell_li .description_rui a:hover, .cell_li .description_rui a:visited, .cell_li .description_rui a:link, .cell_li .description_rui a:active {
+      * .cell_li .description_rui a:hover, * .cell_li .description_rui a:visited, * .cell_li .description_rui a:link, * .cell_li .description_rui a:active {
         text-decoration: none; }
       @media only screen and (max-width: 480px) {
-        .cell_li .description_rui a {
+        * .cell_li .description_rui a {
           font-size: 15px; } }
 
-.cpn_green_title {
+* .cpn_green_title {
   width: 100%;
   background-color: #ABCD03;
   height: 46px;
@@ -98,10 +149,10 @@
   color: white;
   text-align: center; }
   @media only screen and (max-width: 480px) {
-    .cpn_green_title {
+    * .cpn_green_title {
       font-size: 17px; } }
   @media only screen and (max-width: 320px) {
-    .cpn_green_title {
+    * .cpn_green_title {
       font-size: 14px; } }
 
 .main-content {
@@ -113,12 +164,19 @@
   .main-content .naiyou_page {
     opacity: 1;
     margin-bottom: 270px; }
+    @media only screen and (max-width: 960px) {
+      .main-content .naiyou_page {
+        margin-bottom: 100px; } }
     .main-content .naiyou_page .eki_kara {
       opacity: 1; }
       .main-content .naiyou_page .eki_kara .title {
         opacity: 1;
         margin-top: 86px;
         margin-bottom: 67px; }
+        @media only screen and (max-width: 960px) {
+          .main-content .naiyou_page .eki_kara .title {
+            margin-top: 50px;
+            margin-bottom: 66px; } }
       .main-content .naiyou_page .eki_kara .bound_green_title {
         opacity: 1; }
       .main-content .naiyou_page .eki_kara .bounce_navigation {
@@ -129,6 +187,9 @@
           position: absolute;
           top: 40px;
           right: 27px; }
+          @media only screen and (max-width: 767px) {
+            .main-content .naiyou_page .eki_kara .bounce_navigation::after {
+              display: none; } }
         .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list {
           opacity: 1; }
           .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list:before, .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list:after {
@@ -139,12 +200,32 @@
           .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list.bounce_list_1 {
             opacity: 1;
             margin-top: 35px; }
+            @media only screen and (max-width: 767px) {
+              .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list.bounce_list_1 {
+                margin-top: 16px;
+                padding-left: 40px;
+                padding-right: 40px; } }
+            @media only screen and (max-width: 570px) {
+              .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list.bounce_list_1 {
+                padding-left: 10px;
+                padding-right: 10px; } }
           .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list.bounce_list_2 {
             opacity: 1;
             margin-top: 71px; }
+            @media only screen and (max-width: 767px) {
+              .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list.bounce_list_2 {
+                padding-left: 40px;
+                padding-right: 40px; } }
+            @media only screen and (max-width: 570px) {
+              .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list.bounce_list_2 {
+                padding-left: 10px;
+                padding-right: 10px; } }
           .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col {
             opacity: 1;
             float: left; }
+            @media only screen and (max-width: 480px) {
+              .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col {
+                margin-top: 11px; } }
             .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col .row_cell {
               opacity: 1; }
               .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col .row_cell:before, .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col .row_cell:after {
@@ -161,6 +242,9 @@
                   color: #231815;
                   text-decoration: underline;
                   line-height: 34px; }
+                  @media only screen and (max-width: 680px) {
+                    .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col .row_cell .half a, .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col .row_cell .full a {
+                      font-size: 17px; } }
                   .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col .row_cell .half a:hover, .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col .row_cell .full a:hover {
                     color: #65AADD; }
               .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col .row_cell .half {
@@ -183,26 +267,80 @@
             margin-left: 117px;
             opacity: 1;
             width: 185px; }
+            @media only screen and (max-width: 960px) {
+              .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col_1 {
+                margin-left: 10px; } }
+            @media only screen and (max-width: 767px) {
+              .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col_1 {
+                margin-left: 0px; } }
           .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col_2 {
             width: 134px;
             margin-left: 21px; }
+            @media only screen and (max-width: 960px) {
+              .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col_2 {
+                width: 110px; } }
+            @media only screen and (max-width: 320px) {
+              .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col_2 {
+                width: 60px; } }
           .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col_3 {
             width: 330px; }
+            @media only screen and (max-width: 767px) {
+              .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col_3 {
+                width: 300px; } }
+            @media only screen and (max-width: 680px) {
+              .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col_3 {
+                width: 239px; } }
+            @media only screen and (max-width: 570px) {
+              .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col_3 {
+                width: 197px; } }
           .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col_4 {
             opacity: 1;
             margin-left: 117px;
             width: 210px; }
+            @media only screen and (max-width: 960px) {
+              .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col_4 {
+                margin-left: 10px; } }
+            @media only screen and (max-width: 767px) {
+              .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col_4 {
+                margin-left: 0px; } }
+            @media only screen and (max-width: 480px) {
+              .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col_4 {
+                width: 100%; } }
+            @media only screen and (max-width: 480px) {
+              .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col_4 .row_cell {
+                width: 50%;
+                float: left; } }
+            .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col_4 .row_cell:first-child {
+              width: 100%; }
             .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col_4 .full:not(.header_tit) {
               padding-left: 21px; }
           .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col_5 {
             width: 216px; }
             .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col_5 .full:not(.header_tit) {
               padding-left: 24px; }
+            @media only screen and (max-width: 570px) {
+              .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col_5 {
+                width: 162px; } }
+            @media only screen and (max-width: 320px) {
+              .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col_5 {
+                width: 134px; } }
           .main-content .naiyou_page .eki_kara .bounce_navigation .bounce_list .col_6 .full:not(.header_tit) {
             padding-left: 20px; }
       .main-content .naiyou_page .eki_kara .route_map {
         text-align: center;
-        margin-top: 72px; }
+        margin-top: 72px;
+        position: relative; }
+        .main-content .naiyou_page .eki_kara .route_map::after {
+          opacity: 1; }
+          @media only screen and (max-width: 767px) {
+            .main-content .naiyou_page .eki_kara .route_map::after {
+              position: absolute;
+              content: url("../../img/search_eki/mb_shoe_show.png");
+              right: 59px;
+              top: -27px; } }
+          @media only screen and (max-width: 480px) {
+            .main-content .naiyou_page .eki_kara .route_map::after {
+              right: 0px; } }
         .main-content .naiyou_page .eki_kara .route_map a {
           outline: none; }
           .main-content .naiyou_page .eki_kara .route_map a img {
@@ -220,6 +358,9 @@
       .main-content .naiyou_page .eki_kara .bounce_result {
         opacity: 1;
         margin-top: 147px; }
+        @media only screen and (max-width: 767px) {
+          .main-content .naiyou_page .eki_kara .bounce_result {
+            margin-top: 90px; } }
         .main-content .naiyou_page .eki_kara .bounce_result .bounce_buirochi_kara {
           opacity: 1; }
           .main-content .naiyou_page .eki_kara .bounce_result .bounce_buirochi_kara .list {
@@ -229,286 +370,12 @@
             font-size: 16px;
             line-height: 21px;
             color: #231815;
-            color: #231815; }
+            color: #231815;
+            font-weight: 700; }
           .main-content .naiyou_page .eki_kara .bounce_result .bounce_buirochi_kara .bound_ul {
             opacity: 1; }
           .main-content .naiyou_page .eki_kara .bounce_result .bounce_buirochi_kara .no-result {
             opacity: 1;
             font-size: 20px; }
-
-.vitual {
-  position: relative;
-  min-height: 1px;
-  align-content: initial;
-  align-items: initial;
-  align-self: initial;
-  all: initial;
-  animation: initial;
-  animation-delay: initial;
-  animation-direction: initial;
-  animation-duration: initial;
-  animation-fill-mode: initial;
-  animation-iteration-count: initial;
-  animation-name: initial;
-  animation-play-state: initial;
-  animation-timing-function: initial;
-  backface-visibility: initial;
-  background: initial;
-  background-attachment: initial;
-  background-blend-mode: initial;
-  background-clip: initial;
-  background-color: initial;
-  background-image: initial;
-  background-origin: initial;
-  background-position: initial;
-  background-repeat: initial;
-  background-size: initial;
-  border: initial;
-  border-bottom: initial;
-  border-bottom-color: initial;
-  border-bottom-left-radius: initial;
-  border-bottom-right-radius: initial;
-  border-bottom-style: initial;
-  border-bottom-width: initial;
-  border-collapse: initial;
-  border-color: initial;
-  border-image: initial;
-  border-image-outset: initial;
-  border-image-repeat: initial;
-  border-image-slice: initial;
-  border-image-source: initial;
-  border-image-width: initial;
-  border-left: initial;
-  border-left-color: initial;
-  border-left-style: initial;
-  border-left-width: initial;
-  border-radius: initial;
-  border-right: initial;
-  border-right-color: initial;
-  border-right-style: initial;
-  border-right-width: initial;
-  border-spacing: initial;
-  border-style: initial;
-  border-top: initial;
-  border-top-color: initial;
-  border-top-left-radius: initial;
-  border-top-right-radius: initial;
-  border-top-style: initial;
-  border-top-width: initial;
-  border-width: initial;
-  bottom: initial;
-  box-shadow: initial;
-  box-sizing: initial;
-  caption-side: initial;
-  clear: initial;
-  clip: initial;
-  color: initial;
-  column-count: initial;
-  column-fill: initial;
-  column-gap: initial;
-  column-rule: initial;
-  column-rule-color: initial;
-  column-rule-style: initial;
-  column-rule-width: initial;
-  column-span: initial;
-  column-width: initial;
-  columns: initial;
-  content: initial;
-  counter-increment: initial;
-  counter-reset: initial;
-  cursor: initial;
-  direction: initial;
-  display: initial;
-  empty-cells: initial;
-  filter: initial;
-  flex: initial;
-  flex-basis: initial;
-  flex-direction: initial;
-  flex-flow: initial;
-  flex-grow: initial;
-  flex-shrink: initial;
-  flex-wrap: initial;
-  float: initial;
-  font: initial;
-  font-family: initial;
-  font-size: initial;
-  font-size-adjust: initial;
-  font-stretch: initial;
-  font-style: initial;
-  font-variant: initial;
-  font-weight: initial;
-  hanging-punctuation: initial;
-  height: initial;
-  justify-content: initial;
-  left: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  list-style: initial;
-  list-style-image: initial;
-  list-style-position: initial;
-  list-style-type: initial;
-  margin: initial;
-  margin-bottom: initial;
-  margin-left: initial;
-  margin-right: initial;
-  margin-top: initial;
-  max-height: initial;
-  max-width: initial;
-  min-height: initial;
-  min-width: initial;
-  nav-down: initial;
-  nav-index: initial;
-  nav-left: initial;
-  nav-right: initial;
-  nav-up: initial;
-  opacity: initial;
-  order: initial;
-  outline: initial;
-  outline-color: initial;
-  outline-offset: initial;
-  outline-style: initial;
-  outline-width: initial;
-  overflow: initial;
-  overflow-x: initial;
-  overflow-y: initial;
-  padding: initial;
-  padding-bottom: initial;
-  padding-left: initial;
-  padding-right: initial;
-  padding-top: initial;
-  page-break-after: initial;
-  page-break-before: initial;
-  page-break-inside: initial;
-  perspective: initial;
-  perspective-origin: initial;
-  position: initial;
-  quotes: initial;
-  resize: initial;
-  right: initial;
-  tab-size: initial;
-  table-layout: initial;
-  text-align: initial;
-  text-align-last: initial;
-  text-decoration: initial;
-  text-decoration-color: initial;
-  text-decoration-line: initial;
-  text-decoration-style: initial;
-  text-indent: initial;
-  text-justify: initial;
-  text-overflow: initial;
-  text-shadow: initial;
-  text-transform: initial;
-  top: initial;
-  transform: initial;
-  transform-origin: initial;
-  transform-style: initial;
-  transition: initial;
-  transition-delay: initial;
-  transition-duration: initial;
-  transition-property: initial;
-  transition-timing-function: initial;
-  unicode-bidi: initial;
-  user-select: initial;
-  vertical-align: initial;
-  visibility: initial;
-  white-space: initial;
-  width: initial;
-  word-break: initial;
-  word-spacing: initial;
-  word-wrap: initial;
-  z-index: initial; }
-  @media only screen and (max-width: 1200px) {
-    .vitual {
-      opacity: 1; } }
-  @media only screen and (max-width: 1024px) {
-    .vitual {
-      opacity: 1; } }
-  @media only screen and (max-width: 960px) {
-    .vitual {
-      opacity: 1; } }
-  @media only screen and (max-width: 767px) {
-    .vitual {
-      opacity: 1; } }
-  @media only screen and (max-width: 680px) {
-    .vitual {
-      opacity: 1; } }
-  @media only screen and (max-width: 480px) {
-    .vitual {
-      opacity: 1; } }
-  @media only screen and (max-width: 320px) {
-    .vitual {
-      opacity: 1; } }
-  .vitual:active {
-    opacity: 1; }
-  .vitual:checked {
-    opacity: 1; }
-  .vitual:disabled {
-    opacity: 1; }
-  .vitual:empty {
-    opacity: 1; }
-  .vitual:enabled {
-    opacity: 1; }
-  .vitual:first-child {
-    opacity: 1; }
-  .vitual:first-of-type {
-    opacity: 1; }
-  .vitual:focus {
-    opacity: 1; }
-  .vitual:hover {
-    opacity: 1; }
-  .vitual:in-range {
-    opacity: 1; }
-  .vitual:invalid {
-    opacity: 1; }
-  .vitual:lang(language) {
-    opacity: 1; }
-  .vitual:last-child {
-    opacity: 1; }
-  .vitual:last-of-type {
-    opacity: 1; }
-  .vitual:link {
-    opacity: 1; }
-  .vitual:not(selector) {
-    opacity: 1; }
-  .vitual:nth-child(n) {
-    opacity: 1; }
-  .vitual:nth-last-child(n) {
-    opacity: 1; }
-  .vitual:nth-last-of-type(n) {
-    opacity: 1; }
-  .vitual:nth-of-type(n) {
-    opacity: 1; }
-  .vitual:only-of-type {
-    opacity: 1; }
-  .vitual:only-child {
-    opacity: 1; }
-  .vitual:optional {
-    opacity: 1; }
-  .vitual:out-of-range {
-    opacity: 1; }
-  .vitual:read-only {
-    opacity: 1; }
-  .vitual:read-write {
-    opacity: 1; }
-  .vitual:required {
-    opacity: 1; }
-  .vitual:root {
-    opacity: 1; }
-  .vitual:target {
-    opacity: 1; }
-  .vitual:valid {
-    opacity: 1; }
-  .vitual:visited {
-    opacity: 1; }
-  .vitual::after {
-    opacity: 1; }
-  .vitual::before {
-    opacity: 1; }
-  .vitual::first-letter {
-    opacity: 1; }
-  .vitual::first-line {
-    opacity: 1; }
-  .vitual::selection {
-    opacity: 1; }
 
 /*# sourceMappingURL=search_eki.css.map */

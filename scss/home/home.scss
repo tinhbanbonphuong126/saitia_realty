@@ -183,7 +183,7 @@
       //letter-spacing: -1px;
       padding-left: 34px;
       padding-right: 34px;
-      font-weight: 600;
+      font-weight: 700;
 
       @include large-screen() {
         @include paddingLeftRight(14);
@@ -378,7 +378,7 @@
         margin: 0 auto;
         margin-top: 133px;
         margin-bottom: 41px;
-        font-weight: 600;
+        font-weight: 700;
 
         @include large-screen() {
           opacity: 1;

@@ -9,8 +9,10 @@
     margin: 0 auto;
     text-align: center;
 
-    @include tiny-screen() {
-      width: 100%;
+    @include small-screen() {
+      opacity: 1;
+      width: 210px;
+      font-size: 20px;
     }
 
     &:after {

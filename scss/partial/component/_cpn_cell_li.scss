@@ -6,6 +6,12 @@
     padding-left: 3px;
     position: relative;
 
+    @include small-screen() {
+      opacity: 1;
+      height: 75px;
+      padding-left: 0px;
+    }
+
     &:first-child {
       border-top: 1px solid #B5B6B6;
     }
@@ -16,6 +22,14 @@
       top: 31px;
       content: url("../../img/about-us/arrow_left.png");
       clear: both;
+
+      @include small-screen() {
+        top: 22px;
+      }
+      
+      @include tiny-screen() {
+        display: none;
+      }
     }
 
     .label_rui {
@@ -31,10 +45,21 @@
       line-height: 48px;
       text-align: center;
       margin-top: 22px;
+
+      @include small-screen() {
+        opacity: 1;
+        font-size: 14px;
+        width: 48px;
+        @include bl_height(30);
+      }
     }
     .description_rui {
       display: inline-block;
       margin-left: 15px;
+
+      @include small-screen() {
+        margin-left: 0px;
+      }
 
       a {
         text-underline: none;
@@ -44,6 +69,10 @@
         color: rgb(35, 24, 21);
 
         @include reset-a();
+
+        @include small-screen() {
+          font-size: 15px;
+        }
       }
     }
   }

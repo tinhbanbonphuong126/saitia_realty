@@ -7,6 +7,12 @@
   height: $unquote;
 }
 
+@mixin bl_height($size) {
+  $unquote: unquote($size + 'px');
+  line-height: $unquote;
+  height: $unquote;
+}
+
 @mixin reset-a {
   &:hover, &:visited, &:link, &:active {
     text-decoration: none;

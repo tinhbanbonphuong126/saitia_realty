@@ -18,6 +18,12 @@
     font-weight: bold;
     /*change this
    for font-size and font-family*/
+
+
+    @include small-screen() {
+      font-size: 26px;
+      @include square(170)
+    }
   }
 }
 

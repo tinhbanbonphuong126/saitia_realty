@@ -17,6 +17,11 @@
   font-weight: bold;
   /*change this
    for font-size and font-family*/ }
+  @media only screen and (max-width: 480px) {
+    * .circle-text {
+      font-size: 26px;
+      width: 170px;
+      height: 170px; } }
 
 * .cpn_title {
   opacity: 1;
@@ -27,9 +32,11 @@
   width: 316px;
   margin: 0 auto;
   text-align: center; }
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 480px) {
     * .cpn_title {
-      width: 100%; } }
+      opacity: 1;
+      width: 210px;
+      font-size: 20px; } }
   * .cpn_title:after {
     content: '';
     display: block;
@@ -44,6 +51,11 @@
   border-bottom: 1px solid #B5B6B6;
   padding-left: 3px;
   position: relative; }
+  @media only screen and (max-width: 480px) {
+    * .cell_li {
+      opacity: 1;
+      height: 75px;
+      padding-left: 0px; } }
   * .cell_li:first-child {
     border-top: 1px solid #B5B6B6; }
   * .cell_li:after {
@@ -52,6 +64,12 @@
     top: 31px;
     content: url("../../img/about-us/arrow_left.png");
     clear: both; }
+    @media only screen and (max-width: 480px) {
+      * .cell_li:after {
+        top: 22px; } }
+    @media only screen and (max-width: 320px) {
+      * .cell_li:after {
+        display: none; } }
   * .cell_li .label_rui {
     opacity: 1;
     width: 100px;
@@ -65,9 +83,19 @@
     line-height: 48px;
     text-align: center;
     margin-top: 22px; }
+    @media only screen and (max-width: 480px) {
+      * .cell_li .label_rui {
+        opacity: 1;
+        font-size: 14px;
+        width: 48px;
+        line-height: 30px;
+        height: 30px; } }
   * .cell_li .description_rui {
     display: inline-block;
     margin-left: 15px; }
+    @media only screen and (max-width: 480px) {
+      * .cell_li .description_rui {
+        margin-left: 0px; } }
     * .cell_li .description_rui a {
       text-underline: none;
       font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
@@ -76,6 +104,9 @@
       color: #231815; }
       * .cell_li .description_rui a:hover, * .cell_li .description_rui a:visited, * .cell_li .description_rui a:link, * .cell_li .description_rui a:active {
         text-decoration: none; }
+      @media only screen and (max-width: 480px) {
+        * .cell_li .description_rui a {
+          font-size: 15px; } }
 
 * .cpn_green_title {
   width: 100%;

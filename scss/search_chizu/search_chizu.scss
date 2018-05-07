@@ -5,9 +5,13 @@
 @import "../compass/helper_class";
 
 //Common global style
-@include cpn_title();
-@include cpn_cell_li();
-@include cpn_green_title();
+
+* {
+  @include cpn_header_banner_gazou();
+  @include cpn_title();
+  @include cpn_cell_li();
+  @include cpn_green_title();
+}
 
 .main-content {
   opacity: 1;

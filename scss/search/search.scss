@@ -267,7 +267,10 @@
 
   &.nagai {
     opacity: 1;
-    line-height: 22px;
+
+    @include large-screen() {
+      line-height: 22px;
+    }
 
     @include xs-screen() {
       line-height: 38px;

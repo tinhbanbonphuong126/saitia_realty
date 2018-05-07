@@ -338,8 +338,10 @@
   color: #231815;
   border: 1px solid #9FA0A0; }
   .navigation > ul > li > ul > li > a.nagai {
-    opacity: 1;
-    line-height: 22px; }
+    opacity: 1; }
+    @media only screen and (max-width: 960px) {
+      .navigation > ul > li > ul > li > a.nagai {
+        line-height: 22px; } }
     @media only screen and (max-width: 767px) {
       .navigation > ul > li > ul > li > a.nagai {
         line-height: 38px; } }

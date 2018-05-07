@@ -29,6 +29,14 @@
     .bunjiro_kara {
       opacity: 1;
 
+      @include xs-screen() {
+        @include paddingLeftRight(10);
+      }
+
+      @include small-screen() {
+        @include paddingLeftRight(0);
+      }
+
       .title {
         opacity: 1;
         margin-top: 86px;
@@ -39,8 +47,27 @@
           left: 68px;
           position: absolute;
           content: url("../../img/search_chizu/akkushuu_right.png");
+
+          @include xs-screen() {
+            top: -24px;
+            content: url("../../img/search_chizu/mb_akkushuu_right.png");
+          }
+
+          @include iphone5s-landscape-screen() {
+            left: 20px;
+          }
+
+          @include small-screen() {
+            opacity: 1;
+            left: -13px;
+          }
+
+          @include tiny-screen() {
+            zoom: 58%;
+          }
         }
       }
+
       .bound_green_title {
         opacity: 1;
       }
@@ -55,6 +82,15 @@
           padding-right: 45px;
           margin-top: 50px;
 
+          @include xs-screen() {
+            margin-top: 17px;
+            @include paddingLR(36px);
+          }
+
+          @include medium-screen() {
+            @include paddingLeftRight(5);
+          }
+
           .bounce_li {
             opacity: 1;
 
@@ -62,7 +98,18 @@
               opacity: 1;
               float: left;
               width: 20%;
-              margin-top: 6px;
+              margin-top: 15px;
+
+              @include iphone5s-landscape-screen() {
+                width: 25%;
+              }
+
+              @include small-screen() {
+                opacity: 1;
+                width: 50%;
+                @include paddingLeftRight(25);
+
+              }
 
               a {
                 font-family : 小塚ゴシック Pr6N;
@@ -70,6 +117,10 @@
                 color : #231815;
                 color : rgb(35, 24, 21);
                 text-decoration : underline;
+
+                @include small-screen() {
+                  font-size: 17px;
+                }
               }
             }
           }
@@ -84,7 +135,16 @@
           margin-top: 90px;
           margin-left: -57px;
           margin-right: -57px;
-          height: 553px;
+          height: auto;
+
+          @include huge-screen() {
+            opacity: 1;
+            @include marginLeftRight(0);
+          }
+
+          @include xs-screen() {
+            margin-top: 35px;
+          }
 
           img {
             width: 100%;
@@ -96,6 +156,10 @@
           opacity: 1;
           margin-top: 80px;
           margin-bottom: 165px;
+
+          @include xs-screen() {
+            margin-bottom: 90px;
+          }
         }
       }
     }

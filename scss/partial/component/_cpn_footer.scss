@@ -11,7 +11,7 @@
       text-align: center;
       height: 38px;
 
-      background-image: url("../../../img/common/banner_slash.png");
+      background-image: url("../../img/common/banner_slash.png");
       background-repeat: repeat-x;
 
       padding-top: 15px;
@@ -33,6 +33,10 @@
           @include small-screen() {
             padding-left: 11px;
             padding-right: 11px;
+          }
+
+          @include tiny-screen() {
+            @include paddingLeftRight(7);
           }
 
           &:first-child {
@@ -154,6 +158,11 @@
                 color: #231815;
                 color: rgb(35, 24, 21);
                 font-family: 小塚ゴシック Pr6N;
+
+                @include tiny-screen() {
+                  line-height: 17px;
+                  width: 100%;
+                }
               }
             }
 
@@ -204,6 +213,10 @@
                 float: left;
                 font-size: 13px;
               }
+
+              @include tiny-screen() {
+                text-align: left;
+              }
             }
           }
 
@@ -222,7 +235,7 @@
 
   &::before {
     content: '';
-    background-image: url("../../../img/common/wowow_tel.png");
+    background-image: url("../../img/common/wowow_tel.png");
     width: 29px;
     height: 17px;
     position: absolute;

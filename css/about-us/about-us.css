@@ -20,13 +20,16 @@
 
 .cpn_title {
   opacity: 1;
-  font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+  font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 25px;
   color: #438BCB;
   color: #438bcb;
   width: 316px;
   margin: 0 auto;
   text-align: center; }
+  @media only screen and (max-width: 320px) {
+    .cpn_title {
+      width: 100%; } }
   .cpn_title:after {
     content: '';
     display: block;
@@ -55,7 +58,7 @@
     height: 48px;
     background-color: #E60012;
     display: inline-block;
-    font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     font-size: 20px;
     color: #FFFFFF;
     color: white;
@@ -67,7 +70,7 @@
     margin-left: 15px; }
     .cell_li .description_rui a {
       text-underline: none;
-      font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+      font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
       font-size: 21px;
       color: #231815;
       color: #231815; }
@@ -93,7 +96,7 @@
         right: -33px;
         top: -35px; }
       .main-content .naiyou_page .aisatsu .text_aisatsu {
-        font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+        font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
         width: 92%;
         font-size: 20px;
         color: #231815;
@@ -129,7 +132,7 @@
               border-top: 1px solid #B5B6B6; }
             .main-content .naiyou_page .kaisha_gaiyou .content .bound_ul .cell_li .before, .main-content .naiyou_page .kaisha_gaiyou .content .bound_ul .cell_li .after {
               opacity: 1;
-              font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+              font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
               font-size: 17px;
               line-height: 94px;
               color: #231815;
@@ -167,7 +170,7 @@
           margin-top: 58px; }
           .main-content .naiyou_page .jigyou_naiyou .content1 .bounce_below .description {
             opacity: 1;
-            font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+            font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
             font-size: 21px;
             color: #231815;
             color: #231815; }
@@ -188,7 +191,7 @@
           margin-top: 52px; }
           .main-content .naiyou_page .jigyou_naiyou .content2 .bounce_below .description {
             opacity: 1;
-            font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+            font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
             font-size: 21px;
             color: #231815;
             color: #231815; }

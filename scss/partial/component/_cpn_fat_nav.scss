@@ -182,6 +182,11 @@
       margin-top: 49px;
       margin-bottom: 15px;
 
+      @include small-screen() {
+        opacity: 1;
+        margin-top: 3px;
+      }
+
       img {
         opacity: 1;
         max-width: 100%;

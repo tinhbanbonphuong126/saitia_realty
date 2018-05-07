@@ -6,14 +6,96 @@
 
 //Common global style
 @include title_circle();
+
+@include keyframes(fuwafuwa) {
+  0% {
+    transform: translate(0, 0) rotate(-15deg);
+  }
+  50% {
+    transform: translate(0, -20px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(15deg);
+  }
+}
+
+.fuwafuwa {
+  -webkit-animation: fuwafuwa 3s infinite linear alternate;
+  animation: fuwafuwa 3s infinite linear alternate;
+}
+
+
 .main-content {
   opacity: 1;
 
   .top_banner {
     opacity: 1;
+    height: 855px;
+    background: url("../../img/home/big_banner.png") no-repeat fixed;
+    background-size: 100% auto;
+    background-size: cover;
 
-    height: 200px;
-    background-color: gray;
+    @include huge-screen() {
+      height: 639px;
+    }
+
+    @include medium-screen() {
+      height: 431px;
+    }
+
+    position: relative;
+    .bound_face {
+      opacity: 1;
+      position: absolute;
+
+      height: 675px;
+      width: 1132px;
+
+      background: url("../../img/home/face_inside.png") no-repeat;
+      background-position: 0 0;
+
+      bottom: 0px;
+      right: 0;
+      left: 0;
+      margin: auto;
+
+      @include huge-screen() {
+        background-size: 100% auto;
+        width: 700px;
+        height: 416px;
+
+      }
+
+      @include medium-screen() {
+        width: 435px;
+        height: 286px;
+        background-size: 100% 100%;
+
+      }
+
+      .left_eye, .right_eye {
+        position: absolute;
+        bottom: 133px;
+
+        @include huge-screen() {
+          opacity: 1;
+          zoom: 62%;
+          bottom: 131px;
+        }
+
+        @include medium-screen() {
+          opacity: 1;
+
+        }
+      }
+      .left_eye {
+        left: 296px;
+      }
+
+      .right_eye {
+        right: 329px;
+      }
+    }
 
   }
   .naiyou_page {
@@ -25,19 +107,43 @@
       text-align: right;
       margin-bottom: 28px;
       font-weight: bold;
+
+      @include large-screen() {
+        margin-bottom: 15px;
+      }
     }
 
     .slogan {
-      font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+      font-family: "ヒラギノ角ゴ Pro ", "Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
       font-size: 19px;
       line-height: 30px;
       color: #5A5858;
-      letter-spacing: -1px;
-      padding-left: 48px;
-      padding-right: 48px;
+      //letter-spacing: -1px;
+      padding-left: 34px;
+      padding-right: 34px;
+      font-weight: 600;
+
+      @include large-screen() {
+        @include paddingLeftRight(14);
+        text-align: justify;
+      }
+
+      @include small-screen() {
+        @include paddingLeftRight(0);
+        font-size: 15px;
+      }
 
       .pink_text {
         color: #EA5539;
+      }
+      
+      .br_creative {
+        opacity: 1;
+        
+        @include large-screen() {
+          opacity: 1;
+          display: none;
+        }
       }
     }
 
@@ -51,6 +157,29 @@
         position: absolute;
         left: 0;
         top: 12px;
+
+        @include large-screen() {
+          opacity: 1;
+          content: url("../../img/home/mb_askout.png");
+          left: 104px;
+          top: 20px;
+        }
+
+        @include medium-screen() {
+          opacity: 1;
+          left: 77px;
+        }
+
+        @include iphone5s-landscape-screen() {
+          opacity: 1;
+          left: 26px;
+        }
+
+        @include small-screen() {
+          opacity: 1;
+          left: -15px;
+
+        }
       }
 
       .search {
@@ -67,15 +196,51 @@
         margin-top: 51px;
         margin-bottom: 50px;
 
+        @include large-screen () {
+          opacity: 1;
+          margin-top: 162px;
+          margin-left: 122px;
+          margin-bottom: 44px;
+        }
+
+        @include small-screen() {
+          opacity: 1;
+          width: 234px;
+          margin-left: 77px;
+          font-size: 15px;
+
+        }
+
+        @include tiny-screen() {
+          opacity: 1;
+          font-size: 12px;
+          width: 198px;
+          height: 38px;
+        }
+
       }
       .osumai {
-        font-family: $font-family-gothic;
+        font-family: $font-family-hiragino;
         font-size: 15px;
         line-height: 24px;
         color: #231815;
         color: rgb(35, 24, 21);
+
+        @include medium-screen() {
+          @include paddingLeftRight(43);
+        }
+
+        @include small-screen() {
+          @include paddingLeftRight(0);
+          text-align: justify;
+
+          .magic_break {
+            display: none;
+          }
+        }
       }
     }
+
 
     .max_search {
       position: relative;
@@ -85,6 +250,16 @@
       height: 139px;
       background: url("../../img/home/banner_horizontal.png") repeat-x;
 
+      @include large-screen() {
+        margin-top: 175px;
+      }
+
+      @include small-screen() {
+        opacity: 1;
+        margin-top: 90px;
+        height: 100px;
+      }
+
       .bounce_img {
         display: inline-block;
         position: absolute;
@@ -92,9 +267,37 @@
         left: 0;
         right: 0;
 
+        @include medium-screen() {
+          top: -61px;
+        }
+
+        @include small-screen() {
+          opacity: 1;
+          top: -39px;
+        }
+
         a.middle {
           margin-left: 33px;
           margin-right: 33px;
+
+          @include tiny-screen() {
+            opacity: 1;
+
+            @include marginLeftRight(10);
+          }
+        }
+        
+        a {
+          opacity: 1;
+          
+          @include medium-screen() {
+            display: inline-block;
+            width: 25%;
+
+            img {
+              width: 100%;
+            }
+          }
         }
       }
     }
@@ -113,6 +316,19 @@
         margin: 0 auto;
         margin-top: 133px;
         margin-bottom: 41px;
+        font-weight: 600;
+
+        @include large-screen() {
+          opacity: 1;
+          width: 100%;
+        }
+
+        @include small-screen() {
+          opacity: 1;
+          margin-top: 38px;
+          text-align: justify;
+          font-size: 16px;
+        }
 
         .pink_text {
           color: #E83918;
@@ -128,6 +344,26 @@
           position: absolute;
           right: 0;
           top: -57px;
+
+          @include large-screen() {
+            content: url("../../img/home/mb_aisatsu.png");
+            right: 132px;
+            top: -31px;
+          }
+
+          @include medium-screen() {
+            right: 90px;
+          }
+
+          @include iphone5s-landscape-screen() {
+            opacity: 1;
+            right: 43px;
+          }
+
+          @include small-screen() {
+            opacity: 1;
+            right: 21px;
+          }
         }
 
         .btn_search {
@@ -140,6 +376,19 @@
           height: 48px;
           border-radius: $boder_radius_btn;
           background-color: #E83918;
+
+          @include large-screen() {
+            opacity: 1;
+            margin-right: 55px;
+          }
+
+          @include small-screen() {
+            opacity: 1;
+            width: 0px;
+            width: 220px;
+            font-size: 17px;
+            margin-right: 64px
+          }
         }
       }
 
@@ -151,16 +400,70 @@
         text-align: center;
         margin-top: 52px;
         margin-bottom: 66px;
+
+        @include large-screen() {
+          opacity: 1;
+          padding-left: 63px;
+          padding-right: 63px;
+        }
+
+        @include small-screen() {
+          opacity: 1;
+          @include paddingLeftRight(15);
+          margin-bottom: 40px;
+        }
       }
 
-      .bounce_way {
+      .bounce_way_pc {
         opacity: 1;
         @include clearfix();
 
         @include col-options("cell_div", 5, 9);
 
+        @include large-screen() {
+          display: none;
+        }
+     
+
         img {
           width: 100%;
+        }
+      }
+
+      .bounce_way_phone {
+        display: none;
+        
+        @include large-screen() {
+          display: block;
+          width: 96%;
+          margin: 0 auto;
+
+          .row {
+            opacity: 1;
+            text-align: center;
+
+            .cell_div {
+              opacity: 1;
+              width: 30%;
+              display: inline-block;
+              margin-bottom: 26px;
+              
+              @include iphone5s-landscape-screen() {
+                opacity: 1;
+                width: 32%;
+                @include paddingLeftRight(8);
+
+                img {
+                  width: 100%;
+                }
+              }
+
+              @include small-screen() {
+                opacity: 1;
+                margin-bottom: 20px;
+              }
+            }
+          }
         }
       }
 
@@ -173,6 +476,12 @@
         text-align: center;
         margin-top: 78px;
         margin-bottom: 58px;
+
+        @include small-screen() {
+          margin-top: 50px;
+          margin-bottom: 10px;
+        }
+
         .btn_prj {
           opacity: 1;
           width: 340px;
@@ -180,12 +489,21 @@
           border-radius: $boder_radius_btn;
           background-color: transparent;
           border: 1px solid #E83918;
+          color: #E83918;
+
+          @include small-screen() {
+            opacity: 1;
+            width: 200px;
+          }
 
         }
       }
-      .bounce_ctn_prj {
+      .bounce_ctn_prj_pc {
         opacity: 1;
         @include col-options("cell_prj", 2, 5);
+        @include large-screen() {
+          display: none;
+        }
 
         .cell_prj {
           opacity: 1;
@@ -196,6 +514,28 @@
 
         }
       }
+      .bounce_ctn_prj_phone {
+        opacity: 1;
+        display: none;
+
+        @include large-screen() {
+
+          display: block;
+          
+          @include col-options("cell_prj", 1, 5);
+
+          .cell_prj {
+            opacity: 1;
+            text-align: center;
+            margin-top: 25px;
+
+            img {
+              max-width: 100%;
+            }
+
+          }
+        }
+      }
     }
 
 
@@ -203,9 +543,22 @@
       opacity: 1;
       margin-bottom: 72px;
 
+      @include large-screen() {
+        @include paddingLeftRight(28);
+      }
+
+      @include small-screen() {
+        @include paddingLeftRight(15);
+      }
+
       .button_map {
         opacity: 1;
         text-align: center;
+
+        @include small-screen() {
+          opacity: 1;
+
+        }
 
         .btn_map {
           opacity: 1;
@@ -216,6 +569,13 @@
           border: 1px solid #E83918;
           margin-top: 92px;
           margin-bottom: 68px;
+          color: #E83918;
+
+          @include small-screen() {
+            width: 200px;
+            margin-top: 65px;
+            margin-bottom: 37px;
+          }
 
         }
       }
@@ -225,6 +585,18 @@
         height: 501px;
         background-color: rgba(0, 0, 0, 0.02);
         margin: 0 auto;
+
+        @include large-screen() {
+          opacity: 1;
+
+          width: 100%;
+        }
+
+        @include small-screen() {
+          opacity: 1;
+          width: 100%;
+          height: 227px;
+        }
       }
     }
   }

@@ -57,8 +57,18 @@ typings/
 # dotenv environment variables file
 .env
 
-
 .idea/
 
 *.rar
+*.zip
+unzipper-master
+
+
+
+#Ignore all css file
+css/
+
+#Ignore all generated html file
+*.html
+
 

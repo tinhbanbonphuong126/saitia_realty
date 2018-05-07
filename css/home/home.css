@@ -18,12 +18,101 @@
   /*change this
    for font-size and font-family*/ }
 
+@-webkit-keyframes fuwafuwa {
+  0% {
+    transform: translate(0, 0) rotate(-15deg); }
+  50% {
+    transform: translate(0, -20px) rotate(0deg); }
+  100% {
+    transform: translate(0, 0) rotate(15deg); } }
+
+@-moz-keyframes fuwafuwa {
+  0% {
+    transform: translate(0, 0) rotate(-15deg); }
+  50% {
+    transform: translate(0, -20px) rotate(0deg); }
+  100% {
+    transform: translate(0, 0) rotate(15deg); } }
+
+@-ms-keyframes fuwafuwa {
+  0% {
+    transform: translate(0, 0) rotate(-15deg); }
+  50% {
+    transform: translate(0, -20px) rotate(0deg); }
+  100% {
+    transform: translate(0, 0) rotate(15deg); } }
+
+@-o-keyframes fuwafuwa {
+  0% {
+    transform: translate(0, 0) rotate(-15deg); }
+  50% {
+    transform: translate(0, -20px) rotate(0deg); }
+  100% {
+    transform: translate(0, 0) rotate(15deg); } }
+
+@keyframes fuwafuwa {
+  0% {
+    transform: translate(0, 0) rotate(-15deg); }
+  50% {
+    transform: translate(0, -20px) rotate(0deg); }
+  100% {
+    transform: translate(0, 0) rotate(15deg); } }
+
+.fuwafuwa {
+  -webkit-animation: fuwafuwa 3s infinite linear alternate;
+  animation: fuwafuwa 3s infinite linear alternate; }
+
 .main-content {
   opacity: 1; }
   .main-content .top_banner {
     opacity: 1;
-    height: 200px;
-    background-color: gray; }
+    height: 855px;
+    background: url("../../img/home/big_banner.png") no-repeat fixed;
+    background-size: 100% auto;
+    background-size: cover;
+    position: relative; }
+    @media only screen and (max-width: 1200px) {
+      .main-content .top_banner {
+        height: 639px; } }
+    @media only screen and (max-width: 680px) {
+      .main-content .top_banner {
+        height: 431px; } }
+    .main-content .top_banner .bound_face {
+      opacity: 1;
+      position: absolute;
+      height: 675px;
+      width: 1132px;
+      background: url("../../img/home/face_inside.png") no-repeat;
+      background-position: 0 0;
+      bottom: 0px;
+      right: 0;
+      left: 0;
+      margin: auto; }
+      @media only screen and (max-width: 1200px) {
+        .main-content .top_banner .bound_face {
+          background-size: 100% auto;
+          width: 700px;
+          height: 416px; } }
+      @media only screen and (max-width: 680px) {
+        .main-content .top_banner .bound_face {
+          width: 435px;
+          height: 286px;
+          background-size: 100% 100%; } }
+      .main-content .top_banner .bound_face .left_eye, .main-content .top_banner .bound_face .right_eye {
+        position: absolute;
+        bottom: 133px; }
+        @media only screen and (max-width: 1200px) {
+          .main-content .top_banner .bound_face .left_eye, .main-content .top_banner .bound_face .right_eye {
+            opacity: 1;
+            zoom: 62%;
+            bottom: 131px; } }
+        @media only screen and (max-width: 680px) {
+          .main-content .top_banner .bound_face .left_eye, .main-content .top_banner .bound_face .right_eye {
+            opacity: 1; } }
+      .main-content .top_banner .bound_face .left_eye {
+        left: 296px; }
+      .main-content .top_banner .bound_face .right_eye {
+        right: 329px; }
   .main-content .naiyou_page {
     opacity: 1; }
     .main-content .naiyou_page .kittsu {
@@ -32,16 +121,35 @@
       text-align: right;
       margin-bottom: 28px;
       font-weight: bold; }
+      @media only screen and (max-width: 960px) {
+        .main-content .naiyou_page .kittsu {
+          margin-bottom: 15px; } }
     .main-content .naiyou_page .slogan {
-      font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+      font-family: "ヒラギノ角ゴ Pro ", "Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
       font-size: 19px;
       line-height: 30px;
       color: #5A5858;
-      letter-spacing: -1px;
-      padding-left: 48px;
-      padding-right: 48px; }
+      padding-left: 34px;
+      padding-right: 34px;
+      font-weight: 600; }
+      @media only screen and (max-width: 960px) {
+        .main-content .naiyou_page .slogan {
+          padding-left: 14px;
+          padding-right: 14px;
+          text-align: justify; } }
+      @media only screen and (max-width: 480px) {
+        .main-content .naiyou_page .slogan {
+          padding-left: 0px;
+          padding-right: 0px;
+          font-size: 15px; } }
       .main-content .naiyou_page .slogan .pink_text {
         color: #EA5539; }
+      .main-content .naiyou_page .slogan .br_creative {
+        opacity: 1; }
+        @media only screen and (max-width: 960px) {
+          .main-content .naiyou_page .slogan .br_creative {
+            opacity: 1;
+            display: none; } }
     .main-content .naiyou_page .aloha_askout {
       opacity: 1;
       text-align: center;
@@ -51,8 +159,26 @@
         position: absolute;
         left: 0;
         top: 12px; }
+        @media only screen and (max-width: 960px) {
+          .main-content .naiyou_page .aloha_askout::before {
+            opacity: 1;
+            content: url("../../img/home/mb_askout.png");
+            left: 104px;
+            top: 20px; } }
+        @media only screen and (max-width: 680px) {
+          .main-content .naiyou_page .aloha_askout::before {
+            opacity: 1;
+            left: 77px; } }
+        @media only screen and (max-width: 570px) {
+          .main-content .naiyou_page .aloha_askout::before {
+            opacity: 1;
+            left: 26px; } }
+        @media only screen and (max-width: 480px) {
+          .main-content .naiyou_page .aloha_askout::before {
+            opacity: 1;
+            left: -15px; } }
       .main-content .naiyou_page .aloha_askout .search {
-        font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+        font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
         font-size: 20px;
         letter-spacing: 2px;
         color: #FFFFFF;
@@ -61,15 +187,44 @@
         height: 46px;
         background-color: #E83918;
         outline: none;
-        border-radius: 14px;
+        border-radius: 16px;
         margin-top: 51px;
         margin-bottom: 50px; }
+        @media only screen and (max-width: 960px) {
+          .main-content .naiyou_page .aloha_askout .search {
+            opacity: 1;
+            margin-top: 162px;
+            margin-left: 122px;
+            margin-bottom: 44px; } }
+        @media only screen and (max-width: 480px) {
+          .main-content .naiyou_page .aloha_askout .search {
+            opacity: 1;
+            width: 234px;
+            margin-left: 77px;
+            font-size: 15px; } }
+        @media only screen and (max-width: 320px) {
+          .main-content .naiyou_page .aloha_askout .search {
+            opacity: 1;
+            font-size: 12px;
+            width: 198px;
+            height: 38px; } }
       .main-content .naiyou_page .aloha_askout .osumai {
-        font-family: " ＭＳ Ｐゴシック ", " MS PGothic ", " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, sans-serif;
+        font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
         font-size: 15px;
         line-height: 24px;
         color: #231815;
         color: #231815; }
+        @media only screen and (max-width: 680px) {
+          .main-content .naiyou_page .aloha_askout .osumai {
+            padding-left: 43px;
+            padding-right: 43px; } }
+        @media only screen and (max-width: 480px) {
+          .main-content .naiyou_page .aloha_askout .osumai {
+            padding-left: 0px;
+            padding-right: 0px;
+            text-align: justify; }
+            .main-content .naiyou_page .aloha_askout .osumai .magic_break {
+              display: none; } }
     .main-content .naiyou_page .max_search {
       position: relative;
       text-align: center;
@@ -77,15 +232,43 @@
       margin-top: 161px;
       height: 139px;
       background: url("../../img/home/banner_horizontal.png") repeat-x; }
+      @media only screen and (max-width: 960px) {
+        .main-content .naiyou_page .max_search {
+          margin-top: 175px; } }
+      @media only screen and (max-width: 480px) {
+        .main-content .naiyou_page .max_search {
+          opacity: 1;
+          margin-top: 90px;
+          height: 100px; } }
       .main-content .naiyou_page .max_search .bounce_img {
         display: inline-block;
         position: absolute;
         top: -106px;
         left: 0;
         right: 0; }
+        @media only screen and (max-width: 680px) {
+          .main-content .naiyou_page .max_search .bounce_img {
+            top: -61px; } }
+        @media only screen and (max-width: 480px) {
+          .main-content .naiyou_page .max_search .bounce_img {
+            opacity: 1;
+            top: -39px; } }
         .main-content .naiyou_page .max_search .bounce_img a.middle {
           margin-left: 33px;
           margin-right: 33px; }
+          @media only screen and (max-width: 320px) {
+            .main-content .naiyou_page .max_search .bounce_img a.middle {
+              opacity: 1;
+              margin-left: 10px;
+              margin-right: 10px; } }
+        .main-content .naiyou_page .max_search .bounce_img a {
+          opacity: 1; }
+          @media only screen and (max-width: 680px) {
+            .main-content .naiyou_page .max_search .bounce_img a {
+              display: inline-block;
+              width: 25%; }
+              .main-content .naiyou_page .max_search .bounce_img a img {
+                width: 100%; } }
     .main-content .naiyou_page .search_usage {
       opacity: 1; }
       .main-content .naiyou_page .search_usage .upper_box_search {
@@ -98,7 +281,18 @@
         width: 900px;
         margin: 0 auto;
         margin-top: 133px;
-        margin-bottom: 41px; }
+        margin-bottom: 41px;
+        font-weight: 600; }
+        @media only screen and (max-width: 960px) {
+          .main-content .naiyou_page .search_usage .upper_box_search {
+            opacity: 1;
+            width: 100%; } }
+        @media only screen and (max-width: 480px) {
+          .main-content .naiyou_page .search_usage .upper_box_search {
+            opacity: 1;
+            margin-top: 38px;
+            text-align: justify;
+            font-size: 16px; } }
         .main-content .naiyou_page .search_usage .upper_box_search .pink_text {
           color: #E83918; }
       .main-content .naiyou_page .search_usage .search_button_div {
@@ -110,6 +304,22 @@
           position: absolute;
           right: 0;
           top: -57px; }
+          @media only screen and (max-width: 960px) {
+            .main-content .naiyou_page .search_usage .search_button_div::after {
+              content: url("../../img/home/mb_aisatsu.png");
+              right: 132px;
+              top: -31px; } }
+          @media only screen and (max-width: 680px) {
+            .main-content .naiyou_page .search_usage .search_button_div::after {
+              right: 90px; } }
+          @media only screen and (max-width: 570px) {
+            .main-content .naiyou_page .search_usage .search_button_div::after {
+              opacity: 1;
+              right: 43px; } }
+          @media only screen and (max-width: 480px) {
+            .main-content .naiyou_page .search_usage .search_button_div::after {
+              opacity: 1;
+              right: 21px; } }
         .main-content .naiyou_page .search_usage .search_button_div .btn_search {
           opacity: 1;
           font-size: 20px;
@@ -118,8 +328,19 @@
           color: white;
           width: 340px;
           height: 48px;
-          border-radius: 14px;
+          border-radius: 16px;
           background-color: #E83918; }
+          @media only screen and (max-width: 960px) {
+            .main-content .naiyou_page .search_usage .search_button_div .btn_search {
+              opacity: 1;
+              margin-right: 55px; } }
+          @media only screen and (max-width: 480px) {
+            .main-content .naiyou_page .search_usage .search_button_div .btn_search {
+              opacity: 1;
+              width: 0px;
+              width: 220px;
+              font-size: 17px;
+              margin-right: 64px; } }
       .main-content .naiyou_page .search_usage .lower_box_search {
         font-size: 15px;
         line-height: 24px;
@@ -128,25 +349,66 @@
         text-align: center;
         margin-top: 52px;
         margin-bottom: 66px; }
-      .main-content .naiyou_page .search_usage .bounce_way {
+        @media only screen and (max-width: 960px) {
+          .main-content .naiyou_page .search_usage .lower_box_search {
+            opacity: 1;
+            padding-left: 63px;
+            padding-right: 63px; } }
+        @media only screen and (max-width: 480px) {
+          .main-content .naiyou_page .search_usage .lower_box_search {
+            opacity: 1;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-bottom: 40px; } }
+      .main-content .naiyou_page .search_usage .bounce_way_pc {
         opacity: 1; }
-        .main-content .naiyou_page .search_usage .bounce_way:before, .main-content .naiyou_page .search_usage .bounce_way:after {
+        .main-content .naiyou_page .search_usage .bounce_way_pc:before, .main-content .naiyou_page .search_usage .bounce_way_pc:after {
           content: "";
           display: table; }
-        .main-content .naiyou_page .search_usage .bounce_way:after {
+        .main-content .naiyou_page .search_usage .bounce_way_pc:after {
           clear: both; }
-        .main-content .naiyou_page .search_usage .bounce_way .row {
+        .main-content .naiyou_page .search_usage .bounce_way_pc .row {
           margin-left: -9px;
           margin-right: -9px; }
-        .main-content .naiyou_page .search_usage .bounce_way div.cell_div {
+        .main-content .naiyou_page .search_usage .bounce_way_pc div.cell_div {
           float: left;
           position: relative;
           min-height: 1px;
           padding-left: 9px;
           padding-right: 9px;
           width: calc(100% / 5); }
-        .main-content .naiyou_page .search_usage .bounce_way img {
+        @media only screen and (max-width: 960px) {
+          .main-content .naiyou_page .search_usage .bounce_way_pc {
+            display: none; } }
+        .main-content .naiyou_page .search_usage .bounce_way_pc img {
           width: 100%; }
+      .main-content .naiyou_page .search_usage .bounce_way_phone {
+        display: none; }
+        @media only screen and (max-width: 960px) {
+          .main-content .naiyou_page .search_usage .bounce_way_phone {
+            display: block;
+            width: 96%;
+            margin: 0 auto; }
+            .main-content .naiyou_page .search_usage .bounce_way_phone .row {
+              opacity: 1;
+              text-align: center; }
+              .main-content .naiyou_page .search_usage .bounce_way_phone .row .cell_div {
+                opacity: 1;
+                width: 30%;
+                display: inline-block;
+                margin-bottom: 26px; } }
+      @media only screen and (max-width: 960px) and (max-width: 570px) {
+        .main-content .naiyou_page .search_usage .bounce_way_phone .row .cell_div {
+          opacity: 1;
+          width: 32%;
+          padding-left: 8px;
+          padding-right: 8px; }
+          .main-content .naiyou_page .search_usage .bounce_way_phone .row .cell_div img {
+            width: 100%; } }
+      @media only screen and (max-width: 960px) and (max-width: 480px) {
+        .main-content .naiyou_page .search_usage .bounce_way_phone .row .cell_div {
+          opacity: 1;
+          margin-bottom: 20px; } }
     .main-content .naiyou_page .project {
       opacity: 1; }
       .main-content .naiyou_page .project .button_project {
@@ -154,50 +416,110 @@
         text-align: center;
         margin-top: 78px;
         margin-bottom: 58px; }
+        @media only screen and (max-width: 480px) {
+          .main-content .naiyou_page .project .button_project {
+            margin-top: 50px;
+            margin-bottom: 10px; } }
         .main-content .naiyou_page .project .button_project .btn_prj {
           opacity: 1;
           width: 340px;
           height: 48px;
-          border-radius: 14px;
+          border-radius: 16px;
           background-color: transparent;
-          border: 1px solid #E83918; }
-      .main-content .naiyou_page .project .bounce_ctn_prj {
+          border: 1px solid #E83918;
+          color: #E83918; }
+          @media only screen and (max-width: 480px) {
+            .main-content .naiyou_page .project .button_project .btn_prj {
+              opacity: 1;
+              width: 200px; } }
+      .main-content .naiyou_page .project .bounce_ctn_prj_pc {
         opacity: 1; }
-        .main-content .naiyou_page .project .bounce_ctn_prj .row {
+        .main-content .naiyou_page .project .bounce_ctn_prj_pc .row {
           margin-left: -5px;
           margin-right: -5px; }
-        .main-content .naiyou_page .project .bounce_ctn_prj div.cell_prj {
+        .main-content .naiyou_page .project .bounce_ctn_prj_pc div.cell_prj {
           float: left;
           position: relative;
           min-height: 1px;
           padding-left: 5px;
           padding-right: 5px;
           width: calc(100% / 2); }
-        .main-content .naiyou_page .project .bounce_ctn_prj .cell_prj {
+        @media only screen and (max-width: 960px) {
+          .main-content .naiyou_page .project .bounce_ctn_prj_pc {
+            display: none; } }
+        .main-content .naiyou_page .project .bounce_ctn_prj_pc .cell_prj {
           opacity: 1; }
-          .main-content .naiyou_page .project .bounce_ctn_prj .cell_prj img {
+          .main-content .naiyou_page .project .bounce_ctn_prj_pc .cell_prj img {
             width: 100%; }
+      .main-content .naiyou_page .project .bounce_ctn_prj_phone {
+        opacity: 1;
+        display: none; }
+        @media only screen and (max-width: 960px) {
+          .main-content .naiyou_page .project .bounce_ctn_prj_phone {
+            display: block; }
+            .main-content .naiyou_page .project .bounce_ctn_prj_phone .row {
+              margin-left: -5px;
+              margin-right: -5px; }
+            .main-content .naiyou_page .project .bounce_ctn_prj_phone div.cell_prj {
+              float: left;
+              position: relative;
+              min-height: 1px;
+              padding-left: 5px;
+              padding-right: 5px;
+              width: calc(100% / 1); }
+            .main-content .naiyou_page .project .bounce_ctn_prj_phone .cell_prj {
+              opacity: 1;
+              text-align: center;
+              margin-top: 25px; }
+              .main-content .naiyou_page .project .bounce_ctn_prj_phone .cell_prj img {
+                max-width: 100%; } }
     .main-content .naiyou_page .map {
       opacity: 1;
       margin-bottom: 72px; }
+      @media only screen and (max-width: 960px) {
+        .main-content .naiyou_page .map {
+          padding-left: 28px;
+          padding-right: 28px; } }
+      @media only screen and (max-width: 480px) {
+        .main-content .naiyou_page .map {
+          padding-left: 15px;
+          padding-right: 15px; } }
       .main-content .naiyou_page .map .button_map {
         opacity: 1;
         text-align: center; }
+        @media only screen and (max-width: 480px) {
+          .main-content .naiyou_page .map .button_map {
+            opacity: 1; } }
         .main-content .naiyou_page .map .button_map .btn_map {
           opacity: 1;
           width: 340px;
           height: 48px;
-          border-radius: 14px;
+          border-radius: 16px;
           background-color: transparent;
           border: 1px solid #E83918;
           margin-top: 92px;
-          margin-bottom: 68px; }
+          margin-bottom: 68px;
+          color: #E83918; }
+          @media only screen and (max-width: 480px) {
+            .main-content .naiyou_page .map .button_map .btn_map {
+              width: 200px;
+              margin-top: 65px;
+              margin-bottom: 37px; } }
       .main-content .naiyou_page .map .google_map {
         opacity: 1;
         width: 736px;
         height: 501px;
         background-color: rgba(0, 0, 0, 0.02);
         margin: 0 auto; }
+        @media only screen and (max-width: 960px) {
+          .main-content .naiyou_page .map .google_map {
+            opacity: 1;
+            width: 100%; } }
+        @media only screen and (max-width: 480px) {
+          .main-content .naiyou_page .map .google_map {
+            opacity: 1;
+            width: 100%;
+            height: 227px; } }
 
 .vitual {
   position: relative;

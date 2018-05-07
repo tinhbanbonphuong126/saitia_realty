@@ -9,6 +9,10 @@
     margin: 0 auto;
     text-align: center;
 
+    @include tiny-screen() {
+      width: 100%;
+    }
+
     &:after {
       content: '';
       display: block;

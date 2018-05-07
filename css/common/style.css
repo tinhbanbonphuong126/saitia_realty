@@ -3,7 +3,7 @@ html {
   font-size: 16px; }
 
 body {
-  font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif; }
+  font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
 
 @media only screen and (min-width: 1000px) {
   .container {
@@ -191,6 +191,10 @@ button {
     opacity: 1;
     margin-top: 49px;
     margin-bottom: 15px; }
+    @media only screen and (max-width: 480px) {
+      * .nav_header_mb .bound_img {
+        opacity: 1;
+        margin-top: 3px; } }
     * .nav_header_mb .bound_img img {
       opacity: 1;
       max-width: 100%; }
@@ -247,7 +251,7 @@ button {
         display: block;
         transition: .3s background-color; }
         * .pc_nav .nav_pos.right_nav .nav_pure_css a .upper_link {
-          font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+          font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
           font-size: 15px;
           letter-spacing: 0px;
           color: #5A5858;
@@ -306,7 +310,7 @@ button {
     opacity: 1;
     text-align: center;
     height: 38px;
-    background-image: url("../../../img/common/banner_slash.png");
+    background-image: url("../../img/common/banner_slash.png");
     background-repeat: repeat-x;
     padding-top: 15px; }
     * .footer .banner_slash:before, * .footer .banner_slash:after {
@@ -328,10 +332,14 @@ button {
           * .footer .banner_slash .bounce_link .li_link {
             padding-left: 11px;
             padding-right: 11px; } }
+        @media only screen and (max-width: 320px) {
+          * .footer .banner_slash .bounce_link .li_link {
+            padding-left: 7px;
+            padding-right: 7px; } }
         * .footer .banner_slash .bounce_link .li_link:first-child {
           border-left: 1px solid #3F3B3A; }
         * .footer .banner_slash .bounce_link .li_link .anchor_link {
-          font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+          font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
           font-size: 12px;
           color: #3F3B3A;
           color: #3f3b3a; }
@@ -383,7 +391,7 @@ button {
               clear: both; }
             * .footer .footer_below .bounce_content .elm_cel.name_kaisha .tel_time::before {
               content: '';
-              background-image: url("../../../img/common/wowow_tel.png");
+              background-image: url("../../img/common/wowow_tel.png");
               width: 29px;
               height: 17px;
               position: absolute; }
@@ -417,7 +425,7 @@ button {
           opacity: 1;
           margin-top: 8px; }
           * .footer .footer_below .bounce_content .elm_cel.info_kaisha * {
-            font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif; }
+            font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
           @media only screen and (max-width: 960px) {
             * .footer .footer_below .bounce_content .elm_cel.info_kaisha {
               opacity: 1;
@@ -436,7 +444,7 @@ button {
               clear: both; }
             * .footer .footer_below .bounce_content .elm_cel.info_kaisha .tel_time::before {
               content: '';
-              background-image: url("../../../img/common/wowow_tel.png");
+              background-image: url("../../img/common/wowow_tel.png");
               width: 29px;
               height: 17px;
               position: absolute; }
@@ -473,6 +481,10 @@ button {
               color: #231815;
               color: #231815;
               font-family: 小塚ゴシック Pr6N; }
+              @media only screen and (max-width: 320px) {
+                * .footer .footer_below .bounce_content .elm_cel.info_kaisha .address p {
+                  line-height: 17px;
+                  width: 100%; } }
         * .footer .footer_below .bounce_content .elm_cel.image_kaisha {
           opacity: 1;
           float: right; }
@@ -496,7 +508,7 @@ button {
                 width: 100%; } }
           * .footer .footer_below .bounce_content .elm_cel.image_kaisha .copy_right {
             margin-top: 22px;
-            font-family: " ヒラギノ角ゴ Pro W3 ", " Hiragino Kaku Gothic Pro ", Osaka, " メイリオ ", Meiryo, " ＭＳ Ｐゴシック ", " MS PGothic ", sans-serif;
+            font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
             font-size: 10px;
             color: #727171;
             color: #727171;
@@ -505,6 +517,9 @@ button {
               * .footer .footer_below .bounce_content .elm_cel.image_kaisha .copy_right {
                 float: left;
                 font-size: 13px; } }
+            @media only screen and (max-width: 320px) {
+              * .footer .footer_below .bounce_content .elm_cel.image_kaisha .copy_right {
+                text-align: left; } }
 
 .header {
   opacity: 1; }

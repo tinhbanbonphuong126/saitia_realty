@@ -5,18 +5,20 @@
 @import "../compass/helper_class";
 
 //Common global style
-@include title_circle();
-@include cpn_title();
-@include cpn_cell_li();
+* {
+  @include cpn_header_banner_gazou();
+  @include title_circle();
+  @include cpn_title();
+  @include cpn_cell_li();
+}
 
 .main-content {
   opacity: 1;
 
-  .top_banner {
+  .top_banner_gazou {
     opacity: 1;
 
-    height: 200px;
-    background-color: gray;
+
 
   }
   .naiyou_page {

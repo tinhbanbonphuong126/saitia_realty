@@ -1,0 +1,65 @@
+@mixin cpn_header_banner_gazou() {
+  .cpn_header_banner_gazou {
+    opacity: 1;
+    height: 512px;
+    width: 100%;
+    background: url("../../img/common/banner_gazou.png") center;
+    background-size: cover;
+    position: relative;
+
+    .text_float {
+      opacity: 1;
+      position: absolute;
+      top: 39px;
+      right: 255px;
+
+      @include LCD1600() {
+        right: 155px;
+      }
+      @include ipad-pro-screen() {
+        opacity: 1;
+        right: 100px;
+      }
+
+      @include big-screen() {
+        opacity: 1;
+        right: 15px;
+        top: 15px;
+
+      }
+      @include large-screen() {
+        width: 472px;
+        text-align: justify;
+      }
+
+      @include small-screen() {
+        opacity: 1;
+        left: 0;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+
+      }
+      .p_text {
+        opacity: 1;
+        font-family: $font-family-jp;
+        font-size: 25px;
+        color: #438BCB;
+        color: rgb(67, 139, 203);
+
+        @include small-screen() {
+          opacity: 1;
+          font-size: 23px;
+        }
+
+        .break_magic {
+          opacity: 1;
+
+          @include large-screen() {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

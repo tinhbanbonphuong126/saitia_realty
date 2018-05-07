@@ -194,7 +194,7 @@ button {
     @media only screen and (max-width: 480px) {
       * .nav_header_mb .bound_img {
         opacity: 1;
-        margin-top: 3px; } }
+        margin-top: 23px; } }
     * .nav_header_mb .bound_img img {
       opacity: 1;
       max-width: 100%; }
@@ -525,7 +525,7 @@ button {
   opacity: 1; }
   .header .pc_navigation {
     opacity: 1;
-    height: 90px;
+    height: 75px;
     margin-top: 20px; }
     .header .pc_navigation:before, .header .pc_navigation:after {
       content: "";

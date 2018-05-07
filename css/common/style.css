@@ -475,14 +475,14 @@ button {
           * .footer .footer_below .bounce_content .elm_cel.info_kaisha .address {
             opacity: 1;
             margin-top: 12px; }
-            * .footer .footer_below .bounce_content .elm_cel.info_kaisha .address p {
+            * .footer .footer_below .bounce_content .elm_cel.info_kaisha .address p, * .footer .footer_below .bounce_content .elm_cel.info_kaisha .address a {
               font-size: 10px;
               line-height: 10px;
               color: #231815;
               color: #231815;
               font-family: 小塚ゴシック Pr6N; }
               @media only screen and (max-width: 320px) {
-                * .footer .footer_below .bounce_content .elm_cel.info_kaisha .address p {
+                * .footer .footer_below .bounce_content .elm_cel.info_kaisha .address p, * .footer .footer_below .bounce_content .elm_cel.info_kaisha .address a {
                   line-height: 17px;
                   width: 100%; } }
         * .footer .footer_below .bounce_content .elm_cel.image_kaisha {

@@ -173,7 +173,7 @@ button {
     height: 55px;
     background-color: #231815; }
     * .fat-nav .top_nav_mb::after {
-      content: url("../../../img/common/vertical_slash_mb.png");
+      content: url("../../img/common/vertical_slash_mb.png");
       position: absolute;
       right: 57px; }
     * .fat-nav .top_nav_mb img {

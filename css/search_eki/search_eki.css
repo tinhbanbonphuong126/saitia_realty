@@ -31,7 +31,7 @@
     position: absolute;
     right: 0;
     top: 31px;
-    content: url("../../../img/about-us/arrow_left.png");
+    content: url("../../img/about-us/arrow_left.png");
     clear: both; }
   .cell_li .label_rui {
     opacity: 1;

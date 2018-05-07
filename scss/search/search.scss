@@ -190,6 +190,10 @@
     padding-left: 110px;
   }
 
+  @include iphone5s-landscape-screen() {
+    padding-left: 50px;
+  }
+
   @include small-screen() {
     padding-left: 0px;
   }

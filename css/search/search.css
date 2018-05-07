@@ -280,6 +280,9 @@
   @media only screen and (max-width: 767px) {
     .navigation {
       padding-left: 110px; } }
+  @media only screen and (max-width: 570px) {
+    .navigation {
+      padding-left: 50px; } }
   @media only screen and (max-width: 480px) {
     .navigation {
       padding-left: 0px; } }

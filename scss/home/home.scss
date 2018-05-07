@@ -73,6 +73,20 @@
 
       }
 
+      @include small-screen() {
+        opacity: 1;
+        width: 326px;
+        height: 240px;
+
+      }
+
+      @include tiny-screen() {
+        opacity: 1;
+        width: 315px;
+        height: 240px;
+        left: 6px;
+      }
+
       .left_eye, .right_eye {
         position: absolute;
         bottom: 133px;
@@ -85,15 +99,30 @@
 
         @include medium-screen() {
           opacity: 1;
+          zoom: 39%;
+          bottom: 149px;
+        }
 
+        @include small-screen() {
+          opacity: 1;
+          zoom: 29%;
+          bottom: 180px;
         }
       }
       .left_eye {
         left: 296px;
+
+        @include tiny-screen() {
+          left: 289px;
+        }
       }
 
       .right_eye {
         right: 329px;
+
+        @include tiny-screen() {
+          right: 314px;
+        }
       }
     }
 

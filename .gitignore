@@ -62,13 +62,8 @@ typings/
 *.rar
 *.zip
 unzipper-master
+backup
 
 
-
-#Ignore all css file
-css/
-
-#Ignore all generated html file
-*.html
 
 

@@ -128,14 +128,14 @@
   }
   .fat-nav li a {
     text-decoration: none;
-    font-family : KozGoPr6N Medium-83pv-RKSJ-H;
+    font-family : $font-family-jp;
     font-size : 15px;
     letter-spacing : 1.5px;
     color : #FFFFFF;
     color : rgb(255, 255, 255);
 
     span {
-      font-family : KozGoPr6N Light-83pv-RKSJ-H;
+      font-family : $font-family-jp;
       font-size : 12px;
       letter-spacing : 2.4px;
       color : #FFFFFF;

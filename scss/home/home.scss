@@ -126,6 +126,39 @@
       }
     }
 
+    .bound_text_face {
+      position: relative;
+
+      .text_face {
+        opacity: 1;
+        position: absolute;
+        top: 46px;
+        right: 82px;
+
+        @include large-screen() {
+          opacity: 1;
+          right: 15px;
+        }
+
+        @include xs-screen() {
+          opacity: 1;
+          top: 17px;
+        }
+
+        p {
+          font-family: KozGoPr6N Bold-83pv-RKSJ-H;
+          font-size: 29px;
+          line-height: 33.2px;
+          color: #231815;
+          color: rgb(35, 24, 21);
+
+          @include small-screen() {
+            opacity: 1;
+            font-size: 23px;
+          }
+        }
+      }
+    }
   }
   .naiyou_page {
     opacity: 1;

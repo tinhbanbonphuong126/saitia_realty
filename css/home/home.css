@@ -137,6 +137,31 @@
         @media only screen and (max-width: 320px) {
           .main-content .top_banner .bound_face .right_eye {
             right: 314px; } }
+    .main-content .top_banner .bound_text_face {
+      position: relative; }
+      .main-content .top_banner .bound_text_face .text_face {
+        opacity: 1;
+        position: absolute;
+        top: 46px;
+        right: 82px; }
+        @media only screen and (max-width: 960px) {
+          .main-content .top_banner .bound_text_face .text_face {
+            opacity: 1;
+            right: 15px; } }
+        @media only screen and (max-width: 767px) {
+          .main-content .top_banner .bound_text_face .text_face {
+            opacity: 1;
+            top: 17px; } }
+        .main-content .top_banner .bound_text_face .text_face p {
+          font-family: KozGoPr6N Bold-83pv-RKSJ-H;
+          font-size: 29px;
+          line-height: 33.2px;
+          color: #231815;
+          color: #231815; }
+          @media only screen and (max-width: 480px) {
+            .main-content .top_banner .bound_text_face .text_face p {
+              opacity: 1;
+              font-size: 23px; } }
   .main-content .naiyou_page {
     opacity: 1; }
     .main-content .naiyou_page .kittsu {

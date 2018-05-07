@@ -31,7 +31,8 @@ var DESTINATION_HTML = './';
 // Compile Sass files into css
 gulp.task('scss', ['scss:compile']);
 // Decode
-gulp.task('scss:decode', ['scss:lib', 'scss:lib_js', 'html:partial', 'scss:recompile']);
+gulp.task('scss:decode', ['html:partial', 'scss:recompile']);
+gulp.task('scss:decode_lib', ['scss:lib', 'scss:lib_js', 'html:partial', 'scss:recompile']);
 
 gulp.task('scss:compile', function () {
     var processors = [

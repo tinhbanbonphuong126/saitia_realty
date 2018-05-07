@@ -42,7 +42,8 @@
     clear: both; }
     @media only screen and (max-width: 480px) {
       .cell_li:after {
-        top: 22px; } }
+        top: 52px;
+        zoom: 55%; } }
     @media only screen and (max-width: 320px) {
       .cell_li:after {
         display: none; } }
@@ -59,10 +60,12 @@
     line-height: 48px;
     text-align: center;
     margin-top: 22px; }
+    .cell_li .label_rui.gray_item {
+      background-color: #9FA0A0; }
     @media only screen and (max-width: 480px) {
       .cell_li .label_rui {
         opacity: 1;
-        font-size: 14px;
+        font-size: 12px;
         width: 48px;
         line-height: 30px;
         height: 30px; } }
@@ -94,6 +97,12 @@
   color: #FFFFFF;
   color: white;
   text-align: center; }
+  @media only screen and (max-width: 480px) {
+    .cpn_green_title {
+      font-size: 17px; } }
+  @media only screen and (max-width: 320px) {
+    .cpn_green_title {
+      font-size: 14px; } }
 
 .main-content {
   opacity: 1; }

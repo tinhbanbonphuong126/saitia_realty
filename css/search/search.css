@@ -1,5 +1,56 @@
 @charset "UTF-8";
-.cpn_title {
+* .cpn_header_banner_gazou {
+  opacity: 1;
+  height: 512px;
+  width: 100%;
+  background: url("../../img/common/banner_gazou.png") center;
+  background-size: cover;
+  position: relative; }
+  * .cpn_header_banner_gazou .text_float {
+    opacity: 1;
+    position: absolute;
+    top: 39px;
+    right: 255px; }
+    @media only screen and (max-width: 1600px) {
+      * .cpn_header_banner_gazou .text_float {
+        right: 155px; } }
+    @media only screen and (max-width: 1400px) {
+      * .cpn_header_banner_gazou .text_float {
+        opacity: 1;
+        right: 100px; } }
+    @media only screen and (max-width: 1024px) {
+      * .cpn_header_banner_gazou .text_float {
+        opacity: 1;
+        right: 15px;
+        top: 15px; } }
+    @media only screen and (max-width: 960px) {
+      * .cpn_header_banner_gazou .text_float {
+        width: 472px;
+        text-align: justify; } }
+    @media only screen and (max-width: 480px) {
+      * .cpn_header_banner_gazou .text_float {
+        opacity: 1;
+        left: 0;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px; } }
+    * .cpn_header_banner_gazou .text_float .p_text {
+      opacity: 1;
+      font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+      font-size: 25px;
+      color: #438BCB;
+      color: #438bcb; }
+      @media only screen and (max-width: 480px) {
+        * .cpn_header_banner_gazou .text_float .p_text {
+          opacity: 1;
+          font-size: 23px; } }
+      * .cpn_header_banner_gazou .text_float .p_text .break_magic {
+        opacity: 1; }
+        @media only screen and (max-width: 960px) {
+          * .cpn_header_banner_gazou .text_float .p_text .break_magic {
+            display: none; } }
+
+* .cpn_title {
   opacity: 1;
   font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 25px;
@@ -9,11 +60,11 @@
   margin: 0 auto;
   text-align: center; }
   @media only screen and (max-width: 480px) {
-    .cpn_title {
+    * .cpn_title {
       opacity: 1;
       width: 210px;
       font-size: 20px; } }
-  .cpn_title:after {
+  * .cpn_title:after {
     content: '';
     display: block;
     clear: both;
@@ -21,32 +72,33 @@
     background-color: #CACACB;
     margin-top: 12px; }
 
-.cell_li {
+* .cell_li {
   opacity: 1;
   height: 95px;
   border-bottom: 1px solid #B5B6B6;
   padding-left: 3px;
   position: relative; }
   @media only screen and (max-width: 480px) {
-    .cell_li {
+    * .cell_li {
       opacity: 1;
       height: 75px;
       padding-left: 0px; } }
-  .cell_li:first-child {
+  * .cell_li:first-child {
     border-top: 1px solid #B5B6B6; }
-  .cell_li:after {
+  * .cell_li:after {
     position: absolute;
     right: 0;
     top: 31px;
     content: url("../../img/about-us/arrow_left.png");
     clear: both; }
     @media only screen and (max-width: 480px) {
-      .cell_li:after {
-        top: 22px; } }
+      * .cell_li:after {
+        top: 52px;
+        zoom: 55%; } }
     @media only screen and (max-width: 320px) {
-      .cell_li:after {
+      * .cell_li:after {
         display: none; } }
-  .cell_li .label_rui {
+  * .cell_li .label_rui {
     opacity: 1;
     width: 100px;
     height: 48px;
@@ -59,32 +111,34 @@
     line-height: 48px;
     text-align: center;
     margin-top: 22px; }
+    * .cell_li .label_rui.gray_item {
+      background-color: #9FA0A0; }
     @media only screen and (max-width: 480px) {
-      .cell_li .label_rui {
+      * .cell_li .label_rui {
         opacity: 1;
-        font-size: 14px;
+        font-size: 12px;
         width: 48px;
         line-height: 30px;
         height: 30px; } }
-  .cell_li .description_rui {
+  * .cell_li .description_rui {
     display: inline-block;
     margin-left: 15px; }
     @media only screen and (max-width: 480px) {
-      .cell_li .description_rui {
+      * .cell_li .description_rui {
         margin-left: 0px; } }
-    .cell_li .description_rui a {
+    * .cell_li .description_rui a {
       text-underline: none;
       font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
       font-size: 21px;
       color: #231815;
       color: #231815; }
-      .cell_li .description_rui a:hover, .cell_li .description_rui a:visited, .cell_li .description_rui a:link, .cell_li .description_rui a:active {
+      * .cell_li .description_rui a:hover, * .cell_li .description_rui a:visited, * .cell_li .description_rui a:link, * .cell_li .description_rui a:active {
         text-decoration: none; }
       @media only screen and (max-width: 480px) {
-        .cell_li .description_rui a {
+        * .cell_li .description_rui a {
           font-size: 15px; } }
 
-.cpn_green_title {
+* .cpn_green_title {
   width: 100%;
   background-color: #ABCD03;
   height: 46px;
@@ -94,17 +148,29 @@
   color: #FFFFFF;
   color: white;
   text-align: center; }
+  @media only screen and (max-width: 480px) {
+    * .cpn_green_title {
+      font-size: 17px; } }
+  @media only screen and (max-width: 320px) {
+    * .cpn_green_title {
+      font-size: 14px; } }
 
 .main-content {
   opacity: 1; }
-  .main-content .top_banner {
-    opacity: 1;
-    height: 200px;
-    background-color: gray; }
+  .main-content .top_banner_gazou {
+    opacity: 1; }
   .main-content .naiyou_page {
     opacity: 1; }
     .main-content .naiyou_page .bunjirokara {
       opacity: 1; }
+      @media only screen and (max-width: 767px) {
+        .main-content .naiyou_page .bunjirokara {
+          padding-left: 18px;
+          padding-right: 18px; } }
+      @media only screen and (max-width: 480px) {
+        .main-content .naiyou_page .bunjirokara {
+          padding-left: 0px;
+          padding-right: 0px; } }
       .main-content .naiyou_page .bunjirokara .title {
         opacity: 1;
         margin-top: 85px; }
@@ -114,15 +180,33 @@
       .main-content .naiyou_page .bunjirokara .bounce_navigation {
         margin-top: 76px;
         margin-bottom: 207px; }
+        @media only screen and (max-width: 767px) {
+          .main-content .naiyou_page .bunjirokara .bounce_navigation {
+            margin-top: 38px; } }
+        .main-content .naiyou_page .bunjirokara .bounce_navigation .device_union {
+          opacity: 1; }
+          @media only screen and (max-width: 767px) {
+            .main-content .naiyou_page .bunjirokara .bounce_navigation .device_union {
+              width: 100%; } }
       .main-content .naiyou_page .bunjirokara .bounce_buirochi {
         opacity: 1;
         position: relative;
         margin-bottom: 200px; }
+        @media only screen and (max-width: 480px) {
+          .main-content .naiyou_page .bunjirokara .bounce_buirochi {
+            margin-bottom: 100px; } }
         .main-content .naiyou_page .bunjirokara .bounce_buirochi::after {
           position: absolute;
           content: url("../../img/search/akkushuu.png");
           top: -165px;
           right: -16px; }
+          @media only screen and (max-width: 767px) {
+            .main-content .naiyou_page .bunjirokara .bounce_buirochi::after {
+              right: 70px;
+              content: url("../../img/search/mb_akkushuu.png"); } }
+          @media only screen and (max-width: 480px) {
+            .main-content .naiyou_page .bunjirokara .bounce_buirochi::after {
+              right: 0px; } }
         .main-content .naiyou_page .bunjirokara .bounce_buirochi .bound_ul {
           opacity: 1; }
 
@@ -182,6 +266,9 @@
 .navigation ul ul {
   top: -1px;
   left: 99%; }
+  @media only screen and (max-width: 767px) {
+    .navigation ul ul {
+      left: 100%; } }
 
 .navigation ul li {
   float: none; }
@@ -190,6 +277,12 @@
   background: transparent;
   font-family: 'roboto', Tahoma, Arial, sans-serif;
   zoom: 1; }
+  @media only screen and (max-width: 767px) {
+    .navigation {
+      padding-left: 110px; } }
+  @media only screen and (max-width: 480px) {
+    .navigation {
+      padding-left: 0px; } }
 
 .navigation:before {
   content: '';
@@ -207,9 +300,18 @@
   text-transform: uppercase;
   padding-left: 20px;
   line-height: 38px; }
+  @media only screen and (max-width: 570px) {
+    .navigation a {
+      padding-left: 10px; } }
 
 .navigation > ul {
   width: 161px; }
+  @media only screen and (max-width: 767px) {
+    .navigation > ul {
+      width: 161px; } }
+  @media only screen and (max-width: 570px) {
+    .navigation > ul {
+      width: 119px; } }
 
 .navigation > ul > li > a {
   font-family: 小塚ゴシック Pr6N;
@@ -232,6 +334,12 @@
   color: #231815;
   color: #231815;
   border: 1px solid #9FA0A0; }
+  .navigation > ul > li > ul > li > a.nagai {
+    opacity: 1;
+    line-height: 22px; }
+    @media only screen and (max-width: 767px) {
+      .navigation > ul > li > ul > li > a.nagai {
+        line-height: 38px; } }
 
 .navigation > ul > li > ul > li:first-child > a {
   background-color: #ffffff !important;
@@ -279,6 +387,16 @@
   border-bottom: 1px solid #0F8A5F;
   width: 298px;
   border: none; }
+  @media only screen and (max-width: 960px) {
+    .navigation ul ul li {
+      opacity: 1;
+      width: 185px; } }
+  @media only screen and (max-width: 767px) {
+    .navigation ul ul li {
+      width: 300px; } }
+  @media only screen and (max-width: 480px) {
+    .navigation ul ul li {
+      width: calc(100vw - 119px - 30px); } }
 
 .navigation ul ul li:hover > a {
   background: #4eb1ff;
@@ -326,279 +444,8 @@
   -moz-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px; }
 
-.vitual {
-  position: relative;
-  min-height: 1px;
-  align-content: initial;
-  align-items: initial;
-  align-self: initial;
-  all: initial;
-  animation: initial;
-  animation-delay: initial;
-  animation-direction: initial;
-  animation-duration: initial;
-  animation-fill-mode: initial;
-  animation-iteration-count: initial;
-  animation-name: initial;
-  animation-play-state: initial;
-  animation-timing-function: initial;
-  backface-visibility: initial;
-  background: initial;
-  background-attachment: initial;
-  background-blend-mode: initial;
-  background-clip: initial;
-  background-color: initial;
-  background-image: initial;
-  background-origin: initial;
-  background-position: initial;
-  background-repeat: initial;
-  background-size: initial;
-  border: initial;
-  border-bottom: initial;
-  border-bottom-color: initial;
-  border-bottom-left-radius: initial;
-  border-bottom-right-radius: initial;
-  border-bottom-style: initial;
-  border-bottom-width: initial;
-  border-collapse: initial;
-  border-color: initial;
-  border-image: initial;
-  border-image-outset: initial;
-  border-image-repeat: initial;
-  border-image-slice: initial;
-  border-image-source: initial;
-  border-image-width: initial;
-  border-left: initial;
-  border-left-color: initial;
-  border-left-style: initial;
-  border-left-width: initial;
-  border-radius: initial;
-  border-right: initial;
-  border-right-color: initial;
-  border-right-style: initial;
-  border-right-width: initial;
-  border-spacing: initial;
-  border-style: initial;
-  border-top: initial;
-  border-top-color: initial;
-  border-top-left-radius: initial;
-  border-top-right-radius: initial;
-  border-top-style: initial;
-  border-top-width: initial;
-  border-width: initial;
-  bottom: initial;
-  box-shadow: initial;
-  box-sizing: initial;
-  caption-side: initial;
-  clear: initial;
-  clip: initial;
-  color: initial;
-  column-count: initial;
-  column-fill: initial;
-  column-gap: initial;
-  column-rule: initial;
-  column-rule-color: initial;
-  column-rule-style: initial;
-  column-rule-width: initial;
-  column-span: initial;
-  column-width: initial;
-  columns: initial;
-  content: initial;
-  counter-increment: initial;
-  counter-reset: initial;
-  cursor: initial;
-  direction: initial;
-  display: initial;
-  empty-cells: initial;
-  filter: initial;
-  flex: initial;
-  flex-basis: initial;
-  flex-direction: initial;
-  flex-flow: initial;
-  flex-grow: initial;
-  flex-shrink: initial;
-  flex-wrap: initial;
-  float: initial;
-  font: initial;
-  font-family: initial;
-  font-size: initial;
-  font-size-adjust: initial;
-  font-stretch: initial;
-  font-style: initial;
-  font-variant: initial;
-  font-weight: initial;
-  hanging-punctuation: initial;
-  height: initial;
-  justify-content: initial;
-  left: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  list-style: initial;
-  list-style-image: initial;
-  list-style-position: initial;
-  list-style-type: initial;
-  margin: initial;
-  margin-bottom: initial;
-  margin-left: initial;
-  margin-right: initial;
-  margin-top: initial;
-  max-height: initial;
-  max-width: initial;
-  min-height: initial;
-  min-width: initial;
-  nav-down: initial;
-  nav-index: initial;
-  nav-left: initial;
-  nav-right: initial;
-  nav-up: initial;
-  opacity: initial;
-  order: initial;
-  outline: initial;
-  outline-color: initial;
-  outline-offset: initial;
-  outline-style: initial;
-  outline-width: initial;
-  overflow: initial;
-  overflow-x: initial;
-  overflow-y: initial;
-  padding: initial;
-  padding-bottom: initial;
-  padding-left: initial;
-  padding-right: initial;
-  padding-top: initial;
-  page-break-after: initial;
-  page-break-before: initial;
-  page-break-inside: initial;
-  perspective: initial;
-  perspective-origin: initial;
-  position: initial;
-  quotes: initial;
-  resize: initial;
-  right: initial;
-  tab-size: initial;
-  table-layout: initial;
-  text-align: initial;
-  text-align-last: initial;
-  text-decoration: initial;
-  text-decoration-color: initial;
-  text-decoration-line: initial;
-  text-decoration-style: initial;
-  text-indent: initial;
-  text-justify: initial;
-  text-overflow: initial;
-  text-shadow: initial;
-  text-transform: initial;
-  top: initial;
-  transform: initial;
-  transform-origin: initial;
-  transform-style: initial;
-  transition: initial;
-  transition-delay: initial;
-  transition-duration: initial;
-  transition-property: initial;
-  transition-timing-function: initial;
-  unicode-bidi: initial;
-  user-select: initial;
-  vertical-align: initial;
-  visibility: initial;
-  white-space: initial;
-  width: initial;
-  word-break: initial;
-  word-spacing: initial;
-  word-wrap: initial;
-  z-index: initial; }
-  @media only screen and (max-width: 1200px) {
-    .vitual {
-      opacity: 1; } }
-  @media only screen and (max-width: 1024px) {
-    .vitual {
-      opacity: 1; } }
-  @media only screen and (max-width: 960px) {
-    .vitual {
-      opacity: 1; } }
-  @media only screen and (max-width: 767px) {
-    .vitual {
-      opacity: 1; } }
-  @media only screen and (max-width: 680px) {
-    .vitual {
-      opacity: 1; } }
-  @media only screen and (max-width: 480px) {
-    .vitual {
-      opacity: 1; } }
-  @media only screen and (max-width: 320px) {
-    .vitual {
-      opacity: 1; } }
-  .vitual:active {
-    opacity: 1; }
-  .vitual:checked {
-    opacity: 1; }
-  .vitual:disabled {
-    opacity: 1; }
-  .vitual:empty {
-    opacity: 1; }
-  .vitual:enabled {
-    opacity: 1; }
-  .vitual:first-child {
-    opacity: 1; }
-  .vitual:first-of-type {
-    opacity: 1; }
-  .vitual:focus {
-    opacity: 1; }
-  .vitual:hover {
-    opacity: 1; }
-  .vitual:in-range {
-    opacity: 1; }
-  .vitual:invalid {
-    opacity: 1; }
-  .vitual:lang(language) {
-    opacity: 1; }
-  .vitual:last-child {
-    opacity: 1; }
-  .vitual:last-of-type {
-    opacity: 1; }
-  .vitual:link {
-    opacity: 1; }
-  .vitual:not(selector) {
-    opacity: 1; }
-  .vitual:nth-child(n) {
-    opacity: 1; }
-  .vitual:nth-last-child(n) {
-    opacity: 1; }
-  .vitual:nth-last-of-type(n) {
-    opacity: 1; }
-  .vitual:nth-of-type(n) {
-    opacity: 1; }
-  .vitual:only-of-type {
-    opacity: 1; }
-  .vitual:only-child {
-    opacity: 1; }
-  .vitual:optional {
-    opacity: 1; }
-  .vitual:out-of-range {
-    opacity: 1; }
-  .vitual:read-only {
-    opacity: 1; }
-  .vitual:read-write {
-    opacity: 1; }
-  .vitual:required {
-    opacity: 1; }
-  .vitual:root {
-    opacity: 1; }
-  .vitual:target {
-    opacity: 1; }
-  .vitual:valid {
-    opacity: 1; }
-  .vitual:visited {
-    opacity: 1; }
-  .vitual::after {
-    opacity: 1; }
-  .vitual::before {
-    opacity: 1; }
-  .vitual::first-letter {
-    opacity: 1; }
-  .vitual::first-line {
-    opacity: 1; }
-  .vitual::selection {
-    opacity: 1; }
+@media only screen and (max-width: 767px) {
+  .device_union:first-of-type .navigation ul li:last-child {
+    border-bottom: none; } }
 
 /*# sourceMappingURL=search.css.map */

@@ -24,7 +24,8 @@
       clear: both;
 
       @include small-screen() {
-        top: 22px;
+        top: 52px;
+        zoom: 55%;
       }
       
       @include tiny-screen() {
@@ -46,9 +47,13 @@
       text-align: center;
       margin-top: 22px;
 
+      &.gray_item {
+        background-color: #9FA0A0;
+      }
+
       @include small-screen() {
         opacity: 1;
-        font-size: 14px;
+        font-size: 12px;
         width: 48px;
         @include bl_height(30);
       }

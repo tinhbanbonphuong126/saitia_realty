@@ -5,25 +5,35 @@
 @import "../compass/helper_class";
 
 //Common global style
-@include cpn_title();
-@include cpn_cell_li();
-@include cpn_green_title();
+* {
+  @include cpn_header_banner_gazou();
+  @include cpn_title();
+  @include cpn_cell_li();
+  @include cpn_green_title();
+}
 
 .main-content {
   opacity: 1;
 
-  .top_banner {
+  .top_banner_gazou {
     opacity: 1;
 
-    height: 200px;
-    background-color: gray;
-
   }
+
   .naiyou_page {
     opacity: 1;
 
     .bunjirokara {
       opacity: 1;
+
+      @include xs-screen() {
+        @include paddingLeftRight(18);
+
+      }
+
+      @include small-screen() {
+        @include paddingLeftRight(0);
+      }
 
       .title {
         opacity: 1;
@@ -37,17 +47,45 @@
       .bounce_navigation {
         margin-top: 76px;
         margin-bottom: 207px;
+
+        @include xs-screen() {
+          margin-top: 38px;
+        }
+
+
+        .device_union {
+          opacity: 1;
+
+          @include xs-screen() {
+            width: 100%;
+          }
+
+        }
       }
 
       .bounce_buirochi {
         opacity: 1;
         position: relative;
         margin-bottom: 200px;
+
+        @include small-screen() {
+          margin-bottom: 100px;
+        }
+
         &::after {
           position: absolute;
           content: url("../../img/search/akkushuu.png");
           top: -165px;
           right: -16px;
+
+          @include xs-screen() {
+            right: 70px;
+            content: url("../../img/search/mb_akkushuu.png");
+          }
+
+          @include small-screen() {
+            right: 0px;
+          }
         }
 
         .bound_ul {
@@ -128,6 +166,10 @@
 .navigation ul ul {
   top: -1px;
   left: 99%;
+
+  @include xs-screen() {
+    left: 100%;
+  }
 }
 
 .navigation ul li {
@@ -143,6 +185,14 @@
   background: transparent;
   font-family: 'roboto', Tahoma, Arial, sans-serif;
   zoom: 1;
+
+  @include xs-screen() {
+    padding-left: 110px;
+  }
+
+  @include small-screen() {
+    padding-left: 0px;
+  }
 }
 
 .navigation:before {
@@ -164,10 +214,22 @@
 
   padding-left: 20px;
   line-height: 38px;
+
+  @include iphone5s-landscape-screen() {
+    padding-left: 10px;
+  }
 }
 
 .navigation > ul {
   width: 161px;
+
+  @include xs-screen() {
+    width: 161px;
+  }
+
+  @include iphone5s-landscape-screen() {
+    width: 119px;
+  }
 }
 
 .navigation ul ul {
@@ -198,6 +260,15 @@
   color : #231815;
   color : rgb(35, 24, 21);
   border: 1px solid #9FA0A0;
+
+  &.nagai {
+    opacity: 1;
+    line-height: 22px;
+
+    @include xs-screen() {
+      line-height: 38px;
+    }
+  }
 }
 .navigation > ul > li > ul > li:first-child > a {
   background-color: #ffffff!important;
@@ -256,6 +327,19 @@
   border-bottom: 1px solid #0F8A5F;
   width: 298px;
   border: none;
+
+  @include large-screen() {
+    opacity: 1;
+    width: 185px;
+  }
+
+  @include xs-screen() {
+    width: 300px;
+  }
+
+  @include small-screen() {
+    width: calc(100vw - 119px - 30px);
+  }
 }
 
 .navigation ul ul li:hover > a {
@@ -315,333 +399,11 @@
   border-radius: 3px 0 0 3px;
 }
 
-//Common component
 
-//Vitural. After complete. Please delete it
-.vitual {
 
-  position: relative;
-  min-height: 1px;
-
-  @include huge-screen() {
-    opacity: 1;
-
+//Media Query specifics
+@include xs-screen() {
+  .device_union:first-of-type .navigation ul li:last-child {
+    border-bottom: none;
   }
-
-  @include big-screen() {
-    opacity: 1;
-
-  }
-
-  @include large-screen() {
-    opacity: 1;
-
-  }
-
-  @include xs-screen() {
-    opacity: 1;
-
-  }
-  @include medium-screen() {
-    opacity: 1;
-
-  }
-  @include small-screen() {
-    opacity: 1;
-
-  }
-  @include tiny-screen() {
-    opacity: 1;
-
-  }
-
-  align-content: initial;
-  align-items: initial;
-  align-self: initial;
-  all: initial;
-  animation: initial;
-  animation-delay: initial;
-  animation-direction: initial;
-  animation-duration: initial;
-  animation-fill-mode: initial;
-  animation-iteration-count: initial;
-  animation-name: initial;
-  animation-play-state: initial;
-  animation-timing-function: initial;
-  backface-visibility: initial;
-  background: initial;
-  background-attachment: initial;
-  background-blend-mode: initial;
-  background-clip: initial;
-  background-color: initial;
-  background-image: initial;
-  background-origin: initial;
-  background-position: initial;
-  background-repeat: initial;
-  background-size: initial;
-  border: initial;
-  border-bottom: initial;
-  border-bottom-color: initial;
-  border-bottom-left-radius: initial;
-  border-bottom-right-radius: initial;
-  border-bottom-style: initial;
-  border-bottom-width: initial;
-  border-collapse: initial;
-  border-color: initial;
-  border-image: initial;
-  border-image-outset: initial;
-  border-image-repeat: initial;
-  border-image-slice: initial;
-  border-image-source: initial;
-  border-image-width: initial;
-  border-left: initial;
-  border-left-color: initial;
-  border-left-style: initial;
-  border-left-width: initial;
-  border-radius: initial;
-  border-right: initial;
-  border-right-color: initial;
-  border-right-style: initial;
-  border-right-width: initial;
-  border-spacing: initial;
-  border-style: initial;
-  border-top: initial;
-  border-top-color: initial;
-  border-top-left-radius: initial;
-  border-top-right-radius: initial;
-  border-top-style: initial;
-  border-top-width: initial;
-  border-width: initial;
-  bottom: initial;
-  box-shadow: initial;
-  box-sizing: initial;
-  caption-side: initial;
-  clear: initial;
-  clip: initial;
-  color: initial;
-  column-count: initial;
-  column-fill: initial;
-  column-gap: initial;
-  column-rule: initial;
-  column-rule-color: initial;
-  column-rule-style: initial;
-  column-rule-width: initial;
-  column-span: initial;
-  column-width: initial;
-  columns: initial;
-  content: initial;
-  counter-increment: initial;
-  counter-reset: initial;
-  cursor: initial;
-  direction: initial;
-  display: initial;
-  empty-cells: initial;
-  filter: initial;
-  flex: initial;
-  flex-basis: initial;
-  flex-direction: initial;
-  flex-flow: initial;
-  flex-grow: initial;
-  flex-shrink: initial;
-  flex-wrap: initial;
-  float: initial;
-  font: initial;
-  font-family: initial;
-  font-size: initial;
-  font-size-adjust: initial;
-  font-stretch: initial;
-  font-style: initial;
-  font-variant: initial;
-  font-weight: initial;
-  hanging-punctuation: initial;
-  height: initial;
-  justify-content: initial;
-  left: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  list-style: initial;
-  list-style-image: initial;
-  list-style-position: initial;
-  list-style-type: initial;
-  margin: initial;
-  margin-bottom: initial;
-  margin-left: initial;
-  margin-right: initial;
-  margin-top: initial;
-  max-height: initial;
-  max-width: initial;
-  min-height: initial;
-  min-width: initial;
-  nav-down: initial;
-  nav-index: initial;
-  nav-left: initial;
-  nav-right: initial;
-  nav-up: initial;
-  opacity: initial;
-  order: initial;
-  outline: initial;
-  outline-color: initial;
-  outline-offset: initial;
-  outline-style: initial;
-  outline-width: initial;
-  overflow: initial;
-  overflow-x: initial;
-  overflow-y: initial;
-  padding: initial;
-  padding-bottom: initial;
-  padding-left: initial;
-  padding-right: initial;
-  padding-top: initial;
-  page-break-after: initial;
-  page-break-before: initial;
-  page-break-inside: initial;
-  perspective: initial;
-  perspective-origin: initial;
-  position: initial;
-  quotes: initial;
-  resize: initial;
-  right: initial;
-  tab-size: initial;
-  table-layout: initial;
-  text-align: initial;
-  text-align-last: initial;
-  text-decoration: initial;
-  text-decoration-color: initial;
-  text-decoration-line: initial;
-  text-decoration-style: initial;
-  text-indent: initial;
-  text-justify: initial;
-  text-overflow: initial;
-  text-shadow: initial;
-  text-transform: initial;
-  top: initial;
-  transform: initial;
-  transform-origin: initial;
-  transform-style: initial;
-  transition: initial;
-  transition-delay: initial;
-  transition-duration: initial;
-  transition-property: initial;
-  transition-timing-function: initial;
-  unicode-bidi: initial;
-  user-select: initial;
-  vertical-align: initial;
-  visibility: initial;
-  white-space: initial;
-  width: initial;
-  word-break: initial;
-  word-spacing: initial;
-  word-wrap: initial;
-  z-index: initial;
-
-  &:active {
-    opacity: 1;
-  }
-  &:checked {
-    opacity: 1;
-  }
-  &:disabled {
-    opacity: 1;
-  }
-  &:empty {
-    opacity: 1;
-  }
-  &:enabled {
-    opacity: 1;
-  }
-  &:first-child {
-    opacity: 1;
-  }
-  &:first-of-type {
-    opacity: 1;
-  }
-  &:focus {
-    opacity: 1;
-  }
-  &:hover {
-    opacity: 1;
-  }
-  &:in-range {
-    opacity: 1;
-  }
-  &:invalid {
-    opacity: 1;
-  }
-  &:lang(language) {
-    opacity: 1;
-  }
-  &:last-child {
-    opacity: 1;
-  }
-  &:last-of-type {
-    opacity: 1;
-  }
-  &:link {
-    opacity: 1;
-  }
-  &:not(selector) {
-    opacity: 1;
-  }
-  &:nth-child(n) {
-    opacity: 1;
-  }
-  &:nth-last-child(n) {
-    opacity: 1;
-  }
-  &:nth-last-of-type(n) {
-    opacity: 1;
-  }
-  &:nth-of-type(n) {
-    opacity: 1;
-  }
-  &:only-of-type {
-    opacity: 1;
-  }
-  &:only-child {
-    opacity: 1;
-  }
-  &:optional {
-    opacity: 1;
-  }
-  &:out-of-range {
-    opacity: 1;
-  }
-  &:read-only {
-    opacity: 1;
-  }
-  &:read-write {
-    opacity: 1;
-  }
-  &:required {
-    opacity: 1;
-  }
-  &:root {
-    opacity: 1;
-  }
-  &:target {
-    opacity: 1;
-  }
-  &:valid {
-    opacity: 1;
-  }
-  &:visited {
-    opacity: 1;
-  }
-  &::after {
-    opacity: 1;
-  }
-  &::before {
-    opacity: 1;
-  }
-  &::first-letter {
-    opacity: 1;
-  }
-  &::first-line {
-    opacity: 1;
-  }
-  &::selection {
-    opacity: 1;
-  }
-
 }
-

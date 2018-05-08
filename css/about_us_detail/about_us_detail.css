@@ -213,9 +213,11 @@
                   font-size: 15px;
                   line-height: 65px;
                   color: #231815;
-                  color: #231815;
-                  display: inline-block;
-                  float: left; }
+                  color: #231815; }
+                  @media only screen and (max-width: 480px) {
+                    .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .kakaku .bounce_kakaku ul li.cell_li_child .before, .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .kakaku .bounce_kakaku ul li.cell_li_child .after {
+                      display: inline-block;
+                      float: left; } }
                 .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .kakaku .bounce_kakaku ul li.cell_li_child .before {
                   opacity: 1;
                   width: 118px;

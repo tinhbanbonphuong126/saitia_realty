@@ -224,8 +224,10 @@
                   color: #231815;
                   color: rgb(35, 24, 21);
 
-                  display: inline-block;
-                  float: left;
+                  @include small-screen() {
+                    display: inline-block;
+                    float: left;
+                  }
                 }
                 .before {
                   opacity: 1;

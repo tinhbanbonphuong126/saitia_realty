@@ -18,3 +18,11 @@
     text-decoration: none;
   }
 }
+
+@mixin blance_middle_lineheight($fontsize, $lineheight) {
+  $fz: unquote($fontsize + 'px');
+  $lh: unquote($lineheight + 'px');
+
+  line-height: unquote($fontsize * 2 + 'px');
+  @include paddingTopBottom(($lineheight - 2*$fontsize) / 2);
+}

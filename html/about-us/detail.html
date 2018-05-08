@@ -1,18 +1,18 @@
 <!doctype html>
 <html lang="ja">
 <head>
-    @@include('./../partial/style.html', {"title": "サティア不動産ホームページ"})
+    @@include('@@webRoot/partial/style.html', {"title": "サティア不動産ホームページ"})
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwlkTA1L6lLnp76nr6LZ22ebIXMXNxxUY&language=ja&region=JP"></script>
-    <link rel="stylesheet" href="/css/about_us_detail/about_us_detail.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="@@webRoot/css/about_us_detail/about_us_detail.css" type="text/css" media="all"/>
     <style tyle="text/css">
 
     </style>
 </head>
 <body>
-@@include('./../partial/header.html')
+@@include('@@webRoot/partial/header.html')
 <div class="main-content">
-    <div class="top_banner">
-        HERE IS TOP BANNER
+    <div class="top_banner_gazou">
+        @@include('@@webRoot/partial/component/cpn_header_banner_gazou.html')
     </div>
 
     <div class="naiyou_page container">
@@ -32,7 +32,7 @@
                     <div class="kugazu">
                         <div class="title_blue">区画図</div>
                         <div class="img_kugazu">
-                            <img src="/img/about-us/kugazu.png" alt="区画図">
+                            <img src="@@webRoot/img/about-us/kugazu.png" alt="区画図">
                         </div>
                     </div>
                     <div class="butsuken">
@@ -138,7 +138,7 @@
                     <div class="map">
                         <div class="title_blue">地図</div>
                         <div class="bounce_map">
-                            <img src="/img/about-us/map.png" alt="Map Detail">
+                            <img src="@@webRoot/img/about-us/map.png" alt="Map Detail">
                         </div>
                     </div>
 
@@ -152,9 +152,9 @@
     </div>
 </div>
 @@include('@@webRoot/partial/cpn_footer.html')
-@@include('./../partial/script.html')
+@@include('@@webRoot/partial/script.html')
 
-<script type="text/javascript" src="/js/about-us/about-us.js"></script>
+<script type="text/javascript" src="@@webRoot/js/about-us/about-us.js"></script>
 <script type="text/javascript">
     <!--Javascript here-->
 </script>

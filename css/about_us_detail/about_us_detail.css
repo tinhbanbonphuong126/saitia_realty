@@ -1,4 +1,55 @@
 @charset "UTF-8";
+* .cpn_header_banner_gazou {
+  opacity: 1;
+  height: 512px;
+  width: 100%;
+  background: url("../../img/common/banner_gazou.png") center;
+  background-size: cover;
+  position: relative; }
+  * .cpn_header_banner_gazou .text_float {
+    opacity: 1;
+    position: absolute;
+    top: 39px;
+    right: 255px; }
+    @media only screen and (max-width: 1600px) {
+      * .cpn_header_banner_gazou .text_float {
+        right: 155px; } }
+    @media only screen and (max-width: 1400px) {
+      * .cpn_header_banner_gazou .text_float {
+        opacity: 1;
+        right: 100px; } }
+    @media only screen and (max-width: 1024px) {
+      * .cpn_header_banner_gazou .text_float {
+        opacity: 1;
+        right: 15px;
+        top: 15px; } }
+    @media only screen and (max-width: 960px) {
+      * .cpn_header_banner_gazou .text_float {
+        width: 472px;
+        text-align: justify; } }
+    @media only screen and (max-width: 480px) {
+      * .cpn_header_banner_gazou .text_float {
+        opacity: 1;
+        left: 0;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px; } }
+    * .cpn_header_banner_gazou .text_float .p_text {
+      opacity: 1;
+      font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+      font-size: 25px;
+      color: #438BCB;
+      color: #438bcb; }
+      @media only screen and (max-width: 480px) {
+        * .cpn_header_banner_gazou .text_float .p_text {
+          opacity: 1;
+          font-size: 23px; } }
+      * .cpn_header_banner_gazou .text_float .p_text .break_magic {
+        opacity: 1; }
+        @media only screen and (max-width: 960px) {
+          * .cpn_header_banner_gazou .text_float .p_text .break_magic {
+            display: none; } }
+
 .main-content {
   opacity: 1; }
   .main-content .top_banner {
@@ -10,12 +61,23 @@
     .main-content .naiyou_page .bound_ul {
       opacity: 1;
       margin-top: 59px; }
+      @media only screen and (max-width: 767px) {
+        .main-content .naiyou_page .bound_ul {
+          padding-left: 15px;
+          padding-right: 15px; } }
+      @media only screen and (max-width: 480px) {
+        .main-content .naiyou_page .bound_ul {
+          padding-left: 0px;
+          padding-right: 0px; } }
       .main-content .naiyou_page .bound_ul .cell_li {
         opacity: 1;
         height: 78px;
         border-bottom: 1px solid #B5B6B6;
         padding-left: 31px;
         position: relative; }
+        @media only screen and (max-width: 480px) {
+          .main-content .naiyou_page .bound_ul .cell_li {
+            padding-left: 0px; } }
         .main-content .naiyou_page .bound_ul .cell_li:first-child {
           border-top: 1px solid #B5B6B6; }
         .main-content .naiyou_page .bound_ul .cell_li .label_rui {
@@ -39,8 +101,22 @@
           display: inline-block;
           margin-left: 30px;
           vertical-align: middle; }
+          @media only screen and (max-width: 570px) {
+            .main-content .naiyou_page .bound_ul .cell_li .description_rui {
+              font-size: 23px; } }
+          @media only screen and (max-width: 480px) {
+            .main-content .naiyou_page .bound_ul .cell_li .description_rui {
+              margin-left: 9px; } }
     .main-content .naiyou_page .bunjochi_detail {
       opacity: 1; }
+      @media only screen and (max-width: 767px) {
+        .main-content .naiyou_page .bunjochi_detail {
+          padding-left: 15px;
+          padding-right: 15px; } }
+      @media only screen and (max-width: 480px) {
+        .main-content .naiyou_page .bunjochi_detail {
+          padding-left: 0px;
+          padding-right: 0px; } }
       .main-content .naiyou_page .bunjochi_detail .detail_li {
         opacity: 1; }
         .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail {
@@ -53,8 +129,13 @@
             .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .kugazu .img_kugazu {
               width: 864px;
               height: 100%;
-              margin-top: 13px;
-              margin: 0 auto; }
+              margin: 0 auto;
+              margin-top: 28px; }
+              @media only screen and (max-width: 960px) {
+                .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .kugazu .img_kugazu {
+                  width: 100%; } }
+              .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .kugazu .img_kugazu img {
+                width: 100%; }
           .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .butsuken {
             opacity: 1; }
             .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .butsuken .title_blue {
@@ -65,6 +146,9 @@
               opacity: 1;
               margin: 0 auto;
               width: 693px; }
+              @media only screen and (max-width: 767px) {
+                .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .butsuken .bounce_butsuken {
+                  width: 100%; } }
               .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .butsuken .bounce_butsuken ul li.cell_li_child {
                 opacity: 1;
                 border-bottom: 1px solid #B5B6B6; }
@@ -82,8 +166,28 @@
                   width: 198px;
                   display: inline-block;
                   padding-left: 24px; }
+                  @media only screen and (max-width: 480px) {
+                    .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .butsuken .bounce_butsuken ul li.cell_li_child .before {
+                      opacity: 1;
+                      width: 138px;
+                      padding-left: 0px;
+                      float: left; } }
                 .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .butsuken .bounce_butsuken ul li.cell_li_child .after {
                   opacity: 1; }
+                  @media only screen and (max-width: 480px) {
+                    .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .butsuken .bounce_butsuken ul li.cell_li_child .after {
+                      width: calc(100% - 138px);
+                      display: inline-block;
+                      float: left;
+                      line-height: 30px;
+                      padding-top: 17.5px;
+                      padding-bottom: 17.5px; } }
+                @media only screen and (max-width: 480px) {
+                  .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .butsuken .bounce_butsuken ul li.cell_li_child:before, .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .butsuken .bounce_butsuken ul li.cell_li_child:after {
+                    content: "";
+                    display: table; }
+                  .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .butsuken .bounce_butsuken ul li.cell_li_child:after {
+                    clear: both; } }
           .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .kakaku {
             opacity: 1; }
             .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .kakaku .title_blue {
@@ -94,6 +198,9 @@
               opacity: 1;
               margin: 0 auto;
               width: 693px; }
+              @media only screen and (max-width: 767px) {
+                .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .kakaku .bounce_kakaku {
+                  width: 100%; } }
               .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .kakaku .bounce_kakaku ul li.cell_li_child {
                 opacity: 1;
                 border-bottom: 1px solid #B5B6B6; }
@@ -106,15 +213,33 @@
                   font-size: 15px;
                   line-height: 65px;
                   color: #231815;
-                  color: #231815; }
+                  color: #231815;
+                  display: inline-block;
+                  float: left; }
                 .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .kakaku .bounce_kakaku ul li.cell_li_child .before {
                   opacity: 1;
                   width: 118px;
                   display: inline-block;
                   padding-left: 24px;
                   font-weight: bold; }
+                  @media only screen and (max-width: 480px) {
+                    .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .kakaku .bounce_kakaku ul li.cell_li_child .before {
+                      width: 98px;
+                      padding-left: 0px; } }
                 .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .kakaku .bounce_kakaku ul li.cell_li_child .after {
                   opacity: 1; }
+                  @media only screen and (max-width: 480px) {
+                    .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .kakaku .bounce_kakaku ul li.cell_li_child .after {
+                      width: calc(100% - 98px);
+                      line-height: 30px;
+                      padding-top: 17.5px;
+                      padding-bottom: 17.5px; } }
+                @media only screen and (max-width: 480px) {
+                  .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .kakaku .bounce_kakaku ul li.cell_li_child:before, .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .kakaku .bounce_kakaku ul li.cell_li_child:after {
+                    content: "";
+                    display: table; }
+                  .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .kakaku .bounce_kakaku ul li.cell_li_child:after {
+                    clear: both; } }
           .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .map {
             opacity: 1; }
             .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .map .title_blue {
@@ -124,8 +249,7 @@
             .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .map .bounce_map {
               opacity: 1; }
               .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .map .bounce_map img {
-                width: 100%;
-                height: 553px; }
+                width: 100%; }
           .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .shiryou_download {
             opacity: 1;
             margin-top: 62px;
@@ -143,6 +267,12 @@
               color: white;
               text-align: center;
               margin: 0 auto; }
+              @media only screen and (max-width: 680px) {
+                .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .shiryou_download .btn_download {
+                  width: 400px; } }
+              @media only screen and (max-width: 480px) {
+                .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .shiryou_download .btn_download {
+                  width: 100%; } }
 
 .title_blue {
   width: 157px;
@@ -155,280 +285,5 @@
   color: white;
   text-align: center;
   margin: 0 auto; }
-
-.vitual {
-  position: relative;
-  min-height: 1px;
-  align-content: initial;
-  align-items: initial;
-  align-self: initial;
-  all: initial;
-  animation: initial;
-  animation-delay: initial;
-  animation-direction: initial;
-  animation-duration: initial;
-  animation-fill-mode: initial;
-  animation-iteration-count: initial;
-  animation-name: initial;
-  animation-play-state: initial;
-  animation-timing-function: initial;
-  backface-visibility: initial;
-  background: initial;
-  background-attachment: initial;
-  background-blend-mode: initial;
-  background-clip: initial;
-  background-color: initial;
-  background-image: initial;
-  background-origin: initial;
-  background-position: initial;
-  background-repeat: initial;
-  background-size: initial;
-  border: initial;
-  border-bottom: initial;
-  border-bottom-color: initial;
-  border-bottom-left-radius: initial;
-  border-bottom-right-radius: initial;
-  border-bottom-style: initial;
-  border-bottom-width: initial;
-  border-collapse: initial;
-  border-color: initial;
-  border-image: initial;
-  border-image-outset: initial;
-  border-image-repeat: initial;
-  border-image-slice: initial;
-  border-image-source: initial;
-  border-image-width: initial;
-  border-left: initial;
-  border-left-color: initial;
-  border-left-style: initial;
-  border-left-width: initial;
-  border-radius: initial;
-  border-right: initial;
-  border-right-color: initial;
-  border-right-style: initial;
-  border-right-width: initial;
-  border-spacing: initial;
-  border-style: initial;
-  border-top: initial;
-  border-top-color: initial;
-  border-top-left-radius: initial;
-  border-top-right-radius: initial;
-  border-top-style: initial;
-  border-top-width: initial;
-  border-width: initial;
-  bottom: initial;
-  box-shadow: initial;
-  box-sizing: initial;
-  caption-side: initial;
-  clear: initial;
-  clip: initial;
-  color: initial;
-  column-count: initial;
-  column-fill: initial;
-  column-gap: initial;
-  column-rule: initial;
-  column-rule-color: initial;
-  column-rule-style: initial;
-  column-rule-width: initial;
-  column-span: initial;
-  column-width: initial;
-  columns: initial;
-  content: initial;
-  counter-increment: initial;
-  counter-reset: initial;
-  cursor: initial;
-  direction: initial;
-  display: initial;
-  empty-cells: initial;
-  filter: initial;
-  flex: initial;
-  flex-basis: initial;
-  flex-direction: initial;
-  flex-flow: initial;
-  flex-grow: initial;
-  flex-shrink: initial;
-  flex-wrap: initial;
-  float: initial;
-  font: initial;
-  font-family: initial;
-  font-size: initial;
-  font-size-adjust: initial;
-  font-stretch: initial;
-  font-style: initial;
-  font-variant: initial;
-  font-weight: initial;
-  hanging-punctuation: initial;
-  height: initial;
-  justify-content: initial;
-  left: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  list-style: initial;
-  list-style-image: initial;
-  list-style-position: initial;
-  list-style-type: initial;
-  margin: initial;
-  margin-bottom: initial;
-  margin-left: initial;
-  margin-right: initial;
-  margin-top: initial;
-  max-height: initial;
-  max-width: initial;
-  min-height: initial;
-  min-width: initial;
-  nav-down: initial;
-  nav-index: initial;
-  nav-left: initial;
-  nav-right: initial;
-  nav-up: initial;
-  opacity: initial;
-  order: initial;
-  outline: initial;
-  outline-color: initial;
-  outline-offset: initial;
-  outline-style: initial;
-  outline-width: initial;
-  overflow: initial;
-  overflow-x: initial;
-  overflow-y: initial;
-  padding: initial;
-  padding-bottom: initial;
-  padding-left: initial;
-  padding-right: initial;
-  padding-top: initial;
-  page-break-after: initial;
-  page-break-before: initial;
-  page-break-inside: initial;
-  perspective: initial;
-  perspective-origin: initial;
-  position: initial;
-  quotes: initial;
-  resize: initial;
-  right: initial;
-  tab-size: initial;
-  table-layout: initial;
-  text-align: initial;
-  text-align-last: initial;
-  text-decoration: initial;
-  text-decoration-color: initial;
-  text-decoration-line: initial;
-  text-decoration-style: initial;
-  text-indent: initial;
-  text-justify: initial;
-  text-overflow: initial;
-  text-shadow: initial;
-  text-transform: initial;
-  top: initial;
-  transform: initial;
-  transform-origin: initial;
-  transform-style: initial;
-  transition: initial;
-  transition-delay: initial;
-  transition-duration: initial;
-  transition-property: initial;
-  transition-timing-function: initial;
-  unicode-bidi: initial;
-  user-select: initial;
-  vertical-align: initial;
-  visibility: initial;
-  white-space: initial;
-  width: initial;
-  word-break: initial;
-  word-spacing: initial;
-  word-wrap: initial;
-  z-index: initial; }
-  @media only screen and (max-width: 1200px) {
-    .vitual {
-      opacity: 1; } }
-  @media only screen and (max-width: 1024px) {
-    .vitual {
-      opacity: 1; } }
-  @media only screen and (max-width: 960px) {
-    .vitual {
-      opacity: 1; } }
-  @media only screen and (max-width: 767px) {
-    .vitual {
-      opacity: 1; } }
-  @media only screen and (max-width: 680px) {
-    .vitual {
-      opacity: 1; } }
-  @media only screen and (max-width: 480px) {
-    .vitual {
-      opacity: 1; } }
-  @media only screen and (max-width: 320px) {
-    .vitual {
-      opacity: 1; } }
-  .vitual:active {
-    opacity: 1; }
-  .vitual:checked {
-    opacity: 1; }
-  .vitual:disabled {
-    opacity: 1; }
-  .vitual:empty {
-    opacity: 1; }
-  .vitual:enabled {
-    opacity: 1; }
-  .vitual:first-child {
-    opacity: 1; }
-  .vitual:first-of-type {
-    opacity: 1; }
-  .vitual:focus {
-    opacity: 1; }
-  .vitual:hover {
-    opacity: 1; }
-  .vitual:in-range {
-    opacity: 1; }
-  .vitual:invalid {
-    opacity: 1; }
-  .vitual:lang(language) {
-    opacity: 1; }
-  .vitual:last-child {
-    opacity: 1; }
-  .vitual:last-of-type {
-    opacity: 1; }
-  .vitual:link {
-    opacity: 1; }
-  .vitual:not(selector) {
-    opacity: 1; }
-  .vitual:nth-child(n) {
-    opacity: 1; }
-  .vitual:nth-last-child(n) {
-    opacity: 1; }
-  .vitual:nth-last-of-type(n) {
-    opacity: 1; }
-  .vitual:nth-of-type(n) {
-    opacity: 1; }
-  .vitual:only-of-type {
-    opacity: 1; }
-  .vitual:only-child {
-    opacity: 1; }
-  .vitual:optional {
-    opacity: 1; }
-  .vitual:out-of-range {
-    opacity: 1; }
-  .vitual:read-only {
-    opacity: 1; }
-  .vitual:read-write {
-    opacity: 1; }
-  .vitual:required {
-    opacity: 1; }
-  .vitual:root {
-    opacity: 1; }
-  .vitual:target {
-    opacity: 1; }
-  .vitual:valid {
-    opacity: 1; }
-  .vitual:visited {
-    opacity: 1; }
-  .vitual::after {
-    opacity: 1; }
-  .vitual::before {
-    opacity: 1; }
-  .vitual::first-letter {
-    opacity: 1; }
-  .vitual::first-line {
-    opacity: 1; }
-  .vitual::selection {
-    opacity: 1; }
 
 /*# sourceMappingURL=about_us_detail.css.map */

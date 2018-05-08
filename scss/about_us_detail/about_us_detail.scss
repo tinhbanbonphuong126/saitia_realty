@@ -4,6 +4,10 @@
 //Vitural. After complete. Please delete it
 @import "../compass/helper_class";
 
+* {
+  @include cpn_header_banner_gazou();
+}
+
 .main-content {
   opacity: 1;
 
@@ -21,12 +25,24 @@
       opacity: 1;
       margin-top: 59px;
 
+      @include xs-screen() {
+        @include paddingLeftRight(15);
+      }
+
+      @include small-screen() {
+        @include paddingLeftRight(0);
+      }
+
       .cell_li {
         opacity: 1;
         height: 78px;
         border-bottom: 1px solid #B5B6B6;
         padding-left: 31px;
         position: relative;
+
+        @include small-screen() {
+          padding-left: 0px;
+        }
 
         &:first-child {
           border-top: 1px solid #B5B6B6;
@@ -54,12 +70,27 @@
           display: inline-block;
           margin-left: 30px;
           vertical-align: middle;
+
+          @include iphone5s-landscape-screen() {
+            font-size: 23px;
+          }
+
+          @include small-screen() {
+            margin-left: 9px;
+          }
         }
       }
     }
 
     .bunjochi_detail {
       opacity: 1;
+
+      @include xs-screen() {
+        @include paddingLeftRight(15);
+      }
+      @include small-screen() {
+        @include paddingLeftRight(0);
+      }
 
       .detail_li {
         opacity: 1;
@@ -77,8 +108,16 @@
             .img_kugazu {
               width: 864px;
               height: 100%;
-              margin-top: 13px;
               margin: 0 auto;
+              margin-top: 28px;
+
+              @include large-screen() {
+                width: 100%;
+              }
+
+              img {
+                width: 100%;
+              }
             }
           }
 
@@ -95,6 +134,11 @@
               opacity: 1;
               margin: 0 auto;
               width: 693px;
+
+              @include xs-screen() {
+                width: 100%;
+
+              }
 
               ul li.cell_li_child {
                 opacity: 1;
@@ -117,9 +161,29 @@
                   width: 198px;
                   display: inline-block;
                   padding-left: 24px;
+
+                  @include small-screen() {
+                    opacity: 1;
+                    width: 138px;
+                    padding-left: 0px;
+                    float: left;
+                  }
                 }
                 .after {
                   opacity: 1;
+
+                  @include small-screen() {
+                    width: calc(100% - 138px);
+                    display: inline-block;
+                    float: left;
+
+                    @include blance_middle_lineheight(15, 65);
+
+                  }
+                }
+
+                @include small-screen() {
+                  @include clearfix();
                 }
               }
             }
@@ -139,6 +203,10 @@
               margin: 0 auto;
               width: 693px;
 
+              @include xs-screen() {
+                width: 100%;
+              }
+
               ul li.cell_li_child {
                 opacity: 1;
                 border-bottom: 1px solid #B5B6B6;
@@ -155,6 +223,9 @@
                   line-height: 65px;
                   color: #231815;
                   color: rgb(35, 24, 21);
+
+                  display: inline-block;
+                  float: left;
                 }
                 .before {
                   opacity: 1;
@@ -162,9 +233,24 @@
                   display: inline-block;
                   padding-left: 24px;
                   font-weight: bold;
+
+                  @include small-screen() {
+                    width: 98px;
+                    padding-left: 0px;
+                  }
                 }
                 .after {
                   opacity: 1;
+
+                  @include small-screen() {
+                    width: calc(100% - 98px);
+
+                    @include blance_middle_lineheight(15, 65);
+                  }
+                }
+
+                @include small-screen() {
+                  @include clearfix();
                 }
               }
             }
@@ -183,7 +269,6 @@
 
               img {
                 width: 100%;
-                height: 553px;
               }
             }
           }
@@ -206,6 +291,14 @@
               color: rgb(255, 255, 255);
               text-align: center;
               margin: 0 auto;
+
+              @include medium-screen() {
+                width: 400px;
+              }
+
+              @include small-screen() {
+                width: 100%;
+              }
             }
           }
         }
@@ -225,332 +318,5 @@
   color: rgb(255, 255, 255);
   text-align: center;
   margin: 0 auto;
-}
-//Vitural. After complete. Please delete it
-.vitual {
-
-  position: relative;
-  min-height: 1px;
-
-  @include huge-screen() {
-    opacity: 1;
-
-  }
-
-  @include big-screen() {
-    opacity: 1;
-
-  }
-
-  @include large-screen() {
-    opacity: 1;
-
-  }
-
-  @include xs-screen() {
-    opacity: 1;
-
-  }
-  @include medium-screen() {
-    opacity: 1;
-
-  }
-  @include small-screen() {
-    opacity: 1;
-
-  }
-  @include tiny-screen() {
-    opacity: 1;
-
-  }
-
-  align-content: initial;
-  align-items: initial;
-  align-self: initial;
-  all: initial;
-  animation: initial;
-  animation-delay: initial;
-  animation-direction: initial;
-  animation-duration: initial;
-  animation-fill-mode: initial;
-  animation-iteration-count: initial;
-  animation-name: initial;
-  animation-play-state: initial;
-  animation-timing-function: initial;
-  backface-visibility: initial;
-  background: initial;
-  background-attachment: initial;
-  background-blend-mode: initial;
-  background-clip: initial;
-  background-color: initial;
-  background-image: initial;
-  background-origin: initial;
-  background-position: initial;
-  background-repeat: initial;
-  background-size: initial;
-  border: initial;
-  border-bottom: initial;
-  border-bottom-color: initial;
-  border-bottom-left-radius: initial;
-  border-bottom-right-radius: initial;
-  border-bottom-style: initial;
-  border-bottom-width: initial;
-  border-collapse: initial;
-  border-color: initial;
-  border-image: initial;
-  border-image-outset: initial;
-  border-image-repeat: initial;
-  border-image-slice: initial;
-  border-image-source: initial;
-  border-image-width: initial;
-  border-left: initial;
-  border-left-color: initial;
-  border-left-style: initial;
-  border-left-width: initial;
-  border-radius: initial;
-  border-right: initial;
-  border-right-color: initial;
-  border-right-style: initial;
-  border-right-width: initial;
-  border-spacing: initial;
-  border-style: initial;
-  border-top: initial;
-  border-top-color: initial;
-  border-top-left-radius: initial;
-  border-top-right-radius: initial;
-  border-top-style: initial;
-  border-top-width: initial;
-  border-width: initial;
-  bottom: initial;
-  box-shadow: initial;
-  box-sizing: initial;
-  caption-side: initial;
-  clear: initial;
-  clip: initial;
-  color: initial;
-  column-count: initial;
-  column-fill: initial;
-  column-gap: initial;
-  column-rule: initial;
-  column-rule-color: initial;
-  column-rule-style: initial;
-  column-rule-width: initial;
-  column-span: initial;
-  column-width: initial;
-  columns: initial;
-  content: initial;
-  counter-increment: initial;
-  counter-reset: initial;
-  cursor: initial;
-  direction: initial;
-  display: initial;
-  empty-cells: initial;
-  filter: initial;
-  flex: initial;
-  flex-basis: initial;
-  flex-direction: initial;
-  flex-flow: initial;
-  flex-grow: initial;
-  flex-shrink: initial;
-  flex-wrap: initial;
-  float: initial;
-  font: initial;
-  font-family: initial;
-  font-size: initial;
-  font-size-adjust: initial;
-  font-stretch: initial;
-  font-style: initial;
-  font-variant: initial;
-  font-weight: initial;
-  hanging-punctuation: initial;
-  height: initial;
-  justify-content: initial;
-  left: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  list-style: initial;
-  list-style-image: initial;
-  list-style-position: initial;
-  list-style-type: initial;
-  margin: initial;
-  margin-bottom: initial;
-  margin-left: initial;
-  margin-right: initial;
-  margin-top: initial;
-  max-height: initial;
-  max-width: initial;
-  min-height: initial;
-  min-width: initial;
-  nav-down: initial;
-  nav-index: initial;
-  nav-left: initial;
-  nav-right: initial;
-  nav-up: initial;
-  opacity: initial;
-  order: initial;
-  outline: initial;
-  outline-color: initial;
-  outline-offset: initial;
-  outline-style: initial;
-  outline-width: initial;
-  overflow: initial;
-  overflow-x: initial;
-  overflow-y: initial;
-  padding: initial;
-  padding-bottom: initial;
-  padding-left: initial;
-  padding-right: initial;
-  padding-top: initial;
-  page-break-after: initial;
-  page-break-before: initial;
-  page-break-inside: initial;
-  perspective: initial;
-  perspective-origin: initial;
-  position: initial;
-  quotes: initial;
-  resize: initial;
-  right: initial;
-  tab-size: initial;
-  table-layout: initial;
-  text-align: initial;
-  text-align-last: initial;
-  text-decoration: initial;
-  text-decoration-color: initial;
-  text-decoration-line: initial;
-  text-decoration-style: initial;
-  text-indent: initial;
-  text-justify: initial;
-  text-overflow: initial;
-  text-shadow: initial;
-  text-transform: initial;
-  top: initial;
-  transform: initial;
-  transform-origin: initial;
-  transform-style: initial;
-  transition: initial;
-  transition-delay: initial;
-  transition-duration: initial;
-  transition-property: initial;
-  transition-timing-function: initial;
-  unicode-bidi: initial;
-  user-select: initial;
-  vertical-align: initial;
-  visibility: initial;
-  white-space: initial;
-  width: initial;
-  word-break: initial;
-  word-spacing: initial;
-  word-wrap: initial;
-  z-index: initial;
-
-  &:active {
-    opacity: 1;
-  }
-  &:checked {
-    opacity: 1;
-  }
-  &:disabled {
-    opacity: 1;
-  }
-  &:empty {
-    opacity: 1;
-  }
-  &:enabled {
-    opacity: 1;
-  }
-  &:first-child {
-    opacity: 1;
-  }
-  &:first-of-type {
-    opacity: 1;
-  }
-  &:focus {
-    opacity: 1;
-  }
-  &:hover {
-    opacity: 1;
-  }
-  &:in-range {
-    opacity: 1;
-  }
-  &:invalid {
-    opacity: 1;
-  }
-  &:lang(language) {
-    opacity: 1;
-  }
-  &:last-child {
-    opacity: 1;
-  }
-  &:last-of-type {
-    opacity: 1;
-  }
-  &:link {
-    opacity: 1;
-  }
-  &:not(selector) {
-    opacity: 1;
-  }
-  &:nth-child(n) {
-    opacity: 1;
-  }
-  &:nth-last-child(n) {
-    opacity: 1;
-  }
-  &:nth-last-of-type(n) {
-    opacity: 1;
-  }
-  &:nth-of-type(n) {
-    opacity: 1;
-  }
-  &:only-of-type {
-    opacity: 1;
-  }
-  &:only-child {
-    opacity: 1;
-  }
-  &:optional {
-    opacity: 1;
-  }
-  &:out-of-range {
-    opacity: 1;
-  }
-  &:read-only {
-    opacity: 1;
-  }
-  &:read-write {
-    opacity: 1;
-  }
-  &:required {
-    opacity: 1;
-  }
-  &:root {
-    opacity: 1;
-  }
-  &:target {
-    opacity: 1;
-  }
-  &:valid {
-    opacity: 1;
-  }
-  &:visited {
-    opacity: 1;
-  }
-  &::after {
-    opacity: 1;
-  }
-  &::before {
-    opacity: 1;
-  }
-  &::first-letter {
-    opacity: 1;
-  }
-  &::first-line {
-    opacity: 1;
-  }
-  &::selection {
-    opacity: 1;
-  }
-
 }
 
